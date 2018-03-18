@@ -1,0 +1,34 @@
+{
+  "name": "london",
+  "version": "1.0.0",
+  "description": "ServerlessDays London Website",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ServerlessDays/London.git"
+  },
+  "keywords": [
+    "serverless",
+    "serverlessdays",
+    "london"
+  ],
+  "author": "A Stanley",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/ServerlessDays/London/issues"
+  },
+  "homepage": "https://github.com/ServerlessDays/London#readme",
+  "devDependencies": {
+    "balanced-match": "^1.0.0",
+    "browser-sync": "^2.23.6",
+    "gulp": "^3.9.1",
+    "gulp-file-include": "^2.0.1",
+    "gulp-htmlmin": "^4.0.0",
+    "gulp-minify-inline": "^1.0.0",
+    "gulp-uglify": "^3.0.0",
+    "pump": "^3.0.0"
+  }
+}
