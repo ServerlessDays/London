@@ -4,8 +4,12 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="https://unpkg.com/tachyons/css/tachyons.min.css">
   <style>
+  	.vh-60 { height:60vh; }
   	.vh-40 { height:40vh; }
   	.vh-30 { height:30vh; }
+
+  	@media screen and (min-width: 30em) {
+  	.vh-40-ns {  height: 40vh; }
 
   </style>
 
@@ -15,9 +19,9 @@
   	</div>
 
   	<div class="w-100 vh-100">
-  		<div class="relative w-100">
-  			<div class="mt4 ml4 mw6 bg-near-white">
-  				<img class="pa3" src="https://res.cloudinary.com/serverlessdays/image/upload/c_scale,w_400/v1521408640/serverless_logo_no_undertext.png" alt="ServerlessDays Logo"/>
+  		<div class="relative w-100 center">
+  			<div class="mt2 mt4-ns mh0 ml4-ns pa2 pa0-ns mw6-ns bg-near-white">
+  				<img class="pa0 pa3-ns" src="https://res.cloudinary.com/serverlessdays/image/upload/c_scale,w_400/v1521408640/serverless_logo_no_undertext.png" alt="ServerlessDays Logo"/>
   				<div class="tl f4 fw8 code pl3 pb1">
   					<p class="pa0">6 July 2018, St John&#39;s Hoxton, London</p>
   				</div>
@@ -41,31 +45,32 @@
 			</div>
 		</div>
 
-  		<div class="absolute bottom--2 w-100 vh-40 bg-black-80 avenir">
+  		<div class="absolute bottom--2 w-100 vh-60 vh-40-ns bg-black-80 avenir pb3">
   			<div class="f2 near-white avenir tc">
 				<p>One Day. One Track. One Community</p>
 			</div>
-  			<div class="dt w-100 w-50-ns center mt3">
-  				<div class="dt-row-ns f4">
-  					<div id="cfp" class="dtc w-100 w-33-ns tc">
-  						<button type="button" class="pv3 w-50 b--black bg-near-white ba br2">
-  							Call for Papers
-  						</button>
-  					</div>
-  					<div id="sponsor" class="dtc w-100 w-33-ns tc">
-  						<button type="button" class="pv3 w-50 b--white white bg-transparent ba br2">
-  							Sponsor
-  						</button>
-  					</div>
-  				</div>
-  			</div>
-  			<div class="f4 tc mt5">
+			<div class="dt-ns center">
+				<div class="dt-row-ns w-100 tc">
+					<div class="dtc-ns pa2">
+						<button id="cfp" type="button" class="pv3 w5 b--black bg-near-white ba br2">
+							Call for Papers
+						</button>
+					</div>
+					<div class="dtc-ns pa2">
+						<button id="sponsor" type="button" class="pv3 w5 b--white white bg-transparent ba br2">
+							Sponsor
+						</button>
+					</div>
+				</div>
+			</div>
+
+  			<div class="clearfix w-100 f4 tc mt3 mt4-ns">
 				<a class="near-white avenir no-underline" href="#coc">Code of Conduct</a>
 			</div>
   		</div> 
 
   	</div>
-  	<div id="coc" class="relative w-100 bg-black-80">
+  	<div id="coc" class="relative w-100 bg-black-80 pt2 pt0-ns mt0">
 
             <div class="mw6 mw7-ns center avenir near-white pt4 ph2 pb2">
                 <h2 class="f3 f2-ns tl">Code of Conduct</h2>
