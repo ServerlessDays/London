@@ -1,26 +1,26 @@
 {
-  "name": "london",
+  "name": "serverlessdays-amsterdam",
   "version": "1.0.0",
-  "description": "ServerlessDays London Website",
+  "description": "ServerlessDays Amsterdam Website",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/ServerlessDays/London.git"
+    "url": "git+https://github.com:ContainerSolutions/ServerlessDaysAmsterdam.git"
   },
   "keywords": [
     "serverless",
     "serverlessdays",
-    "london"
+    "Amsterdam"
   ],
-  "author": "A Stanley",
+  "author": "Lian Li",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/ServerlessDays/London/issues"
+    "url": "https://github.com/ContainerSolutions/ServerlessDaysAmsterdam/issues"
   },
-  "homepage": "https://github.com/ServerlessDays/London#readme",
+  "homepage": "https://github.com/ContainerSolutions/ServerlessDaysAmsterdam#readme",
   "devDependencies": {
     "browser-sync": "^2.23.3",
     "connect-history-api-fallback": "^1.5.0",
