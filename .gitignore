@@ -58,3 +58,5 @@ typings/
 .env
 
 .DS_Store
+src/.DS_Store
+src/html/.DS_Store
