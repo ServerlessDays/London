@@ -28,103 +28,373 @@
       z-index: 10;
     }
 
+    .bg-color-1 {
+      background: rgba(200,70,0,.75);
+    }
+
+    .bg-color-2 {
+      background: rgba(192,132,0,.75);
+    }
+
+    .bg-color-3 {
+      background: rgba(90,172,174,.75);
+    }
+
+    .bg-color-4 {
+      background: rgba(65,146,75,.75);
+    }
+
+    .bg-color-5 {
+      background: rgba(15,27,7,.75);
+    }
+
+    .bg-color-6 {
+      background: rgba(0,41,70,.75);
+    }
+
+    .ldn {
+      font-family: "Comic Sans MS", cursive, sans-serif;
+      color: #44D62C;
+      font-size: 3rem;
+    }
+
+    .ml8 { margin-left: 26rem; }
+
+
   	@media screen and (min-width: 30em) {
   	.vh-40-ns {  height: 40vh; }
 
   </style>
 
-  <body class="cover" style="background:url(./adore_and_endure_med.jpeg)">
+  <body>
+
+    <div class="fixed vh-100 w-100 cover top-0" style="background:url(./adore_and_endure_med.jpeg)">
+    </div>
 
     <div class="fixed bg-black-80 w-100 top-0 shadow-7">
-      <div class="fl mt2 ml2-ns pa0 tl v-mid">
-          <img class="pa0 pa1-ns" src="serverless_logo_no_undertext_white.svg" height="85" alt="ServerlessDays Logo"/>
+      <div class="fl-ns mt0 mt2-ns ml2-ns pa0 tl-ns v-mid">
+          <img class="pv2 pa3-ns" src="serverless_white_new.svg" height="46" alt="ServerlessDays Logo"/>
           
       </div>
-      <div class="fr mt4 mr2-ns pa2 tr v-mid">
-        <span class="f5 fw8 code pl3 pb1 white v-mid">
+      <div class="fr-ns mt0 mt4-ns mr2-ns pa2 tc tr-ns v-mid">
+        <span class="f5 fw8 code pl3-ns pb1 white">
             6 July 2018, St John&#39;s Hoxton, London
           </span>
       </div>
+
     </div>
 
-  	<div class="mt6">
+  	<div class="w-100 relative">
       <div class="fl-ns w-100 w-40-ns">
 
-        <div class="ml3 bg-near-white measure-ns code dark-gray f6 pa3">
+        <div class="cf mt6 ml3-ns bg-near-white measure-ns code dark-gray f6 pa3 shadow-6 lh-copy">
           <h1 class="code f4 underline">ServerlessDays London</h1>
           <p> 
             The 2nd edition of the conference formerly known as JeffConf London see's it evolve into ServerlessDays London as the community grows and takes root globally.
           </p>
         </div>
 
+        <div class="cf mt3 ml3-ns bg-near-white mw6 code dark-gray f6 pa3 shadow-6 lh-copy">
+          <h3 class="code f5 underline">Tickets</h3>
+          
+          
+          <a class="f6 b tc pointer no-underline" href="https://ti.to/serverlessdays-london/serverlessdays-london-2018" target="_blank">
+            <p class="cf bg-animate hover-bg-yellow pv1 mv1-ns">
+              <span class="dark-gray fl">Standard Ticket</span>
+              <span class="dark-gray underline fr">£35</span>
+            </p>
+          </a>
+          
+          <a class="f6 b tc pointer no-underline" href="https://ti.to/serverlessdays-london/serverlessdays-london-2018" target="_blank">
+            <p class="cf bg-animate hover-bg-yellow pv1 mv1-ns">
+              <span class="dark-gray fl">Standard + Diversity Sponsor</span>
+              <span class="dark-gray underline fr">£70</span>
+            </p>
+          </a>
+
+          <a class="f6 b pointer no-underline pv3" href="https://diversitytickets.org/events/173" target="_blank">
+            <p class="cf bg-animate hover-bg-yellow pv1 mv1-ns">
+              <span class="dark-gray fl">Diversity Scholarships</span> 
+              <span class="dark-gray underline fr">Apply Here</span>
+            </p>
+          </a>
+
+        </div>
+
+        <div class="cf mt3 ml3-ns bg-near-white mw6 code dark-gray f6 pa3 shadow-6 lh-copy">
+          <h3 class="code f5 underline">Agenda</h3>
+          
+          
+         
+          <p class="cf f6 pv1 mv1-ns">
+            <span class="fl">Doors Open</span>
+            
+            <span class="fr">8:30am</span>
+          </p>
+          <p class="cf f6 pv1 mv1-ns bg-light-blue">
+            <span class="fl">Opening Remarks</span>
+            
+            <span class="fr">9:30am</span>
+          </p>
+          <p class="cf f6 pv1 mv1-ns bg-orange">
+            <span class="fl">Keynote - Erica Windisch</span>
+            
+            <span class="fr">9:40am</span>
+          </p>
+          <p class="cf f6 pv1 mv1-ns bg-orange">
+            <span class="fl">Keynote - Sarah Drasner</span>
+            
+            <span class="fr">10:30am</span>
+          </p>
+          <p class="cf f6 pv1 mv1-ns">
+            <span class="fl">Break</span>
+            
+            <span class="fr">11:20am</span>
+          </p>
+          <p class="cf f6 pv1 mv1-ns bg-light-green">
+            <span class="fl">Lily Stanley</span>
+            
+            <span class="fr">11:35am</span>
+          </p>
+          <p class="cf f6 pv1 mv1-ns bg-light-pink">
+            <span class="fl">Lightning Talks</span>
+            
+            <span class="fr">12:05am</span>
+          </p>
+          <p class="cf f6 pv1 mv1-ns">
+            <span class="fl">Lunch</span>
+            
+            <span class="fr">12:45pm</span>
+          </p>
+          <p class="cf f6 pv1 mv1-ns bg-yellow">
+            <span class="fl">Open Spaces</span>
+            
+            <span class="fr">1pm to 2pm</span>
+          </p>
+          <p class="cf f6 pv1 mv1-ns bg-light-pink">
+            <span class="fl">Lightning Talks</span>
+            
+            <span class="fr">2:30pm</span>
+          </p>
+          <p class="cf f6 pv1 mv1-ns bg-light-green">
+            <span class="fl">Lily Stanley</span>
+            
+            <span class="fr">3:10pm</span>
+          </p>
+          <p class="cf f6 pv1 mv1-ns">
+            <span class="fl">Coffee Break</span>
+            
+            <span class="fr">3:45pm</span>
+          </p>
+          <p class="cf f6 pv1 mv1-ns bg-light-green">
+            <span class="fl">Lily Stanley</span>
+            
+            <span class="fr">4:15pm</span>
+          </p>
+          <p class="cf f6 pv1 mv1-ns bg-light-green">
+            <span class="fl">Lily Stanley</span>
+            
+            <span class="fr">5:00pm</span>
+          </p>
+
+          <p class="cf f6 pv1 mv1-ns bg-light-blue">
+            <span class="fl">Closing Remarks</span>
+            
+            <span class="fr">5:35pm</span>
+          </p>
+          <p class="cf f6 pv1 mv1-ns">
+            <span class="fl">Reception on the lawn</span>
+            
+            <span class="fr">5:45pm</span>
+          </p>
+
+        
+        </div>
 
       </div>
 
-      <div class="fr-ns w-100 w-60-ns">
-        <div class="dt cf w-100">
-          <div class="dt-row-ns">
-            <div class="dtc w-100 w-50-ns grow pointer tc pa2">
-              <img src="lily.jpg" class="w5 h5 ba br4 b--transparent shadow-6">
-              <div class="near-white code">
-                <h3 class="mb1">Lily Pentecost</h3>
-                <span class="f5 fw1">Pupper</span>
-              </div>
-            </div>
-            <div class="dtc w-100 w-50-ns grow pointer tc pa2">
-              <img src="lily_sml.jpg" class="w5 h5 ba br4 b--transparent shadow-6">
-              <div class="near-white code">
-                <h3 class="mb1">Lily Poopiecost</h3>
-                <span class="f5 fw1">Poopmachine</span>
-              </div>
-            </div>
-          </div>
-        </div>
-
+      <div class="fr-ns w-100 w-60-ns mt2 mt6-ns">
         <div class="dt w-100">
-          <div class="dt-row-ns w-100 mv3">
-            <div class="dtc tc w-100 w-33-ns grow pointer tc pa2">
-              <img src="lily.jpg" class="w4 h4 ba br4 b--transparent shadow-6">
-              <div class="near-white code">
-                <h4 class="mv1">Lily Pentecost</h4>
-                <span class="f6 fw1 mv0">Pupper</span>
-              </div>
+          <div class="dt-row">
+            <div class="dtc h2 w-100 bg-black-80">
+              <h2 class="pa0 tc v-mid code near-white f4">Keynotes</h2>
             </div>
-            <div class="dtc tc w-100 w-33-ns grow pointer tc pa2">
-              <img src="lily.jpg" class="w4 h4 ba br4 b--transparent shadow-6">
-              <div class="near-white code">
-                <h4 class="mv1">Lily Pentecost</h4>
-                <span class="f6 fw1 mv0">Pupper</span>
-              </div>
-            </div>
-            <div class="dtc tc w-100 w-33-ns grow pointer tc pa2">
-              <img src="lily.jpg" class="w4 h4 ba br4 b--transparent shadow-6">
-              <div class="near-white code">
-                <h4 class="mv1">Lily Pentecost</h4>
-                <span class="f6 fw1 mv0">Pupper</span>
+          </div>
+          <div class="dt-row">
+            <div class="dtc w-100 tc tl-ns bg-color-1">
+              <img src="erica_med.jpeg" class="fl-ns ph0-ns w-100 w5-ns h5-ns">
+              <div class="fl-ns mh3 ml4-ns white code w-40-m w-60-l">
+                <h3 class="f5 f4-ns mb1">Erica Windisch</h3>
+                <span class="f6 f5-ns fw1">CTO IOpipe</span>
+                <p class="f6 fw1 lh-copy tl">
+                  Erica is CTO & Founder at IOpipe where she is building tools to help developers of serverless applications iterate faster and support their applications in production. She is a former maintainer of Docker and OpenStack and has been building cloud, ops, and infrastructure tooling for over 15 years.
+                </p>
               </div>
             </div>
           </div>
-
-          <div class="dt-row-ns w-100 mv3">
-            <div class="dtc tc w-100 w-33-ns grow pointer tc pa2">
-              <img src="lily.jpg" class="w4 h4 ba br4 b--transparent shadow-6">
-              <div class="near-white code">
-                <h4 class="mv1">Lily Pentecost</h4>
-                <span class="f6 fw1 mv0">Pupper</span>
+          <div class="dt-row">
+            <div class="dtc w-100 tc tr-ns bg-color-2">
+              <img src="lily_sml.jpg" class="fr-ns w-100 w5-ns h5-ns">
+              <div class="fr-ns mh3 mr4-ns white code w-40-m w-60-l">
+                <h3 class="f5 f4-ns mb1">Lily Stanley</h3>
+                <span class="f6 f5-ns fw1">Pupper</span>
+                <p class="f6 fw1 lh-copy tl tr-ns">
+                  Lily is an exceptional pupper that gives loves on demand whether you want it or not. Definitely a good dog. 14/10 would hug.
+                </p>
               </div>
             </div>
-            <div class="dtc tc w-100 w-33-ns grow pointer tc pa2">
-              <img src="lily.jpg" class="w4 h4 ba br4 b--transparent shadow-6">
-              <div class="near-white code">
-                <h4 class="mv1">Lily Pentecost</h4>
-                <span class="f6 fw1 mv0">Pupper</span>
+          </div>
+          <div class="dt-row">
+            <div class="dtc h2 w-100 bg-black-80">
+              <h2 class="pa0 tc v-mid code white f4">30 Minute Talks</h2>
+            </div>
+          </div>
+          <div class="dt-row">
+            <div class="dtc w-100 tc tl-ns bg-color-3">
+              <img src="lily.jpg" class="fl-ns ph0-ns w-100 w5-ns h5-ns">
+              <div class="fl-ns mh3 ml4-ns white code w-60-ns">
+                <h3 class="f5 f4-ns mb1">Lily Pentecost</h3>
+                <span class="f6 f5-ns fw1">Pupper</span>
+                <p class="f6 fw1 lh-copy tl">
+                  Lily is an exceptional pupper that gives loves on demand whether you want it or not. Definitely a good dog. 14/10 would hug.
+                </p>
               </div>
             </div>
-            <div class="dtc tc w-100 w-33-ns grow pointer tc pa2">
-              <img src="lily.jpg" class="w4 h4 ba br4 b--transparent shadow-6">
-              <div class="near-white code">
-                <h4 class="mv1">Lily Pentecost</h4>
-                <span class="f6 fw1 mv0">Pupper</span>
+          </div>
+          <div class="dt-row">
+            <div class="dtc w-100 tc tr-ns bg-color-4">
+              <img src="lily_sml.jpg" class="fr-ns w-100 w5-ns h5-ns">
+              <div class="fr-ns mh3 mr4-ns white code w-60-ns">
+                <h3 class="f5 f4-ns mb1">Lily Stanley</h3>
+                <span class="f6 f5-ns fw1">Pupper</span>
+                <p class="f6 fw1 lh-copy tl tr-ns">
+                  Lily is an exceptional pupper that gives loves on demand whether you want it or not. Definitely a good dog. 14/10 would hug.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="dt-row">
+            <div class="dtc w-100 tc tl-ns bg-color-5">
+              <img src="lily.jpg" class="fl-ns ph0-ns w-100 w5-ns h5-ns">
+              <div class="fl-ns mh3 ml4-ns white code w-60-ns">
+                <h3 class="f5 f4-ns mb1">Lily Pentecost</h3>
+                <span class="f6 f5-ns fw1">Pupper</span>
+                <p class="f6 fw1 lh-copy tl">
+                  Lily is an exceptional pupper that gives loves on demand whether you want it or not. Definitely a good dog. 14/10 would hug.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="dt-row">
+            <div class="dtc w-100 tc tr-ns bg-color-6">
+              <img src="lily_sml.jpg" class="fr-ns w-100 w5-ns h5-ns">
+              <div class="fr-ns mh3 mr4-ns white code w-60-ns">
+                <h3 class="f5 f4-ns mb1">Lily Stanley</h3>
+                <span class="f6 f5-ns fw1">Pupper</span>
+                <p class="f6 fw1 lh-copy tl tr-ns">
+                  Lily is an exceptional pupper that gives loves on demand whether you want it or not. Definitely a good dog. 14/10 would hug.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="dt-row">
+            <div class="dtc h2 w-100 bg-black-80">
+              <h2 class="pa0 tc v-mid code near-white f4">Lightning Talks</h2>
+            </div>
+          </div>
+          <div class="dt-row">
+            <div class="dtc w-100 tc tl-ns bg-color-1">
+              <img src="lily.jpg" class="fl-ns ph0-ns w-100 w5-ns h5-ns">
+              <div class="fl-ns mh3 ml4-ns white code w-60-ns">
+                <h3 class="f5 f4-ns mb1">Lily Pentecost</h3>
+                <span class="f6 f5-ns fw1">Pupper</span>
+                <p class="f6 fw1 lh-copy tl">
+                  Lily is an exceptional pupper that gives loves on demand whether you want it or not. Definitely a good dog. 14/10 would hug.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="dt-row">
+            <div class="dtc w-100 tc tr-ns bg-color-2">
+              <img src="lily_sml.jpg" class="fr-ns w-100 w5-ns h5-ns">
+              <div class="fr-ns mh3 mr4-ns white code w-60-ns">
+                <h3 class="f5 f4-ns mb1">Lily Stanley</h3>
+                <span class="f6 f5-ns fw1">Pupper</span>
+                <p class="f6 fw1 lh-copy tl tr-ns">
+                  Lily is an exceptional pupper that gives loves on demand whether you want it or not. Definitely a good dog. 14/10 would hug.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="dt-row">
+            <div class="dtc w-100 tc tl-ns bg-color-3">
+              <img src="lily.jpg" class="fl-ns ph0-ns w-100 w5-ns h5-ns">
+              <div class="fl-ns mh3 ml4-ns white code w-60-ns">
+                <h3 class="f5 f4-ns mb1">Lily Pentecost</h3>
+                <span class="f6 f5-ns fw1">Pupper</span>
+                <p class="f6 fw1 lh-copy tl">
+                  Lily is an exceptional pupper that gives loves on demand whether you want it or not. Definitely a good dog. 14/10 would hug.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="dt-row">
+            <div class="dtc w-100 tc tr-ns bg-color-4">
+              <img src="lily_sml.jpg" class="fr-ns w-100 w5-ns h5-ns">
+              <div class="fr-ns mh3 mr4-ns white code w-60-ns">
+                <h3 class="f5 f4-ns mb1">Lily Stanley</h3>
+                <span class="f6 f5-ns fw1">Pupper</span>
+                <p class="f6 fw1 lh-copy tl tr-ns">
+                  Lily is an exceptional pupper that gives loves on demand whether you want it or not. Definitely a good dog. 14/10 would hug.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="dt-row">
+            <div class="dtc w-100 tc tl-ns bg-color-5">
+              <img src="lily.jpg" class="fl-ns ph0-ns w-100 w5-ns h5-ns">
+              <div class="fl-ns mh3 ml4-ns white code w-60-ns">
+                <h3 class="f5 f4-ns mb1">Lily Pentecost</h3>
+                <span class="f6 f5-ns fw1">Pupper</span>
+                <p class="f6 fw1 lh-copy tl">
+                  Lily is an exceptional pupper that gives loves on demand whether you want it or not. Definitely a good dog. 14/10 would hug.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="dt-row">
+            <div class="dtc w-100 tc tr-ns bg-color-6">
+              <img src="lily_sml.jpg" class="fr-ns w-100 w5-ns h5-ns">
+              <div class="fr-ns mh3 mr4-ns white code w-60-ns">
+                <h3 class="f5 f4-ns mb1">Lily Stanley</h3>
+                <span class="f6 f5-ns fw1">Pupper</span>
+                <p class="f6 fw1 lh-copy tl tr-ns">
+                  Lily is an exceptional pupper that gives loves on demand whether you want it or not. Definitely a good dog. 14/10 would hug.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="dt-row">
+            <div class="dtc w-100 tc tl-ns bg-color-1">
+              <img src="lily.jpg" class="fl-ns ph0-ns w-100 w5-ns h5-ns">
+              <div class="fl-ns mh3 ml4-ns white code w-60-ns">
+                <h3 class="f5 f4-ns mb1">Lily Pentecost</h3>
+                <span class="f6 f5-ns fw1">Pupper</span>
+                <p class="f6 fw1 lh-copy tl">
+                  Lily is an exceptional pupper that gives loves on demand whether you want it or not. Definitely a good dog. 14/10 would hug.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="dt-row">
+            <div class="dtc w-100 tc tr-ns bg-color-2">
+              <img src="lily_sml.jpg" class="fr-ns w-100 w5-ns h5-ns">
+              <div class="fr-ns mh3 mr4-ns white code w-60-ns">
+                <h3 class="f5 f4-ns mb1">Lily Stanley</h3>
+                <span class="f6 f5-ns fw1">Pupper</span>
+                <p class="f6 fw1 lh-copy tl tr-ns">
+                  Lily is an exceptional pupper that gives loves on demand whether you want it or not. Definitely a good dog. 14/10 would hug.
+                </p>
               </div>
             </div>
           </div>
@@ -132,7 +402,9 @@
       </div>
     </div>
 
-
+    <div class="static w-100 bg-navy tc h5 btm-0 white">
+      <span>This is the footer</span>
+    </div>
 
 <!--
   	<footer id="foot" class="relative w-100 bg-black-80">
