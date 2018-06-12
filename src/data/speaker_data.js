@@ -33,7 +33,7 @@ module.exports = [
 	      speakerName: "Yan Cui",
 	      speakerDesc: "Yan is an experienced engineer who has worked with AWS for nearly 10 years. He has been an architect and lead developer with a variety of industries ranging from investment banks, e-commerce to mobile gaming. In the last 2 years he has worked extensively with AWS Lambda in production, and he has been very active in sharing his experiences and the lessons he has learnt, some of his work has even made their way into the [Well-Architected whitepaper](https://aws.amazon.com/architecture/well-architected/) published by AWS.",
 	      speakerSocial: {
-	        speakerTwitter: "theburningmonk"
+	        speakerTwitter: "https://twitter.com/theburningmonk"
 	      }
 	    },
 	    talkDetails: {
@@ -47,7 +47,7 @@ module.exports = [
 	      speakerName: "Rob Allen",
 	      speakerDesc: "Rob Allen is a software consultant and developer with many years experience and writes code in PHP, Swift and other interesting languages. He leads Slim Framework's development team and contributes to Apache OpenWhisk and other open source projects. Rob is a published author and based in the UK where he runs [Nineteen Feet Limited](http://19ft.com), focussing on API development, training and consultancy. In his spare time, Rob blogs at [akrabat.com](https://akrabat.com) and can often be seen with a camera in his hand.",
 	      speakerSocial: {
-	        speakerTwitter: "akrabat"
+	        speakerTwitter: "https://twitter.com/akrabat"
 	      }
 	    },
 	    talkDetails: {
@@ -61,7 +61,8 @@ module.exports = [
 	      speakerName: "Serhat Can",
 	      speakerDesc: "Serhat is the Technical Evangelist for OpsGenie. He contributed to different parts of OpsGenie as a software engineer and now spreads the word by coding, writing and talking about DevOps. He is organizing Serverless Turkey and DevOps Turkey meetups as well as İstanbul DevOpsDays.",
 	      speakerSocial: {
-	        speakerTwitter: "srhtcn"
+	        speakerTwitter: "https://twitter.com/srhtcn",
+	        speakerLinkedIn: "https://linkedin.com/in/serhatcan/"
 	      }
 	    },
 	    talkDetails: {
@@ -70,12 +71,26 @@ module.exports = [
 	    }
 	  },
 	  {   
-	    slug: "blanca-garcia-gil-and-neil-crofts",
+	    slug: "blanca-garcia-gil",
 	    speakerDetails: {
 	      speakerName: "Blanca Garcia Gil & Neil Crofts",
-	      speakerDesc: "Blanca Garcia Gil is a senior software engineer at BBC. Her current work is focused on highly scalable big data pipelines. She is very interested in automation (testing and deployment) and observability. While having spent most of her time as a Java developer she’s also enjoys tinkering with Python and Bash when running data experiments. Neil Crofts is a senior software engineer at the BBC in the Audience Platform Data team responsible for processing the billions of messages audiences create when interacting with BBC online services. Previously he worked on the BBC Red Button Digital Text service and prior to that has developed software in a number of other industries including semiconductors,  automotive (commercial and F1) and telecoms.",
+	      speakerDesc: "Blanca Garcia Gil is a senior software engineer at BBC. Her current work is focused on highly scalable big data pipelines. She is very interested in automation (testing and deployment) and observability. While having spent most of her time as a Java developer she’s also enjoys tinkering with Python and Bash when running data experiments.",
 	      speakerSocial: {
-	        speakerTwitter: "blanquish"
+	        speakerTwitter: "https://twitter.com/blanquish"
+	      }
+	    },
+	    talkDetails: {
+	      talkTitle: "7 serverless recipes for big data architectures",
+	      talkDesc: "The BBC Audience Platform Data team collects, transforms and delivers billions of events each day from audience interactions with mobile apps and web sites such as BBC News, BBC Sport and iPlayer. We will share our experience of the 7 critical steps we took to migrate from Spark clusters with Map-Reduce to a serverless architecture. We will cover the good, the bad and the ugly, including lessons learnt along the way. These steps are also applicable to new architectures. We have been running in production for nearly a year and have achieved our goal of real-time analysis at up to 25000 transactions per second. This allows us to meet the demands of even the biggest news days, as well as seeing significant savings on our cloud infrastructure."
+	    }
+	  },
+	  {   
+	    slug: "neil-crofts",
+	    speakerDetails: {
+	      speakerName: "Neil Crofts",
+	      speakerDesc: "Neil Crofts is a senior software engineer at the BBC in the Audience Platform Data team responsible for processing the billions of messages audiences create when interacting with BBC online services. Previously he worked on the BBC Red Button Digital Text service and prior to that has developed software in a number of other industries including semiconductors,  automotive (commercial and F1) and telecoms.",
+	      speakerSocial: {
+	        speakerLinkedIn: "https://www.linkedin.com/in/neil-crofts"
 	      }
 	    },
 	    talkDetails: {
@@ -103,7 +118,8 @@ module.exports = [
 	      speakerName: "Hendric Ruesch",
 	      speakerDesc: "Hendric's journey has taken him from studying the social sciences to a deep fascination with the social web and digital strategy. He worked for Jimdo, SysEleven, strg. and as a freelance consultant. He grew up by the sea in Germany and lives in Hamburg. Hendric is the co-founder of superluminar, a cloud consulting firm and co-organiser of ServerlessDays Hamburg.",
 	      speakerSocial: {
-	        speakerTwitter: "hendricruesch"
+	        speakerTwitter: "https://twitter.com/hendricruesch",
+	        speakerLinkedIn: "https://www.linkedin.com/in/hendricruesch"
 	      }
 	    },
 	    talkDetails: {
@@ -117,7 +133,8 @@ module.exports = [
 	      speakerName: "Remy Chantenay",
 	      speakerDesc: "Engineering lead at Travelex from a mobile software engineering background (particularly Android for almost 9 years). I always have been interested by cloud-based solutions, distributed systems and architecture in general. Focused on delivering a large-scale project with a serverless architecture for the past year. On my spare time, I love to watch sports, travel around the world and read about health and nutrition.",
 	      speakerSocial: {
-	        speakerTwitter: "thekoreanbeaver"
+	        speakerTwitter: "https://twitter.com/thekoreanbeaver",
+	        speakerInstagram: : "https://www.instagram.com/koreanbeaver/"
 	      }
 	    },
 	    talkDetails: {
@@ -129,9 +146,11 @@ module.exports = [
 	    slug: "markus-thommes",
 	    speakerDetails: {
 	      speakerName: "Markus Thömmes",
-	      speakerDesc: "",
+	      speakerDesc: "Metalcore guitarist, adrenaline junky, Scala enthusiast, Software Engineer and leading contributor to Apache OpenWhisk. I love open-technology and I’m obsessed with anything technology in general. I’m one of the founding members of the Apache OpenWhisk project and day-0 employee on IBM’s serverless effort, IBM Cloud Functions. As such I’ve been driving the design and implementation of the OpenWhisk platform to reach the production-grade it has today. I’m a key driver of IBM’s adoption of OpenWhisk and I’ve been hosting the largest open-source platform over the past 2 years",
 	      speakerSocial: {
-	        "speakerTwitter": ""
+	        "speakerTwitter": "https://twitter.com/markusthoemmes",
+	        "speakerMedium": "https://medium.com/@markusthoemmes",
+	        "speakerLinkedIn": "https://www.linkedin.com/in/markus-th%C3%B6mmes-0b923669/s"
 	      }
 	    },
 	    talkDetails: {
@@ -145,7 +164,9 @@ module.exports = [
 	      speakerName: "Olivier Tardieu",
 	      speakerDesc: "Dr. Olivier Tardieu is a Research Staff Member at IBM in the New York area. He is part of the team shaping the future of IBM Cloud Functions and a contributor to its open source nucleus, the Apache OpenWhisk functions-as-a-service platform. With a passion for programming languages and tools, he works relentlessly to make developers feel at home in a serverless cloud.",
 	      speakerSocial: {
-	        speakerTwitter: "tardieu0"
+	        speakerTwitter: "https://twitter.com/tardieu0",
+	        speakerLinkedIn: "https://researcher.watson.ibm.com/researcher/view.php?person=us-tardieu",
+	        speakerWeb: "https://researcher.watson.ibm.com/researcher/view.php?person=us-tardieu"
 	      }
 	    },
 	    talkDetails: {
@@ -159,7 +180,7 @@ module.exports = [
 	      speakerName: "Matthew Henderson",
 	      speakerDesc: "Matthew Henderson is a Senior Program Manager at Microsoft working on Azure Functions and Azure App Service. His primary mission is to unlock developer productivity by removing barriers to identity and integration. He loves helping developers leverage serverless solutions to get more done and is proud to have worked on Azure Functions from its outset. Outside of computing, Matthew is a runner, a volleyballer, and a culinary adventurist.",
 	      speakerSocial: {
-	        speakerTwitter: "mattchenderson"
+	        speakerTwitter: "https://twitter.com/mattchenderson"
 	      }
 	    },
 	    talkDetails: {
