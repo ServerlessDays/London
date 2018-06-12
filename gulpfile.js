@@ -6,19 +6,27 @@ var pump = require('pump');
 var historyApiFallback = require('connect-history-api-fallback');
 var fileinclude = require('gulp-file-include');
 var browserSync = require('browser-sync').create();
+var del = require('del');
+var plumber = require('gulp-plumber');
 
-gulp.task('compress', function(cb) {
-    pump([
-            gulp.src('src/*.js'),
-            uglify(),
-            gulp.dest('dist')
-        ],
-        cb
-    );
+gulp.task('compress', function() {
+    return pump([
+        gulp.src('src/*.js'),
+        uglify(),
+        gulp.dest('dist')
+    ]);
 });
 
-gulp.task('fileinclude', function() {
-    gulp.src(['src/html/**/*.html'])
+gulp.task('clean', function () {
+    return del([
+        'dist/**',
+        'src/html-compiled/**',
+    ]);
+});
+
+gulp.task('fileinclude', ['clean'], function(callback) {
+    return gulp.src(['src/html/*.html'])
+      .pipe(plumber())
       .pipe(fileinclude({
         prefix: '@@',
         basepath: '@file'
@@ -37,7 +45,9 @@ gulp.task('minify', function() {
 gulp.task('copy', function() {
     return gulp.src([
             'src/_redirects',
-            'src/*.xml'
+            'src/*.xml',
+            'src/*.txt',
+            'src/*.pdf'
         ])
         .pipe(gulp.dest('dist'));
 });
@@ -48,15 +58,21 @@ gulp.task('include-watch', ['fileinclude'], browserSync.reload);
 
 gulp.task('watch', ['fileinclude', 'browser-sync'], function () {
     "use strict";
-    gulp.watch("./src/html/*.html", ['include-watch']);
+    gulp.watch("./src/html/**/*.html", ['include-watch']);
+    gulp.watch("./src/*.json", ['include-watch']);
 });
 
-function simpleURLRewrite(req,res,next) {
+gulp.task('watch-dist', ['build'], function () {
+    "use strict";
+    gulp.watch("./dist/*.html", browserSync.reload);
+});
+
+function simpleURLRewrite(req, res, next) {
     if (req.url === '/') {
-        req.url = "/index/";
+        req.url = "/index";
     }
-    if (req.url.endsWith('/')) {
-        req.url = req.url.slice(0, -1) + ".html";
+    if (req.url.indexOf('.') === -1) {
+        req.url += ".html";
     }
     return next();
 }
@@ -71,4 +87,15 @@ gulp.task('browser-sync', ['fileinclude'], function() {
     });
 });
 
+gulp.task('browser-sync-dist', ['build'], function() {
+    browserSync.init({
+        server: {
+            baseDir: "./dist/",
+        },
+        middleware: simpleURLRewrite,
+    });
+});
+
 gulp.task('default', ['watch']);
+
+gulp.task('dist', ['watch-dist', 'browser-sync-dist']);
