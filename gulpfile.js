@@ -35,8 +35,8 @@ gulp.task('fileinclude', ['clean'], function(callback) {
       .pipe(browserSync.stream());
   });
 
-gulp.task('minify', ['fileinclude'], function() {
-    return gulp.src('src/html-compiled/**/*.html')
+gulp.task('minify', function() {
+    return gulp.src('src/html/*.html')
         .pipe(htmlmin({ collapseWhitespace: true, removeComments: true }))
         .pipe(minifyInline())
         .pipe(gulp.dest('dist'));
