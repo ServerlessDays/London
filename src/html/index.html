@@ -27,6 +27,14 @@
         .vh-60 { height:60vh; }
         .vh-40 { height:40vh; }
         .vh-30 { height:30vh; }
+
+        iframe#eventbrite {
+            width: 100%;
+            border: 0;
+            margin: 0;
+            overflow: scroll;
+            min-height: 750px;
+        }
   
       @media screen and (min-width: 30em) {
           .vh-40-ns {  height: 40vh; }
@@ -88,27 +96,82 @@
 			<div class="dt-ns center">
 				<div class="dt-row-ns w-100 tc">
 					<div class="dtc-ns pa2">
-						<a id="cfp" title="CFP" href="https://www.papercall.io/serverless-days-milano"class="pv2 pv3-ns w5 b--white white bg-transparent ba br2 pointer db no-underline">
+						<a id="cfp-link" title="CFP" target="_blank" href="https://www.papercall.io/serverless-days-milano" class="pv2 pv3-ns w5 b--white white bg-transparent hover-black hover-bg-white ba br2 pointer db no-underline">
 							Call for Papers
                         </a>
                     </div>
-                    <!-- Coming soon!
-					<div class="dtc-ns pa2">
-						<a id="tickets" title="ServerlessDays Milan Tickets" href="#" class="pv2 pv3-ns w5 b--black bg-near-white black ba br2 pointer db no-underline">
+                    <div class="dtc-ns pa2">
+						<a id="tickets-link" title="ServerlessDays Milan Tickets" href="#tickets" class="pv2 pv3-ns w5 b--black b--white white bg-transparent hover-black hover-bg-white ba br2 pointer db no-underline">
 							Tickets
                         </a>
                     </div>
-                    -->
-          <div class="dtc-ns pa2">
-            <a id="sponsor" title="Sponsor Prospectus" href="/ServerlessDaysMilanSponsorProspectus.pdf" class="pv2 pv3-ns w5 b--white white bg-transparent ba br2 pointer db no-underline">
-              Sponsorships
-            </a>
-          </div>
+                    <div class="dtc-ns pa2">
+                        <a id="sponsorships-link" title="Sponsor Prospectus" target="_blank" href="/ServerlessDaysMilanSponsorProspectus.pdf" class="pv2 pv3-ns w5 b--white white bg-transparent hover-black hover-bg-white ba br2 pointer db no-underline">
+                        Sponsorships
+                        </a>
+                    </div>
 				</div>
 			</div>
   		</div> 
 
-  	</div>
+      </div>
+
+    <div id="about" class="relative w-100 bg-black-80 pt2 pt0-ns mt0">
+        <div class="mw6 mw7-ns center near-white pt3 pt4-ns ph2 pb2">
+            <h2 class="f3 f2-ns tl">About</h2>
+            <div class="f6 f5-ns mt4 lh-copy">
+                <p>
+                    ServerlessDays Milan is developer-oriented conference about serverless technologies.
+                </p>
+                <p>
+                    We believe in and encourage practical sessions, in which developers share their experience and lessons from real-world projects.
+                </p>
+                <p>
+                        ServerlessDays Milan is part of 
+                        <a href="https://serverlessdays.io/" class="link dim blue">ServerlessDays</a>
+                        (formerly JeffConf), a global series of events around the world fostering communities around serverless technologies.
+                        We follow and enforce the <a href="https://serverlessdays.io/coc" class="link dim blue">Serverless Days Code of Conduct</a>.
+                </p>
+            </div>
+        </div>
+    </div>
+
+
+    <div id="tickets" class="relative w-100 bg-black-80 pt2 pt0-ns mt0">
+        <div class="mw6 mw7-ns center near-white pt3 pt4-ns ph2 pb4">
+            <h2 class="f3 f2-ns tl">Tickets</h2>
+            <div class="f6 f5-ns mt4 lh-copy">
+                <p>
+                    Tickets are available at €35, and the income will be donated to local no-profit organizations.
+                </p>
+                <p>
+                    We believe in inclusiveness and diversity, and we are working hard with our Diversity Partners to welcome people from diverse backgrounds and to remove any financial barrier.
+                </p>
+                <p>
+                    You can chosee to buy a Diversity Sponsor Ticket, and we'll donate it to a Diversity Scholar for free.
+                    If you are part of an underrepresented group in tech, you can apply for diversity tickets by emailing us at <a class="orange no-underline" href="mailto:milan@serverlessdays.io">milan@serverlessdays.io</a>!
+                </p>
+            </div>
+        </div>
+
+        <iframe src="https://eventbrite.com/tickets-external?eid=47239920875&ref=etckt" frameborder="0" height="750" width="100%" vspace="0" hspace="0" marginheight="5" marginwidth="5" scrolling="auto" allowtransparency="true"></iframe>
+
+    </div>
+
+    <!--
+    <div id="agenda" class="relative w-100 bg-black-80 pt2 pt0-ns mt0">
+        <div class="mw6 mw7-ns center near-white pt3 pt4-ns ph2 pb2">
+            <h2 class="f3 f2-ns tl">Agenda</h2>
+            <div class="f6 f5-ns mt4 lh-copy">
+                <p>
+                    Coming soon. Stay tuned!
+                </p>
+            </div>
+        </div>
+    </div>
+    -->
+
+
   	<div id="coc" class="relative w-100 bg-black-80 pt2 pt0-ns mt0">
 
             <div class="mw6 mw7-ns center near-white pt3 pt4-ns ph2 pb2">
