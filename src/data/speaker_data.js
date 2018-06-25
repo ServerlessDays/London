@@ -42,8 +42,8 @@ module.exports = [
 	      }
 	    },
 	    talkDetails: {
-	      talkTitle: "Everything you wanted to ask about cold starts but were afraid to ask",
-	      talkDesc: "There are a lot of hearsay and misconception about cold starts. You see contradictory advices on how to mitigate the effect of cold starts all the time. Some say putting an entire API into one function would reduce cold starts, but others argue that will make cold starts worse. The effectiveness of these practices are all circumstantial, but no one talks about that. It’s a mess. Let’s do away with hearsays. Instead, let’s test out these hypothesis with experiments, and use empirical evidence to do our talking."
+	      talkTitle: "Applying the principles of chaos to Serverless",
+	      talkDesc: "Chaos engineering is a discipline that focuses on improving system resilience through  experiments that expose the inherent chaos and failure modes in our system, in a controlled fashion, before these failure modes manifest themselves like a wildfire in production and impact our users.\n\rCan we apply the same principles of chaos to a serverless architecture built around AWS Lambda functions? Can we adapt and modify existing practices to expose the inherent chaos in our serverless applications? What are the limitations and new challenges that we need to consider?\n\rJoin us in this talk as Yan Cui shares his thought experiments, and actual experiments, in his pursuit to understand how we can apply the principles of chaos to a serverless architecture. A word of warning though, you’re guaranteed to walk away with more questions than answers!"
 	    }
 	  },
 	  {   
