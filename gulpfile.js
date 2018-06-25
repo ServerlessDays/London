@@ -8,6 +8,7 @@ var fileinclude = require('gulp-file-include');
 var browserSync = require('browser-sync').create();
 var del = require('del');
 var plumber = require('gulp-plumber');
+var buildSpeaker = require('./src/build/profile.build.js');
 
 gulp.task('compress', function() {
     return pump([
@@ -42,6 +43,16 @@ gulp.task('minify', function() {
         .pipe(gulp.dest('dist'));
 });
 
+gulp.task('minify-speaker', async function() {
+
+    await buildSpeaker();
+
+    return gulp.src('static/speaker/*.html')
+        .pipe(htmlmin({ collapseWhitespace: true, removeComments: true }))
+        .pipe(minifyInline())
+        .pipe(gulp.dest('dist/speaker'));
+});
+
 gulp.task('copy', function() {
     return gulp.src([
             'src/_redirects',
@@ -52,7 +63,7 @@ gulp.task('copy', function() {
         .pipe(gulp.dest('dist'));
 });
 
-gulp.task('build', ['minify', 'compress', 'copy']);
+gulp.task('build', ['minify', 'minify-speaker', 'compress', 'copy']);
 
 gulp.task('include-watch', ['fileinclude'], browserSync.reload);
 
