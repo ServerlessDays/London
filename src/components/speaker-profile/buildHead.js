@@ -1,8 +1,10 @@
 const buildHead = (slug, title, desc, previewImg) => {
 	
 	return `
+<!DOCTYPE html>
+<html lang="en">
 <head> 
-    <title>ServerlessDays London 2018</title>
+    <title>${title}</title>
 
     <meta charset="utf-8" />
     <meta property="og:title" content="${title.substr(0,150)}" />
