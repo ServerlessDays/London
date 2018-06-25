@@ -13,6 +13,7 @@ const buildHead = (slug, title, desc, previewImg) => {
   	<meta name="description" content="${desc.substr(0,280)} ..."/>
   	<meta name="viewport" content="width=device-width, initial-scale=1">
   	<link rel="stylesheet" href="https://unpkg.com/tachyons/css/tachyons.min.css">
+    <link rel="shortcut icon" href="https://res.cloudinary.com/senzo/image/upload/c_scale,w_32/v1518368936/unicorn_mascot_1_vyq3zb.ico"/>
 </head>
 <style>
     .vh-60 { height:60vh; }
