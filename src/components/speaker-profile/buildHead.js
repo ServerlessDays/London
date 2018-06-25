@@ -7,10 +7,10 @@ const buildHead = (slug, title, desc, previewImg) => {
     <meta charset="utf-8" />
     <meta property="og:title" content="${title.substr(0,150)}" />
 	<meta property="og:type" content="website" />
-  	<meta property="og:description" content="${desc.substr(0,300)}" />
+  	<meta property="og:description" content="${desc.substr(0,280)} ..." />
   	<meta property="og:url" content="https://london.serverlessdays.io/speaker/${slug}" />
   	<meta property="og:image" content="${previewImg}" />
-  	<meta name="description" content="${desc.substr(0,300)}"/>
+  	<meta name="description" content="${desc.substr(0,280)} ..."/>
   	<meta name="viewport" content="width=device-width, initial-scale=1">
   	<link rel="stylesheet" href="https://unpkg.com/tachyons/css/tachyons.min.css">
 </head>
