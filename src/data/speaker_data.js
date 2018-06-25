@@ -3,7 +3,7 @@ module.exports = [
 		slug: 'erica-windisch',
 		speakerDetails: {
 			imgSrc: 'https://res.cloudinary.com/serverlessdays/image/upload/v1528146103/London/erica_med.jpg',
-			previewImg: '',
+			previewImg: 'https://res.cloudinary.com/serverlessdays/image/upload/c_scale,w_512/v1529964831/SM_Icons/ew.png',
 			speakerOrg: "IOpipe",
 			speakerName: 'Erica Windisch',
 			speakerDesc: 'Erica is CTO & Founder at IOpipe where she is building tools to help developers of serverless applications iterate faster and support their applications in production. She is a former maintainer of Docker and OpenStack and has been building cloud, ops, and infrastructure tooling for over 15 years.',
@@ -17,6 +17,7 @@ module.exports = [
 		slug: 'sarah-drasner',
 		speakerDetails: {
 			imgSrc: 'https://res.cloudinary.com/serverlessdays/image/upload/v1528246688/sarah_edo.jpg',
+			previewImg: 'https://res.cloudinary.com/serverlessdays/image/upload/c_scale,w_512/v1529964829/SM_Icons/sd.png',
 			speakerName: 'Sarah Drasner',
 			speakerOrg: 'Microsoft',
 			speakerDesc: 'Sarah Drasner is an award-winning Speaker, Senior Developer Advocate at Microsoft, and Staff Writer at CSS-Tricks. Sarah is also the co-founder of Web Animation Workshops, with Val Head. She’s the author of SVG Animations from O’Reilly and has given Frontend Masters workshops on Vue.js and Advanced SVG Animations.\n\r   Sarah is formerly Manager of UX Design & Engineering at Trulia (Zillow). Sarah won CSS Dev Conf’s “Best of the Best Award” as well as “Best Code Wrangler” from CSS Design Awards. She has worked for 15 years as a web developer and designer, and at points worked as a Scientific Illustrator and an Undergraduate Professor, and has tutored a Byzantine Icon painter in Santorini.',
@@ -34,6 +35,7 @@ module.exports = [
 	    slug: "yan-cui",
 	    speakerDetails: {
 	      imgSrc: 'https://res.cloudinary.com/serverlessdays/image/upload/c_scale,w_240/v1528817527/London/yan.jpg',
+	      previewImg: 'https://res.cloudinary.com/serverlessdays/image/upload/c_scale,w_512/v1529964829/SM_Icons/yc.png',
 	      speakerName: "Yan Cui",
 		  speakerOrg: "DAZN",
 	      speakerDesc: "Yan is an experienced engineer who has worked with AWS for nearly 10 years. He has been an architect and lead developer with a variety of industries ranging from investment banks, e-commerce to mobile gaming. In the last 2 years he has worked extensively with AWS Lambda in production, and he has been very active in sharing his experiences and the lessons he has learnt, some of his work has even made their way into the [Well-Architected whitepaper](https://aws.amazon.com/architecture/well-architected/) published by AWS.",
@@ -50,6 +52,7 @@ module.exports = [
 	    slug: "rob-allen",
 	    speakerDetails: {
 	      imgSrc: 'https://res.cloudinary.com/serverlessdays/image/upload/c_scale,h_240/c_crop,g_face,h_240,w_240/v1528817527/London/rob_allen.jpg',
+	      previewImg: 'https://res.cloudinary.com/serverlessdays/image/upload/c_scale,w_512/v1529964829/SM_Icons/ra.png',
 	      speakerName: "Rob Allen",
 		  speakerOrg: "Consultant",
 	      speakerDesc: "Rob Allen is a software consultant and developer with many years experience and writes code in PHP, Swift and other interesting languages. He leads Slim Framework's development team and contributes to Apache OpenWhisk and other open source projects. Rob is a published author and based in the UK where he runs [Nineteen Feet Limited](http://19ft.com), focussing on API development, training and consultancy. In his spare time, Rob blogs at [akrabat.com](https://akrabat.com) and can often be seen with a camera in his hand.",
@@ -66,6 +69,7 @@ module.exports = [
 	    slug: "serhat-can",
 	    speakerDetails: {
 	      imgSrc: "https://res.cloudinary.com/serverlessdays/image/upload/c_scale,h_240/v1528817525/London/serhat.jpg",
+	      previewImg: 'https://res.cloudinary.com/serverlessdays/image/upload/c_scale,w_512/v1529964828/SM_Icons/sc.png',
 	      speakerName: "Serhat Can",
 		  speakerOrg: "OpsGenie",
 	      speakerDesc: "Serhat is the Technical Evangelist for OpsGenie. He contributed to different parts of OpsGenie as a software engineer and now spreads the word by coding, writing and talking about DevOps. He is organizing Serverless Turkey and DevOps Turkey meetups as well as İstanbul DevOpsDays.",
@@ -83,6 +87,7 @@ module.exports = [
 	    slug: "blanca-garcia-gil",
 	    speakerDetails: {
 	      imgSrc: "https://res.cloudinary.com/serverlessdays/image/upload/c_scale,h_240/v1528817525/London/blanca-garcia-gil-profile-photo.jpg",
+	      previewImg: 'https://res.cloudinary.com/serverlessdays/image/upload/c_scale,w_512/v1529964830/SM_Icons/bgg.png',
 	      speakerName: "Blanca Garcia Gil",
 		  speakerOrg: "BBC",
 	      speakerDesc: "Blanca Garcia Gil is a senior software engineer at BBC. Her current work is focused on highly scalable big data pipelines. She is very interested in automation (testing and deployment) and observability. While having spent most of her time as a Java developer she’s also enjoys tinkering with Python and Bash when running data experiments.",
@@ -99,6 +104,7 @@ module.exports = [
 	    slug: "neil-crofts",
 	    speakerDetails: {
 	      imgSrc: "https://res.cloudinary.com/serverlessdays/image/upload/c_scale,h_240/c_crop,g_face,h_240,w_240/v1528817524/London/ncrofts_picture.jpg",
+	      previewImg: "https://res.cloudinary.com/serverlessdays/image/upload/c_scale,w_512/v1529964828/SM_Icons/nc.png",
 	      speakerName: "Neil Crofts",
 		  speakerOrg: "BBC",
 	      speakerDesc: "Neil Crofts is a senior software engineer at the BBC in the Audience Platform Data team responsible for processing the billions of messages audiences create when interacting with BBC online services. Previously he worked on the BBC Red Button Digital Text service and prior to that has developed software in a number of other industries including semiconductors,  automotive (commercial and F1) and telecoms.",
@@ -115,6 +121,7 @@ module.exports = [
 	    slug: "thomas-michael-wallace",
 	    speakerDetails: {
 	      imgSrc: "https://res.cloudinary.com/serverlessdays/image/upload/c_scale,w_240/v1528838861/London/thomas.jpg",
+	      previewImg: 'https://res.cloudinary.com/serverlessdays/image/upload/c_scale,w_512/v1529964829/SM_Icons/tmw.png',
 	      speakerName: "Thomas Michael Wallace",
 		  speakerOrg: "DevicePilot",
 	      speakerDesc: "The first thing I ever designed was a bridge (it’s still standing). These days I can be found leading development for DevicePilot, a startup that helps companies measure the success of their IoT offerings. Over the last year and a half we’ve delivered a platform entirely based on serverless that lets our customers do ad hoc analysis across nearly 50k devices; and we’re just about to sign-up 200k more. After a year and a half of serverless, I’m always happy to share my mistakes with others.",
@@ -131,6 +138,7 @@ module.exports = [
 	    slug: "hendric-ruesch",
 	    speakerDetails: {
 	      imgSrc: "https://res.cloudinary.com/serverlessdays/image/upload/c_scale,h_240/v1528817524/London/hendric.jpg",
+	      previewImg: "https://res.cloudinary.com/serverlessdays/image/upload/c_scale,w_512/v1529964829/SM_Icons/hr.png",
 	      speakerName: "Hendric Ruesch",
 		  speakerOrg: "superluminar",
 	      speakerDesc: "Hendric's journey has taken him from studying the social sciences to a deep fascination with the social web and digital strategy. He worked for Jimdo, SysEleven, strg. and as a freelance consultant. He grew up by the sea in Germany and lives in Hamburg. Hendric is the co-founder of superluminar, a cloud consulting firm and co-organiser of ServerlessDays Hamburg.",
@@ -145,26 +153,10 @@ module.exports = [
 	    }
 	  },
 	  {   
-	    slug: "remy-chantenay",
-	    speakerDetails: {
-	      imgSrc: "https://res.cloudinary.com/serverlessdays/image/upload/c_scale,h_240/v1528817525/London/remy.jpg",
-	      speakerName: "Remy Chantenay",
-		  speakerOrg: "Travelex",
-	      speakerDesc: "Engineering lead at Travelex from a mobile software engineering background (particularly Android for almost 9 years). I always have been interested by cloud-based solutions, distributed systems and architecture in general. Focused on delivering a large-scale project with a serverless architecture for the past year. On my spare time, I love to watch sports, travel around the world and read about health and nutrition.",
-	      speakerSocial: {
-	        speakerTwitter: "https://twitter.com/thekoreanbeaver",
-	        speakerInstagram: "https://www.instagram.com/koreanbeaver/"
-	      }
-	    },
-	    talkDetails: {
-	      talkTitle: "Changing VAT refund experience with Serverless",
-	      talkDesc: "How we aim at improving the life of 3 million tourists per year from around the world by providing them the best possible customer experience when claiming their refund in the UK. …and doing so without managing a single server. Transforming an entire ecosystem is no small task. The VAT refund process in the UK has been the same for years- paper-based, archaic and painful. These days are nearly over. We are working hard to provide an entire digital solution to transform this process, working with retailers and partners such as Alipay, HMRC and the UK Border Force."
-	    }
-	  },
-	  {   
 	    slug: "markus-thommes",
 	    speakerDetails: {
 	      imgSrc: "https://res.cloudinary.com/serverlessdays/image/upload/c_scale,h_240/v1528817524/London/markus.jpg",
+	      previewImg: "https://res.cloudinary.com/serverlessdays/image/upload/c_scale,w_512/v1529964831/SM_Icons/mt.png",
 	      speakerName: "Markus Thömmes",
 		  speakerOrg: "IBM",
 	      speakerDesc: "Metalcore guitarist, adrenaline junky, Scala enthusiast, Software Engineer and leading contributor to Apache OpenWhisk. I love open-technology and I’m obsessed with anything technology in general. I’m one of the founding members of the Apache OpenWhisk project and day-0 employee on IBM’s serverless effort, IBM Cloud Functions. As such I’ve been driving the design and implementation of the OpenWhisk platform to reach the production-grade it has today. I’m a key driver of IBM’s adoption of OpenWhisk and I’ve been hosting the largest open-source platform over the past 2 years",
@@ -183,6 +175,7 @@ module.exports = [
 	    slug: "olivier-tardieu",
 	    speakerDetails: {
 	      imgSrc: 'https://res.cloudinary.com/serverlessdays/image/upload/c_scale,h_240,w_240/v1528817525/London/olivier-tardieu.jpg',
+	      previewImg: 'https://res.cloudinary.com/serverlessdays/image/upload/c_scale,w_512/v1529964829/SM_Icons/ot.png',
 	      speakerName: "Olivier Tardieu",
 		  speakerOrg: "IBM",
 	      speakerDesc: "Dr. Olivier Tardieu is a Research Staff Member at IBM in the New York area. He is part of the team shaping the future of IBM Cloud Functions and a contributor to its open source nucleus, the Apache OpenWhisk functions-as-a-service platform. With a passion for programming languages and tools, he works relentlessly to make developers feel at home in a serverless cloud.",
@@ -201,6 +194,7 @@ module.exports = [
 	    slug: "matthew-henderson",
 	    speakerDetails: {
 	      imgSrc: "https://res.cloudinary.com/serverlessdays/image/upload/c_scale,h_240/v1528817525/London/matt-henderson.png",	
+	      previewImg: "https://res.cloudinary.com/serverlessdays/image/upload/c_scale,w_512/v1529964831/SM_Icons/mh.png",
 	      speakerName: "Matthew Henderson",
 		  speakerOrg: "Microsoft",
 	      speakerDesc: "Matthew Henderson is a Senior Program Manager at Microsoft working on Azure Functions and Azure App Service. His primary mission is to unlock developer productivity by removing barriers to identity and integration. He loves helping developers leverage serverless solutions to get more done and is proud to have worked on Azure Functions from its outset. Outside of computing, Matthew is a runner, a volleyballer, and a culinary adventurist.",
@@ -217,6 +211,7 @@ module.exports = [
 	    slug: "anne-currie",
 	    speakerDetails: {
 	      imgSrc: "https://res.cloudinary.com/serverlessdays/image/upload/c_scale,h_240/v1528824122/London/anne.png",
+	      previewImg: "https://res.cloudinary.com/serverlessdays/image/upload/c_scale,w_512/v1529964830/SM_Icons/ac.png",
 	      speakerName: "Anne Currie",
 		  speakerOrg: "Container Solutions",
 	      speakerDesc: "Anne Currie has been in the tech industry for over 20 years working on everything from Microsoft Back Office Servers in the 90's to international online lingerie in the 00's to cutting edge devops and the impact of orchestrated containers in the 10's. Anne has co-founded tech startups in the productivity, retail and devops spaces. She is currently the Chief Strategist at Container Solutions, in addition to running [COED:ETHICS](https://www.coedethics.org/), a conference about ethics in Tech.",
@@ -233,6 +228,7 @@ module.exports = [
 	    slug: "dizzy",
 	    speakerDetails: {
 	      imgSrc: "https://res.cloudinary.com/serverlessdays/image/upload/c_scale,h_240/v1528818599/London/dave_smith.jpg",
+	      previewImg: "https://res.cloudinary.com/serverlessdays/image/upload/c_scale,w_512/v1529964830/SM_Icons/ds.png",
 	      speakerName: "Dizzy Smith",
 		  speakerOrg: "Digital Ocean",
 	      speakerDesc: 'Dave “Dizzy” Smith is the director of cloud engineering at DigitalOcean. A software industry veteran with over 19 years of experience, Dizzy has the rare ability to breath life into abstract and theoretical business concepts with practical software solutions. He has a broad range of experience across real-time messaging systems, identity federation and authentication, and low-latency peer-to-peer data stores and has been an active contributor to many open source projects.',

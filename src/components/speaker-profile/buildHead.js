@@ -8,11 +8,19 @@ const buildHead = (slug, title, desc, previewImg) => {
 
     <meta charset="utf-8" />
     <meta property="og:title" content="${title.substr(0,150)}" />
-	<meta property="og:type" content="website" />
+	  <meta property="og:type" content="website" />
   	<meta property="og:description" content="${desc.substr(0,280)} ..." />
   	<meta property="og:url" content="https://london.serverlessdays.io/speaker/${slug}" />
   	<meta property="og:image" content="${previewImg}" />
   	<meta name="description" content="${desc.substr(0,280)} ..."/>
+
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="${title.substr(0,150)}" />
+    <meta name="twitter:site" content="@serverlessLDN" />
+    <meta name="twitter:description" content="${desc.substr(0,280)} ..." />
+    <meta name="twitter:url" content="https://london.serverlessdays.io/speaker/${slug}" />
+    <meta name="twitter:image" content="${previewImg}" />
+
   	<meta name="viewport" content="width=device-width, initial-scale=1">
   	<link rel="stylesheet" href="https://unpkg.com/tachyons/css/tachyons.min.css">
     <link rel="shortcut icon" href="https://res.cloudinary.com/senzo/image/upload/c_scale,w_32/v1518368936/unicorn_mascot_1_vyq3zb.ico"/>

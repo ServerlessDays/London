@@ -10,18 +10,20 @@ const converter = new showdown.Converter()
 const buildSpeaker = (details) => {
 
 
-	const { imgSrc, imgAlt, speakerName, speakerDesc, speakerOrg, speakerSocial } = details.speakerDetails
+	const { imgSrc, previewImg, imgAlt, speakerName, speakerDesc, speakerOrg, speakerSocial } = details.speakerDetails
 	const { talkTitle, talkDesc } = details.talkDetails
 
 	const imgSnip = (imgSrc) ? `<img class="w5 ba br4 b--transparent" src='${imgSrc}' alt='${speakerName} image'/>` : "<img class='fl w5 h5 ba br4 b--transparent' src='https://res.cloudinary.com/serverlessdays/image/upload/c_scale,w_480/v1521408642/unicorn_mascot.png' alt='Jeff'/>"
 	
+	const socailImg = (!previewImg) ? imgSrc : previewImg
+
 	let socialLinks = ''
 
 	for (socialService in speakerSocial) {
     	socialLinks += `${socialDefaults(speakerName, socialService, speakerSocial[socialService])}`
 	}
 
-	const htmlHead = buildHead(details.slug, speakerName, speakerDesc, imgSrc)
+	const htmlHead = buildHead(details.slug, speakerName, speakerDesc, socailImg)
 	const htmlFoot = buildFoot()
 	const htmlSponsor = buildSponsor()
 
@@ -68,7 +70,7 @@ const buildSpeaker = (details) => {
 						</div>
 					</div>
 				</div>
-				<div>
+				<div class="pa2 pl3-ns">
 					${socialLinks}
 				</div>
 			</article>
