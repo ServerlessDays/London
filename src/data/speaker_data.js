@@ -3,6 +3,7 @@ module.exports = [
 		slug: 'erica-windisch',
 		speakerDetails: {
 			imgSrc: 'https://res.cloudinary.com/serverlessdays/image/upload/v1528146103/London/erica_med.jpg',
+			previewImg: '',
 			speakerName: 'Erica Windisch',
 			speakerDesc: 'Erica is CTO & Founder at IOpipe where she is building tools to help developers of serverless applications iterate faster and support their applications in production. She is a former maintainer of Docker and OpenStack and has been building cloud, ops, and infrastructure tooling for over 15 years.',
 			speakerSocial: {
@@ -16,7 +17,7 @@ module.exports = [
 		speakerDetails: {
 			imgSrc: 'https://res.cloudinary.com/serverlessdays/image/upload/v1528246688/sarah_edo.jpg',
 			speakerName: 'Sarah Drasner',
-			speakerDesc: 'Sarah Drasner is an award-winning Speaker, Senior Developer Advocate at Microsoft, and Staff Writer at CSS-Tricks. Sarah is also the co-founder of Web Animation Workshops, with Val Head. She’s the author of SVG Animations from O’Reilly and has given Frontend Masters workshops on Vue.js and Advanced SVG Animations. Sarah is formerly Manager of UX Design & Engineering at Trulia (Zillow). Sarah won CSS Dev Conf’s “Best of the Best Award” as well as “Best Code Wrangler” from CSS Design Awards. She has worked for 15 years as a web developer and designer, and at points worked as a Scientific Illustrator and an Undergraduate Professor, and has tutored a Byzantine Icon painter in Santorini.',
+			speakerDesc: 'Sarah Drasner is an award-winning Speaker, Senior Developer Advocate at Microsoft, and Staff Writer at CSS-Tricks. Sarah is also the co-founder of Web Animation Workshops, with Val Head. She’s the author of SVG Animations from O’Reilly and has given Frontend Masters workshops on Vue.js and Advanced SVG Animations.\n\r   Sarah is formerly Manager of UX Design & Engineering at Trulia (Zillow). Sarah won CSS Dev Conf’s “Best of the Best Award” as well as “Best Code Wrangler” from CSS Design Awards. She has worked for 15 years as a web developer and designer, and at points worked as a Scientific Illustrator and an Undergraduate Professor, and has tutored a Byzantine Icon painter in Santorini.',
 			speakerSocial: {
 				speakerTwitter: 'https://twitter.com/sarah_edo',
 				speakerMedium: 'https://medium.com/@sarah_edo'
@@ -134,7 +135,7 @@ module.exports = [
 	      speakerDesc: "Engineering lead at Travelex from a mobile software engineering background (particularly Android for almost 9 years). I always have been interested by cloud-based solutions, distributed systems and architecture in general. Focused on delivering a large-scale project with a serverless architecture for the past year. On my spare time, I love to watch sports, travel around the world and read about health and nutrition.",
 	      speakerSocial: {
 	        speakerTwitter: "https://twitter.com/thekoreanbeaver",
-	        speakerInstagram: : "https://www.instagram.com/koreanbeaver/"
+	        speakerInstagram: "https://www.instagram.com/koreanbeaver/"
 	      }
 	    },
 	    talkDetails: {

@@ -1,8 +1,7 @@
-// TODO: do something
-
 const speakerData = require('../data/speaker_data.js')
 const speakerProfile = require('../components/speaker-profile')
 const fs = require ('fs')
+const path = require('path')
 
 const validateSpeaker = (speaker) => {
 
@@ -19,19 +18,25 @@ const validateSpeaker = (speaker) => {
 	return speaker;
 }
 
-console.log("Begin processing ...");
-for (let speaker of speakerData) {
-  
-  	if (speaker.slug) {
-  		try {
-  			fs.writeFileSync(`../../static/speaker/${speaker.slug}.html`,speakerProfile(validateSpeaker(speaker)))
-  			console.log (speaker.slug)
-  		}
-  		catch (err) {
-  			console.log(`Error Reported: ${err}`)
-  		}
-  	} else {
-  		console.log ('Speaker slug not specified')
-  	}
-	
+const buildSpeakerProfiles = async () => {
+	console.log("Begin processing ...");
+
+
+	for (let speaker of speakerData) {
+	  
+	  	if (speaker.slug) {
+	  		try {
+	  			fs.writeFileSync(path.resolve('./static/speaker/',`${speaker.slug}.html`),speakerProfile(validateSpeaker(speaker)))
+	  			console.log (speaker.slug)
+	  		}
+	  		catch (err) {
+	  			console.log(`Error Reported: ${err}`)
+	  		}
+	  	} else {
+	  		console.log ('Speaker slug not specified')
+	  	}
+		
+	}
 }
+
+module.exports = buildSpeakerProfiles

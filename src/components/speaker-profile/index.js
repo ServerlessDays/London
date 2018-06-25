@@ -1,52 +1,79 @@
+const socialDefaults = require ('./socialDefaults.js')
+const buildHead = require('./buildHead.js')
+const buildFoot = require('./buildFoot.js')
+
+const showdown  = require('showdown')
+const converter = new showdown.Converter()
+
 
 const buildSpeaker = (details) => {
 
-	const { imgSrc, imgAlt, speakerName, speakerDesc, speakerTwitter, speakerMedium, speakerBlog } = details.speakerDetails
+
+	const { imgSrc, imgAlt, speakerName, speakerDesc, speakerSocial } = details.speakerDetails
 	const { talkTitle, talkDesc } = details.talkDetails
 
-	const imgSnip = (imgSrc) ? `<img class="w5 ba br4 b--transparent" src='${imgSrc}' alt='${imgAlt}'/>` : "<img class='fl w5 h5 ba br4 b--transparent' src='https://res.cloudinary.com/serverlessdays/image/upload/c_scale,w_480/v1521408642/unicorn_mascot.png' alt='Jeff'/>"
-	const twitterSnip =  (speakerTwitter) ? `<a class="ph3 no-underline v-mid" title='${speakerName} on Twitter' href="${speakerTwitter}" target="_blank"><img src="https://res.cloudinary.com/senzo/image/upload/c_scale,w_24/v1496932336/twitter_o9f6np.svg" height="24" alt="Twitter Icon"></a>` : ''
-	const mediumSnip = (speakerMedium) ? `<a class="ph3 no-underline v-mid" title="${speakerName} on Medium" href="${speakerMedium}" target="_blank"><img src="https://res.cloudinary.com/senzo/image/upload/c_scale,w_24/v1496933265/medium_lfjkd4.svg" height="24" alt="Medium Icon"></a>` : ''
-	const blogSnip = (speakerBlog) ? `<a class="no-underline navy f5 ph3 pv0 mv0 v-mid" href="${speakerBlog}" target="_blank">${speakerBlog}</a>` : ''
+	const imgSnip = (imgSrc) ? `<img class="w5 ba br4 b--transparent" src='${imgSrc}' alt='${speakerName} image'/>` : "<img class='fl w5 h5 ba br4 b--transparent' src='https://res.cloudinary.com/serverlessdays/image/upload/c_scale,w_480/v1521408642/unicorn_mascot.png' alt='Jeff'/>"
+	
+	let socialLinks = ''
 
-	const html = `<article class="mw7 center ">
-		<div class="dt">
-			<div class="dt-row-ns">
-				<div class="dtc">
-				${imgSnip}
+	for (socialService in speakerSocial) {
+    	socialLinks += `${socialDefaults(speakerName, socialService, speakerSocial[socialService])}`
+	}
+
+	const htmlHead = buildHead(details.slug, speakerName, speakerDesc, imgSrc)
+	const htmlFoot = buildFoot()
+
+
+	const html = `
+		${htmlHead}
+		<div class="w-100 vh-100-ns pt5">
+			<article class="mw8 center bg-near-white pa3 mt4 mt5-ns">
+				<div class="pa2 pl3-ns pb2 pt3-ns">
+					<h3 class="code tl f3 f2-ns b pl2 pl4-ns mt0 v-top mv0">${speakerName}</h3>
 				</div>
-				<div class="dtc">
-					<div class="dt pl4">
-						<div class="dt-row">
-							<div class="dtc">
-								<h3 class="code tl f2 b mt0 v-top mv0">${speakerName}</h3>
+
+				<div class="dt-ns">
+					<div class="dt-row-ns">
+						<div class="dtc-ns w-100 w-40-ns pa2 pa3-ns">
+							<div class="pb0 pb3-ns ph2 ph4-ns">
+								${imgSnip}
 							</div>
 						</div>
-						<div class="dt-row">
-							<div class="dtc">
-								<p class="lh-copy code tl f6 fw4 pt3 mv0 v-top dark-gray">${speakerDesc}</p>
-							</div>
-						</div>
-						<div class="dt-row">
-							<div class="dtc">
-								<h3 class="code tl f2 b mt0 v-top mv0">${talkTitle}</h3>
-							</div>
-						</div>
-						<div class="dt-row">
-							<div class="dtc">
-								<p class="lh-copy code tl f6 fw4 pt3 mv0 v-top dark-gray">${talkDesc}</p>
+
+						<div class="dtc-ns v-top w-100 w-60-ns">
+							<div class="dt">
+								<div class="dt-row">
+									<div class="dtc w-100">
+										<div class="pv1">
+											${converter.makeHtml(speakerDesc)}
+										</div>
+									</div>
+								</div>
+								<div class="dt-row">
+									<div class="dtc">
+										<h3 class="code tl f4 b mt0 v-top mv0">Talk: ${talkTitle}</h3>
+									</div>
+								</div>
+								<div class="dt-row">
+									<div class="dtc">
+										<div class="pv1">
+											${converter.makeHtml(talkDesc)}
+										</div>
+									</div>
+								</div>
 							</div>
 						</div>
 					</div>
 				</div>
-			</div
+				<div>
+					${socialLinks}
+				</div>
+			</article>
 		</div>
-		<div class="pt3 avenir">
-			${twitterSnip}
-			${mediumSnip}
-			${blogSnip}
+		<div class="vh-25">
 		</div>
-	</article>`
+		${htmlFoot}
+	`
 
 	return html
 }
