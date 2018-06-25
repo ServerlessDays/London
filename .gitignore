@@ -62,8 +62,7 @@ src/html-compiled/
 dist/
 
 src/.DS_Store
-<<<<<<< HEAD
 src/html/.DS_Store
-=======
-src/html/.DS_Store
->>>>>>> master
+
+static/
+

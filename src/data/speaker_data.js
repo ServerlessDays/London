@@ -31,6 +31,7 @@ module.exports = [
 	{   
 	    slug: "yan-cui",
 	    speakerDetails: {
+	      imgSrc: 'https://res.cloudinary.com/serverlessdays/image/upload/c_scale,w_240/v1528817527/London/yan.jpg',
 	      speakerName: "Yan Cui",
 	      speakerDesc: "Yan is an experienced engineer who has worked with AWS for nearly 10 years. He has been an architect and lead developer with a variety of industries ranging from investment banks, e-commerce to mobile gaming. In the last 2 years he has worked extensively with AWS Lambda in production, and he has been very active in sharing his experiences and the lessons he has learnt, some of his work has even made their way into the [Well-Architected whitepaper](https://aws.amazon.com/architecture/well-architected/) published by AWS.",
 	      speakerSocial: {
@@ -45,6 +46,7 @@ module.exports = [
 	  {   
 	    slug: "rob-allen",
 	    speakerDetails: {
+	      imgSrc: 'https://res.cloudinary.com/serverlessdays/image/upload/c_scale,h_240/c_crop,g_face,h_240,w_240/v1528817527/London/rob_allen.jpg',
 	      speakerName: "Rob Allen",
 	      speakerDesc: "Rob Allen is a software consultant and developer with many years experience and writes code in PHP, Swift and other interesting languages. He leads Slim Framework's development team and contributes to Apache OpenWhisk and other open source projects. Rob is a published author and based in the UK where he runs [Nineteen Feet Limited](http://19ft.com), focussing on API development, training and consultancy. In his spare time, Rob blogs at [akrabat.com](https://akrabat.com) and can often be seen with a camera in his hand.",
 	      speakerSocial: {
@@ -59,6 +61,7 @@ module.exports = [
 	  {   
 	    slug: "serhat-can",
 	    speakerDetails: {
+	      imgSrc: "https://res.cloudinary.com/serverlessdays/image/upload/c_scale,h_240/v1528817525/London/serhat.jpg",
 	      speakerName: "Serhat Can",
 	      speakerDesc: "Serhat is the Technical Evangelist for OpsGenie. He contributed to different parts of OpsGenie as a software engineer and now spreads the word by coding, writing and talking about DevOps. He is organizing Serverless Turkey and DevOps Turkey meetups as well as İstanbul DevOpsDays.",
 	      speakerSocial: {
@@ -74,6 +77,7 @@ module.exports = [
 	  {   
 	    slug: "blanca-garcia-gil",
 	    speakerDetails: {
+	      imgSrc: "https://res.cloudinary.com/serverlessdays/image/upload/c_scale,h_240/v1528817525/London/blanca-garcia-gil-profile-photo.jpg",
 	      speakerName: "Blanca Garcia Gil & Neil Crofts",
 	      speakerDesc: "Blanca Garcia Gil is a senior software engineer at BBC. Her current work is focused on highly scalable big data pipelines. She is very interested in automation (testing and deployment) and observability. While having spent most of her time as a Java developer she’s also enjoys tinkering with Python and Bash when running data experiments.",
 	      speakerSocial: {
@@ -88,6 +92,7 @@ module.exports = [
 	  {   
 	    slug: "neil-crofts",
 	    speakerDetails: {
+	      imgSrc: "https://res.cloudinary.com/serverlessdays/image/upload/c_scale,h_240/c_crop,g_face,h_240,w_240/v1528817524/London/ncrofts_picture.jpg",
 	      speakerName: "Neil Crofts",
 	      speakerDesc: "Neil Crofts is a senior software engineer at the BBC in the Audience Platform Data team responsible for processing the billions of messages audiences create when interacting with BBC online services. Previously he worked on the BBC Red Button Digital Text service and prior to that has developed software in a number of other industries including semiconductors,  automotive (commercial and F1) and telecoms.",
 	      speakerSocial: {
@@ -102,8 +107,9 @@ module.exports = [
 	  {   
 	    slug: "thomas-michael-wallace",
 	    speakerDetails: {
+	      imgSrc: "https://res.cloudinary.com/serverlessdays/image/upload/c_scale,w_240/v1528838861/London/thomas.jpg",
 	      speakerName: "Thomas Michael Wallace",
-	      speakerDesc: "",
+	      speakerDesc: "The first thing I ever designed was a bridge (it’s still standing). These days I can be found leading development for DevicePilot, a startup that helps companies measure the success of their IoT offerings. Over the last year and a half we’ve delivered a platform entirely based on serverless that lets our customers do ad hoc analysis across nearly 50k devices; and we’re just about to sign-up 200k more. After a year and a half of serverless, I’m always happy to share my mistakes with others.",
 	      speakerSocial: {
 	        speakerTwitter: ""
 	      }
@@ -116,6 +122,7 @@ module.exports = [
 	  {   
 	    slug: "hendric-ruesch",
 	    speakerDetails: {
+	      imgSrc: "https://res.cloudinary.com/serverlessdays/image/upload/c_scale,h_240/v1528817524/London/hendric.jpg",
 	      speakerName: "Hendric Ruesch",
 	      speakerDesc: "Hendric's journey has taken him from studying the social sciences to a deep fascination with the social web and digital strategy. He worked for Jimdo, SysEleven, strg. and as a freelance consultant. He grew up by the sea in Germany and lives in Hamburg. Hendric is the co-founder of superluminar, a cloud consulting firm and co-organiser of ServerlessDays Hamburg.",
 	      speakerSocial: {
@@ -146,6 +153,7 @@ module.exports = [
 	  {   
 	    slug: "markus-thommes",
 	    speakerDetails: {
+	      imgSrc: "https://res.cloudinary.com/serverlessdays/image/upload/c_scale,h_240/v1528817524/London/markus.jpg",
 	      speakerName: "Markus Thömmes",
 	      speakerDesc: "Metalcore guitarist, adrenaline junky, Scala enthusiast, Software Engineer and leading contributor to Apache OpenWhisk. I love open-technology and I’m obsessed with anything technology in general. I’m one of the founding members of the Apache OpenWhisk project and day-0 employee on IBM’s serverless effort, IBM Cloud Functions. As such I’ve been driving the design and implementation of the OpenWhisk platform to reach the production-grade it has today. I’m a key driver of IBM’s adoption of OpenWhisk and I’ve been hosting the largest open-source platform over the past 2 years",
 	      speakerSocial: {
@@ -162,6 +170,7 @@ module.exports = [
 	  {   
 	    slug: "olivier-tardieu",
 	    speakerDetails: {
+	      imgSrc: 'https://res.cloudinary.com/serverlessdays/image/upload/c_scale,h_240,w_240/v1528817525/London/olivier-tardieu.jpg',
 	      speakerName: "Olivier Tardieu",
 	      speakerDesc: "Dr. Olivier Tardieu is a Research Staff Member at IBM in the New York area. He is part of the team shaping the future of IBM Cloud Functions and a contributor to its open source nucleus, the Apache OpenWhisk functions-as-a-service platform. With a passion for programming languages and tools, he works relentlessly to make developers feel at home in a serverless cloud.",
 	      speakerSocial: {
@@ -178,6 +187,7 @@ module.exports = [
 	  {   
 	    slug: "matthew-henderson",
 	    speakerDetails: {
+	      imgSrc: "https://res.cloudinary.com/serverlessdays/image/upload/c_scale,h_240/v1528817525/London/matt-henderson.png",	
 	      speakerName: "Matthew Henderson",
 	      speakerDesc: "Matthew Henderson is a Senior Program Manager at Microsoft working on Azure Functions and Azure App Service. His primary mission is to unlock developer productivity by removing barriers to identity and integration. He loves helping developers leverage serverless solutions to get more done and is proud to have worked on Azure Functions from its outset. Outside of computing, Matthew is a runner, a volleyballer, and a culinary adventurist.",
 	      speakerSocial: {
@@ -187,6 +197,36 @@ module.exports = [
 	    talkDetails: {
 	      talkTitle: "They can't hack your servers if you don't have any servers, right?",
 	      talkDesc: "Serverless does a lot, but it doesn’t make your app invulnerable. How do security habits change when moving to a serverless architecture? What unique risks come from adopting serverless? What should we treat as vendor responsibilities? This session will explore common pitfalls of serverless architectures, with emphasis on event source and data integrations, identity and authentication practices, and just the right amount of networking."
+	    }
+	  },
+	  {   
+	    slug: "anne-currie",
+	    speakerDetails: {
+	      imgSrc: "https://res.cloudinary.com/serverlessdays/image/upload/c_scale,h_240/v1528824122/London/anne.png",
+	      speakerName: "Anne Currie",
+	      speakerDesc: "Anne Currie has been in the tech industry for over 20 years working on everything from Microsoft Back Office Servers in the 90's to international online lingerie in the 00's to cutting edge devops and the impact of orchestrated containers in the 10's. Anne has co-founded tech startups in the productivity, retail and devops spaces. She is currently the Chief Strategist at Container Solutions, in addition to running [COED:ETHICS](https://www.coedethics.org/), a conference about ethics in Tech.",
+	      speakerSocial: {
+	        speakerTwitter: "https://twitter.com/anne_e_currie"
+	      }
+	    },
+	    talkDetails: {
+	      talkTitle: "",
+	      talkDesc: ""
+	    }
+	  },
+	  {   
+	    slug: "dizzy",
+	    speakerDetails: {
+	      imgSrc: "https://res.cloudinary.com/serverlessdays/image/upload/c_scale,h_240/v1528818599/London/dave_smith.jpg",
+	      speakerName: "Dizzy Smith",
+	      speakerDesc: 'Dave “Dizzy” Smith is the director of cloud engineering at DigitalOcean. A software industry veteran with over 19 years of experience, Dizzy has the rare ability to breath life into abstract and theoretical business concepts with practical software solutions. He has a broad range of experience across real-time messaging systems, identity federation and authentication, and low-latency peer-to-peer data stores and has been an active contributor to many open source projects.',
+	      speakerSocial: {
+	        speakerTwitter: "https://twitter.com/anne_e_currie"
+	      }
+	    },
+	    talkDetails: {
+	      talkTitle: "Spectre and Meltdown in the Cloud",
+	      talkDesc: "Serverless hides a lot of details, but there has to be a server somewhere! So what happens when a cloud provider is faced with a vulnerability like the Spectre/Meltdown? This is the story of how we fixed these bugs and rebooted 20,000 computers -- and how a serverless world would have been better."
 	    }
 	  }
 ]

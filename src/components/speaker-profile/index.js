@@ -44,7 +44,7 @@ const buildSpeaker = (details) => {
 							<div class="dt">
 								<div class="dt-row">
 									<div class="dtc w-100">
-										<div class="pv1">
+										<div class="pv1 pr3-ns">
 											${converter.makeHtml(speakerDesc)}
 										</div>
 									</div>
@@ -56,7 +56,7 @@ const buildSpeaker = (details) => {
 								</div>
 								<div class="dt-row">
 									<div class="dtc">
-										<div class="pv1">
+										<div class="pv1 pr3-ns">
 											${converter.makeHtml(talkDesc)}
 										</div>
 									</div>
