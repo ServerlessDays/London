@@ -53,12 +53,16 @@
       background: rgba(0,41,70,.8);
     }
     .bg-cover {
-      background: url('https://res.cloudinary.com/serverlessdays/image/upload/c_scale,w_1920/c_crop,h_1080,w_1920/v1521409086/London/adore_and_endure.jpg');
+      background: url('https://res.cloudinary.com/serverlessdays/image/upload/c_scale,w_640/c_crop,h_360,w_640/v1521409086/London/adore_and_endure.jpg');
       z-index: -10;
     }
     @media screen and (min-width: 30em) {
     .vh-40-ns {  height: 40vh; }
     .w-65-ns { width: 64%; }
+    .bg-cover-ns {
+      background: url('https://res.cloudinary.com/serverlessdays/image/upload/c_scale,w_1920/c_crop,h_1080,w_1920/v1521409086/London/adore_and_endure.jpg');
+      z-index: -10;
+    }
     }
     @media screen and (min-width: 60em) {
     .vh-40-l {  height: 40vh; }
@@ -68,7 +72,7 @@
 
   <body>
 
-    <div class="fixed vh-100 w-100 cover top-0 bg-cover">
+    <div class="fixed vh-100 w-100 cover top-0 bg-cover bg-cover-ns">
     </div>
 
     <div class="fixed bg-black-80 w-100 top-0 shadow-7">
