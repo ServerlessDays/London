@@ -71,10 +71,12 @@ const buildHead = (slug, title, desc, previewImg) => {
 
     <div class="fixed bg-black-80 w-100 top-0 shadow-7">
       <div class="fl-l mt0 mv2-l ml2-l pa0 tc tl-l v-mid">
-          <img class="pt2 pb1 ph1 pa2-m ph3-l" src="https://res.cloudinary.com/serverlessdays/image/upload/v1528146521/serverless_white_new.svg" height="46" alt="ServerlessDays Logo"/>
-          <p class="mh1 ml3-l f6 fw1 code near-white mv0 pt0 pb2 pb0-ns">
-            6 July 2018, St John&#39;s Hoxton, London
-          </p>
+          <a href="/">
+            <img class="pt2 pb1 ph1 pa2-m ph3-l" src="https://res.cloudinary.com/serverlessdays/image/upload/v1528146521/serverless_white_new.svg" height="46" alt="ServerlessDays Logo"/>
+            <p class="mh1 ml3-l f6 fw1 code near-white mv0 pt0 pb2 pb0-ns">
+              6 July 2018, St John&#39;s Hoxton, London
+            </p>
+          </a>
       </div>
       <div class="fr-l mt0 mt4-l mr2-l ph1 pv2 pa2-ns tr v-mid near-white code f6 fw1 dn">
         <div class="dt dn db-ns">
