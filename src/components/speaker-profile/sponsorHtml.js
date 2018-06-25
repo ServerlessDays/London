@@ -1,7 +1,7 @@
 const sponsorHtml = () => {
 
   return `
-        <div class="cf dt w-100 mt2 ml2-l bg-black-80">
+        <div class="cf dt w-100 mt2 bg-black-80">
           <div class="dt-row">
             <div class="dtc w-100">
               <div class="dt-ns w-100 pt3 pb1 pb2-ns">
