@@ -17,7 +17,8 @@ const buildFoot = () => {
             <img class="ph2 ma0" title="I am Jeff!" alt="Jeff" src="https://res.cloudinary.com/senzo/image/upload/c_scale,w_45/v1486988424/SERVERLESS_NO_BACKGROUND_opzcgz.png">
           </div>
           <div class="dtc-ns w-100 w-auto-ns tc tr-ns mt4-ns pa2 f6">
-              <span>6 July 2018, St John's Hoxton, London</span>
+              <span>6 July 2018</span>
+              <a class="near-white" href="http://www.stjohnshoxton.org.uk/">St John&#39;s Hoxton, London, N1 6NP</a>
           </div>
         </div>
       </div>

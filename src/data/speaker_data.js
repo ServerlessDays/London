@@ -126,7 +126,7 @@ module.exports = [
 		  speakerOrg: "DevicePilot",
 	      speakerDesc: "The first thing I ever designed was a bridge (it’s still standing). These days I can be found leading development for DevicePilot, a startup that helps companies measure the success of their IoT offerings. Over the last year and a half we’ve delivered a platform entirely based on serverless that lets our customers do ad hoc analysis across nearly 50k devices; and we’re just about to sign-up 200k more. After a year and a half of serverless, I’m always happy to share my mistakes with others.",
 	      speakerSocial: {
-	        speakerTwitter: ""
+	        speakerTwitter: "https://twitter.com/tomincode"
 	      }
 	    },
 	    talkDetails: {
@@ -220,8 +220,8 @@ module.exports = [
 	      }
 	    },
 	    talkDetails: {
-	      talkTitle: "",
-	      talkDesc: ""
+	      talkTitle: "Does moving fast break the wrong things?",
+	      talkDesc: "Moving fast is great! Or is it? With great serverless power comes great responsibility. Are we ready to assume it?"
 	    }
 	  },
 	  {   
@@ -233,7 +233,7 @@ module.exports = [
 		  speakerOrg: "Digital Ocean",
 	      speakerDesc: 'Dave “Dizzy” Smith is the director of cloud engineering at DigitalOcean. A software industry veteran with over 19 years of experience, Dizzy has the rare ability to breath life into abstract and theoretical business concepts with practical software solutions. He has a broad range of experience across real-time messaging systems, identity federation and authentication, and low-latency peer-to-peer data stores and has been an active contributor to many open source projects.',
 	      speakerSocial: {
-	        speakerTwitter: "https://twitter.com/anne_e_currie"
+	        speakerTwitter: "https://twitter.com/dizzyd"
 	      }
 	    },
 	    talkDetails: {
