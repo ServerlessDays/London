@@ -20,7 +20,7 @@ module.exports = [
 			previewImg: 'https://res.cloudinary.com/serverlessdays/image/upload/c_scale,w_512/v1529964829/SM_Icons/sd.png',
 			speakerName: 'Sarah Drasner',
 			speakerOrg: 'Microsoft',
-			speakerDesc: 'Sarah Drasner is an award-winning Speaker, Senior Developer Advocate at Microsoft, and Staff Writer at CSS-Tricks. Sarah is also the co-founder of Web Animation Workshops, with Val Head. She’s the author of SVG Animations from O’Reilly and has given Frontend Masters workshops on Vue.js and Advanced SVG Animations.\n\r   Sarah is formerly Manager of UX Design & Engineering at Trulia (Zillow). Sarah won CSS Dev Conf’s “Best of the Best Award” as well as “Best Code Wrangler” from CSS Design Awards. She has worked for 15 years as a web developer and designer, and at points worked as a Scientific Illustrator and an Undergraduate Professor, and has tutored a Byzantine Icon painter in Santorini.',
+			speakerDesc: 'Sarah Drasner is an award-winning Speaker, Senior Developer Advocate at Microsoft, and Staff Writer at CSS-Tricks. Sarah is also the co-founder of Web Animation Workshops, with Val Head. She’s the author of SVG Animations from O’Reilly and has given Frontend Masters workshops on Vue.js and Advanced SVG Animations.\n\r Sarah is formerly Manager of UX Design & Engineering at Trulia (Zillow). Sarah won CSS Dev Conf’s “Best of the Best Award” as well as “Best Code Wrangler” from CSS Design Awards. She has worked for 15 years as a web developer and designer, and at points worked as a Scientific Illustrator and an Undergraduate Professor, and has tutored a Byzantine Icon painter in Santorini.',
 			speakerSocial: {
 				speakerTwitter: 'https://twitter.com/sarah_edo',
 				speakerMedium: 'https://medium.com/@sarah_edo'
@@ -55,14 +55,14 @@ module.exports = [
 	      previewImg: 'https://res.cloudinary.com/serverlessdays/image/upload/c_scale,w_512/v1529964829/SM_Icons/ra.png',
 	      speakerName: "Rob Allen",
 		  speakerOrg: "Consultant",
-	      speakerDesc: "Rob Allen is a software consultant and developer with many years experience and writes code in PHP, Swift and other interesting languages. He leads Slim Framework's development team and contributes to Apache OpenWhisk and other open source projects. Rob is a published author and based in the UK where he runs [Nineteen Feet Limited](http://19ft.com), focussing on API development, training and consultancy. In his spare time, Rob blogs at [akrabat.com](https://akrabat.com) and can often be seen with a camera in his hand.",
+	      speakerDesc: "Rob Allen is a software consultant and developer with many years experience and writes code in PHP, Swift and other interesting languages. He leads Slim Framework's development team and contributes to Apache OpenWhisk and other open source projects.\n\r Rob is a published author and based in the UK where he runs [Nineteen Feet Limited](http://19ft.com), focussing on API development, training and consultancy. In his spare time, Rob blogs at [akrabat.com](https://akrabat.com) and can often be seen with a camera in his hand.",
 	      speakerSocial: {
 	        speakerTwitter: "https://twitter.com/akrabat"
 	      }
 	    },
 	    talkDetails: {
 	      talkTitle: "PHP & Serverless - A Match Made In Heaven?",
-	      talkDesc: "PHP is arguably the most widely used language for writing web applications and is ideal for writing serverless apps. This session explores why PHP works so well in a serverless environment and how to write serverless PHP functions in Apache OpenWhisk. We’ll explore how the common PHP architectural patterns apply directly to serverless, so the transition for PHP developers is easy and see that that PHP developers can easily make use of this exciting to technology to augment their applications. By the end of the talk, you’ll appreciate that PHP and serverless really do work well together."
+	      talkDesc: "PHP is arguably the most widely used language for writing web applications and is ideal for writing serverless apps. This session explores why PHP works so well in a serverless environment and how to write serverless PHP functions in Apache OpenWhisk.\n\r We’ll explore how the common PHP architectural patterns apply directly to serverless, so the transition for PHP developers is easy and see that that PHP developers can easily make use of this exciting to technology to augment their applications. By the end of the talk, you’ll appreciate that PHP and serverless really do work well together."
 	    }
 	  },
 	  {   
@@ -80,7 +80,7 @@ module.exports = [
 	    },
 	    talkDetails: {
 	      talkTitle: "DevOps in a Serverless World",
-	      talkDesc: "The goal of this ignite talk is to make people realize that abstracting some of the complexity does not mean #NoOps. Starting with what Serverless is and is not, I will explain in which steps we need DevOps to the ultimate goal of running successful serverless applications on production. The steps like testing, deploying, monitoring is not going anywhere. Some of the steps become a lot more difficult in Serverless environments. The need for observability is still one of the most important things if you are running in production. Hence, you need proper logging, distributed tracing, monitoring, and alerting. Also, security is still a top concern while new challenges like cold start adding extra complexity to Serverless environments."
+	      talkDesc: "The goal of this ignite talk is to make people realize that abstracting some of the complexity does not mean #NoOps. Starting with what Serverless is and is not, I will explain in which steps we need DevOps to the ultimate goal of running successful serverless applications on production.\n\r The steps like testing, deploying, monitoring are not going anywhere. Some of the steps become a lot more difficult in Serverless environments.\n\r The need for observability is still one of the most important things if you are running in production. Hence, you need proper logging, distributed tracing, monitoring, and alerting. Also, security is still a top concern while new challenges like cold start adding extra complexity to Serverless environments."
 	    }
 	  },
 	  {   
@@ -90,14 +90,14 @@ module.exports = [
 	      previewImg: 'https://res.cloudinary.com/serverlessdays/image/upload/c_scale,w_512/v1529964830/SM_Icons/bgg.png',
 	      speakerName: "Blanca Garcia Gil",
 		  speakerOrg: "BBC",
-	      speakerDesc: "Blanca Garcia Gil is a senior software engineer at BBC. Her current work is focused on highly scalable big data pipelines. She is very interested in automation (testing and deployment) and observability. While having spent most of her time as a Java developer she’s also enjoys tinkering with Python and Bash when running data experiments.",
+	      speakerDesc: "Blanca Garcia Gil is a senior software engineer at BBC. Her current work is focused on highly scalable big data pipelines. She is very interested in automation (testing and deployment) and observability.\n\r While having spent most of her time as a Java developer she’s also enjoys tinkering with Python and Bash when running data experiments.",
 	      speakerSocial: {
 	        speakerTwitter: "https://twitter.com/blanquish"
 	      }
 	    },
 	    talkDetails: {
 	      talkTitle: "7 serverless recipes for big data architectures",
-	      talkDesc: "The BBC Audience Platform Data team collects, transforms and delivers billions of events each day from audience interactions with mobile apps and web sites such as BBC News, BBC Sport and iPlayer. We will share our experience of the 7 critical steps we took to migrate from Spark clusters with Map-Reduce to a serverless architecture. We will cover the good, the bad and the ugly, including lessons learnt along the way. These steps are also applicable to new architectures. We have been running in production for nearly a year and have achieved our goal of real-time analysis at up to 25000 transactions per second. This allows us to meet the demands of even the biggest news days, as well as seeing significant savings on our cloud infrastructure."
+	      talkDesc: "The BBC Audience Platform Data team collects, transforms and delivers billions of events each day from audience interactions with mobile apps and web sites such as BBC News, BBC Sport and iPlayer.\n\r We will share our experience of the 7 critical steps we took to migrate from Spark clusters with Map-Reduce to a serverless architecture. We will cover the good, the bad and the ugly, including lessons learnt along the way. These steps are also applicable to new architectures.\n\r We have been running in production for nearly a year and have achieved our goal of real-time analysis at up to 25000 transactions per second. This allows us to meet the demands of even the biggest news days, as well as seeing significant savings on our cloud infrastructure."
 	    }
 	  },
 	  {   
@@ -107,14 +107,14 @@ module.exports = [
 	      previewImg: "https://res.cloudinary.com/serverlessdays/image/upload/c_scale,w_512/v1529964828/SM_Icons/nc.png",
 	      speakerName: "Neil Crofts",
 		  speakerOrg: "BBC",
-	      speakerDesc: "Neil Crofts is a senior software engineer at the BBC in the Audience Platform Data team responsible for processing the billions of messages audiences create when interacting with BBC online services. Previously he worked on the BBC Red Button Digital Text service and prior to that has developed software in a number of other industries including semiconductors,  automotive (commercial and F1) and telecoms.",
+	      speakerDesc: "Neil Crofts is a senior software engineer at the BBC in the Audience Platform Data team responsible for processing the billions of messages audiences create when interacting with BBC online services.\n\r Previously he worked on the BBC Red Button Digital Text service and prior to that has developed software in a number of other industries including semiconductors,  automotive (commercial and F1) and telecoms.",
 	      speakerSocial: {
 	        speakerLinkedIn: "https://www.linkedin.com/in/neil-crofts"
 	      }
 	    },
 	    talkDetails: {
 	      talkTitle: "7 serverless recipes for big data architectures",
-	      talkDesc: "The BBC Audience Platform Data team collects, transforms and delivers billions of events each day from audience interactions with mobile apps and web sites such as BBC News, BBC Sport and iPlayer. We will share our experience of the 7 critical steps we took to migrate from Spark clusters with Map-Reduce to a serverless architecture. We will cover the good, the bad and the ugly, including lessons learnt along the way. These steps are also applicable to new architectures. We have been running in production for nearly a year and have achieved our goal of real-time analysis at up to 25000 transactions per second. This allows us to meet the demands of even the biggest news days, as well as seeing significant savings on our cloud infrastructure."
+	      talkDesc: "The BBC Audience Platform Data team collects, transforms and delivers billions of events each day from audience interactions with mobile apps and web sites such as BBC News, BBC Sport and iPlayer.\n\r We will share our experience of the 7 critical steps we took to migrate from Spark clusters with Map-Reduce to a serverless architecture. We will cover the good, the bad and the ugly, including lessons learnt along the way. These steps are also applicable to new architectures.\n\r We have been running in production for nearly a year and have achieved our goal of real-time analysis at up to 25000 transactions per second. This allows us to meet the demands of even the biggest news days, as well as seeing significant savings on our cloud infrastructure."
 	    }
 	  },
 	  {   
@@ -124,14 +124,14 @@ module.exports = [
 	      previewImg: 'https://res.cloudinary.com/serverlessdays/image/upload/c_scale,w_512/v1529964829/SM_Icons/tmw.png',
 	      speakerName: "Thomas Michael Wallace",
 		  speakerOrg: "DevicePilot",
-	      speakerDesc: "The first thing I ever designed was a bridge (it’s still standing). These days I can be found leading development for DevicePilot, a startup that helps companies measure the success of their IoT offerings. Over the last year and a half we’ve delivered a platform entirely based on serverless that lets our customers do ad hoc analysis across nearly 50k devices; and we’re just about to sign-up 200k more. After a year and a half of serverless, I’m always happy to share my mistakes with others.",
+	      speakerDesc: "The first thing I ever designed was a bridge (it’s still standing). These days I can be found leading development for DevicePilot, a startup that helps companies measure the success of their IoT offerings.\n\r Over the last year and a half we’ve delivered a platform entirely based on serverless that lets our customers do ad hoc analysis across nearly 50k devices; and we’re just about to sign-up 200k more. After a year and a half of serverless, I’m always happy to share my mistakes with others.",
 	      speakerSocial: {
 	        speakerTwitter: "https://twitter.com/tomincode"
 	      }
 	    },
 	    talkDetails: {
 	      talkTitle: "We built our own serverless database, and you should too. Probably.",
-	      talkDesc: "At two in the morning I was rapidly firing up EC2 instances in a desperate attempt to keep our platform alive. It wasn’t working. We were on track to losing our first big customer. We did. But six weeks later, we closed the deal. This is a story about building a time-series database in lambda. About the agility being able to spin up 3000 machines in an instant can give you. About how you can use that to learn about the product you need to build. And about a team of three developers who no longer hide under their desks every time one of our customers treble in size. It’s also about that sinking feeling you get when you notice bits of your architecture randomly failing- and you realise there’s some important small print in the lambda definition of “scalable”. If you’ve ever wondered what it’s like to build and run your product on map-reduce in AWS lambda. This is the talk for you."
+	      talkDesc: "At two in the morning I was rapidly firing up EC2 instances in a desperate attempt to keep our platform alive. It wasn’t working. We were on track to losing our first big customer. We did. But six weeks later, we closed the deal.\n\r This is a story about building a time-series database in lambda. About the agility being able to spin up 3000 machines in an instant can give you. About how you can use that to learn about the product you need to build. And about a team of three developers who no longer hide under their desks every time one of our customers treble in size. It’s also about that sinking feeling you get when you notice bits of your architecture randomly failing- and you realise there’s some important small print in the lambda definition of “scalable”. If you’ve ever wondered what it’s like to build and run your product on map-reduce in AWS lambda. This is the talk for you."
 	    }
 	  },
 	  {   
@@ -178,7 +178,7 @@ module.exports = [
 	      previewImg: 'https://res.cloudinary.com/serverlessdays/image/upload/c_scale,w_512/v1529964829/SM_Icons/ot.png',
 	      speakerName: "Olivier Tardieu",
 		  speakerOrg: "IBM",
-	      speakerDesc: "Dr. Olivier Tardieu is a Research Staff Member at IBM in the New York area. He is part of the team shaping the future of IBM Cloud Functions and a contributor to its open source nucleus, the Apache OpenWhisk functions-as-a-service platform. With a passion for programming languages and tools, he works relentlessly to make developers feel at home in a serverless cloud.",
+	      speakerDesc: "Dr. Olivier Tardieu is a Research Staff Member at IBM in the New York area. He is part of the team shaping the future of IBM Cloud Functions and a contributor to its open source nucleus, the Apache OpenWhisk functions-as-a-service platform.\n\r With a passion for programming languages and tools, he works relentlessly to make developers feel at home in a serverless cloud.",
 	      speakerSocial: {
 	        speakerTwitter: "https://twitter.com/tardieu0",
 	        speakerLinkedIn: "https://researcher.watson.ibm.com/researcher/view.php?person=us-tardieu",
@@ -187,7 +187,7 @@ module.exports = [
 	    },
 	    talkDetails: {
 	      talkTitle: "Serverless composition of serverless functions",
-	      talkDesc: "Building scalable serverless architectures requires more stateless functions and cloud services. How do you coordinate and manage application state using stateless functions, independent cloud services, external APIs? Whilst also maximising code reuse, enabling modular development and creating resilient architectures. New programming platforms need new programming paradigms… In this talk, we’ll look at the issues and challenges of building scalable architectures and look at new approaches to “composing” serverless applications using new open-source tools. This talk will introduce a new open-source serverless tool, Composer, developed by IBM Research that aims to resolve some of issues developer face in the serverless community. It will identify common architectures that struggle with using serverless platforms and think about how to re-implement them with these new approaches."
+	      talkDesc: "Building scalable serverless architectures requires more stateless functions and cloud services. How do you coordinate and manage application state using stateless functions, independent cloud services, external APIs? Whilst also maximising code reuse, enabling modular development and creating resilient architectures. New programming platforms need new programming paradigms…\n\r In this talk, we’ll look at the issues and challenges of building scalable architectures and look at new approaches to “composing” serverless applications using new open-source tools.\n\r This talk will introduce a new open-source serverless tool, Composer, developed by IBM Research that aims to resolve some of issues developer face in the serverless community. It will identify common architectures that struggle with using serverless platforms and think about how to re-implement them with these new approaches."
 	    }
 	  },
 	  {   
@@ -197,14 +197,14 @@ module.exports = [
 	      previewImg: "https://res.cloudinary.com/serverlessdays/image/upload/c_scale,w_512/v1529964831/SM_Icons/mh.png",
 	      speakerName: "Matthew Henderson",
 		  speakerOrg: "Microsoft",
-	      speakerDesc: "Matthew Henderson is a Senior Program Manager at Microsoft working on Azure Functions and Azure App Service. His primary mission is to unlock developer productivity by removing barriers to identity and integration. He loves helping developers leverage serverless solutions to get more done and is proud to have worked on Azure Functions from its outset. Outside of computing, Matthew is a runner, a volleyballer, and a culinary adventurist.",
+	      speakerDesc: "Matthew Henderson is a Senior Program Manager at Microsoft working on Azure Functions and Azure App Service. His primary mission is to unlock developer productivity by removing barriers to identity and integration. He loves helping developers leverage serverless solutions to get more done and is proud to have worked on Azure Functions from its outset.\n\r Outside of computing, Matthew is a runner, a volleyballer, and a culinary adventurist.",
 	      speakerSocial: {
 	        speakerTwitter: "https://twitter.com/mattchenderson"
 	      }
 	    },
 	    talkDetails: {
 	      talkTitle: "They can't hack your servers if you don't have any servers, right?",
-	      talkDesc: "Serverless does a lot, but it doesn’t make your app invulnerable. How do security habits change when moving to a serverless architecture? What unique risks come from adopting serverless? What should we treat as vendor responsibilities? This session will explore common pitfalls of serverless architectures, with emphasis on event source and data integrations, identity and authentication practices, and just the right amount of networking."
+	      talkDesc: "Serverless does a lot, but it doesn’t make your app invulnerable. How do security habits change when moving to a serverless architecture? What unique risks come from adopting serverless? What should we treat as vendor responsibilities?\n\r This session will explore common pitfalls of serverless architectures, with emphasis on event source and data integrations, identity and authentication practices, and just the right amount of networking."
 	    }
 	  },
 	  {   
@@ -214,7 +214,7 @@ module.exports = [
 	      previewImg: "https://res.cloudinary.com/serverlessdays/image/upload/c_scale,w_512/v1529964830/SM_Icons/ac.png",
 	      speakerName: "Anne Currie",
 		  speakerOrg: "Container Solutions",
-	      speakerDesc: "Anne Currie has been in the tech industry for over 20 years working on everything from Microsoft Back Office Servers in the 90's to international online lingerie in the 00's to cutting edge devops and the impact of orchestrated containers in the 10's. Anne has co-founded tech startups in the productivity, retail and devops spaces. She is currently the Chief Strategist at Container Solutions, in addition to running [COED:ETHICS](https://www.coedethics.org/), a conference about ethics in Tech.",
+	      speakerDesc: "Anne Currie has been in the tech industry for over 20 years working on everything from Microsoft Back Office Servers in the 90's to international online lingerie in the 00's to cutting edge devops and the impact of orchestrated containers in the 10's.\n\r Anne has co-founded tech startups in the productivity, retail and devops spaces. She is currently the Chief Strategist at Container Solutions, in addition to running [COED:ETHICS](https://www.coedethics.org/), a conference about ethics in Tech.",
 	      speakerSocial: {
 	        speakerTwitter: "https://twitter.com/anne_e_currie"
 	      }
@@ -231,7 +231,7 @@ module.exports = [
 	      previewImg: "https://res.cloudinary.com/serverlessdays/image/upload/c_scale,w_512/v1529964830/SM_Icons/ds.png",
 	      speakerName: "Dizzy Smith",
 		  speakerOrg: "Digital Ocean",
-	      speakerDesc: 'Dave “Dizzy” Smith is the director of cloud engineering at DigitalOcean. A software industry veteran with over 19 years of experience, Dizzy has the rare ability to breath life into abstract and theoretical business concepts with practical software solutions. He has a broad range of experience across real-time messaging systems, identity federation and authentication, and low-latency peer-to-peer data stores and has been an active contributor to many open source projects.',
+	      speakerDesc: 'Dave “Dizzy” Smith is the director of cloud engineering at DigitalOcean. A software industry veteran with over 19 years of experience, Dizzy has the rare ability to breath life into abstract and theoretical business concepts with practical software solutions.\n\r He has a broad range of experience across real-time messaging systems, identity federation and authentication, and low-latency peer-to-peer data stores and has been an active contributor to many open source projects.',
 	      speakerSocial: {
 	        speakerTwitter: "https://twitter.com/dizzyd"
 	      }
