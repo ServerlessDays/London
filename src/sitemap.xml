@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset
+      xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+      xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+      xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9
+            http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
+
+<url>
+  <loc>https://london.serverlessdays.io/</loc>
+  <lastmod>2018-06-26T14:52:53+00:00</lastmod>
+  <priority>1.00</priority>
+</url>
+<url>
+  <loc>https://london.serverlessdays.io/speaker/erica-windisch</loc>
+  <lastmod>2018-06-26T14:52:53+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://london.serverlessdays.io/speaker/sarah-drasner</loc>
+  <lastmod>2018-06-26T14:52:53+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://london.serverlessdays.io/speaker/olivier-tardieu</loc>
+  <lastmod>2018-06-26T14:52:53+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://london.serverlessdays.io/speaker/blanca-garcia-gil</loc>
+  <lastmod>2018-06-26T14:52:53+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://london.serverlessdays.io/speaker/neil-crofts</loc>
+  <lastmod>2018-06-26T14:52:53+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://london.serverlessdays.io/speaker/dizzy</loc>
+  <lastmod>2018-06-26T14:52:53+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://london.serverlessdays.io/speaker/yan-cui</loc>
+  <lastmod>2018-06-26T14:52:53+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://london.serverlessdays.io/speaker/anne-currie</loc>
+  <lastmod>2018-06-26T14:52:53+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://london.serverlessdays.io/speaker/rob-allen</loc>
+  <lastmod>2018-06-26T14:52:53+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://london.serverlessdays.io/speaker/serhat-can</loc>
+  <lastmod>2018-06-26T14:52:53+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://london.serverlessdays.io/speaker/hendric-ruesch</loc>
+  <lastmod>2018-06-26T14:52:53+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://london.serverlessdays.io/speaker/markus-thommes</loc>
+  <lastmod>2018-06-26T14:52:53+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://london.serverlessdays.io/speaker/matthew-henderson</loc>
+  <lastmod>2018-06-26T14:52:53+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://london.serverlessdays.io/speaker/thomas-michael-wallace</loc>
+  <lastmod>2018-06-26T14:52:53+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+
+
+</urlset>

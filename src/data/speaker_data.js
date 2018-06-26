@@ -181,7 +181,7 @@ module.exports = [
 	      speakerDesc: "Dr. Olivier Tardieu is a Research Staff Member at IBM in the New York area. He is part of the team shaping the future of IBM Cloud Functions and a contributor to its open source nucleus, the Apache OpenWhisk functions-as-a-service platform.\n\r With a passion for programming languages and tools, he works relentlessly to make developers feel at home in a serverless cloud.",
 	      speakerSocial: {
 	        speakerTwitter: "https://twitter.com/tardieu0",
-	        speakerLinkedIn: "https://researcher.watson.ibm.com/researcher/view.php?person=us-tardieu",
+	        speakerLinkedIn: "https://www.linkedin.com/in/tardieu/",
 	        speakerWeb: "https://researcher.watson.ibm.com/researcher/view.php?person=us-tardieu"
 	      }
 	    },
