@@ -1,0 +1,278 @@
+
+		
+<!DOCTYPE html>
+<html lang="en">
+<head> 
+    <title>Erica Windisch</title>
+
+    <meta charset="utf-8" />
+    <meta property="og:title" content="Erica Windisch" />
+	  <meta property="og:type" content="website" />
+  	<meta property="og:description" content="Erica is CTO & Founder at IOpipe where she is building tools to help developers of serverless applications iterate faster and support their applications in production. She is a former maintainer of Docker and OpenStack and has been building cloud, ops, and infrastructure tooling  ..." />
+  	<meta property="og:url" content="https://london.serverlessdays.io/speaker/erica-windisch" />
+  	<meta property="og:image" content="https://res.cloudinary.com/serverlessdays/image/upload/c_scale,w_512/v1529964831/SM_Icons/ew.png" />
+  	<meta name="description" content="Erica is CTO & Founder at IOpipe where she is building tools to help developers of serverless applications iterate faster and support their applications in production. She is a former maintainer of Docker and OpenStack and has been building cloud, ops, and infrastructure tooling  ..."/>
+
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Erica Windisch" />
+    <meta name="twitter:site" content="@serverlessLDN" />
+    <meta name="twitter:description" content="Erica is CTO & Founder at IOpipe where she is building tools to help developers of serverless applications iterate faster and support their applications in production. She is a former maintainer of Docker and OpenStack and has been building cloud, ops, and infrastructure tooling  ..." />
+    <meta name="twitter:url" content="https://london.serverlessdays.io/speaker/erica-windisch" />
+    <meta name="twitter:image" content="https://res.cloudinary.com/serverlessdays/image/upload/c_scale,w_512/v1529964831/SM_Icons/ew.png" />
+
+  	<meta name="viewport" content="width=device-width, initial-scale=1">
+  	<link rel="stylesheet" href="https://unpkg.com/tachyons/css/tachyons.min.css">
+    <link rel="shortcut icon" href="https://res.cloudinary.com/senzo/image/upload/c_scale,w_32/v1518368936/unicorn_mascot_1_vyq3zb.ico"/>
+</head>
+<style>
+    .vh-60 { height:60vh; }
+    .vh-40 { height:40vh; }
+    .vh-30 { height:30vh; }
+    .shadow-6 {
+      box-shadow: 0px 0px 8px 4px rgba(192,192,192,.2);
+    }
+    .shadow-7 {
+      box-shadow: 0px 0px 8px 12px rgba(32,32,32,.5);
+      z-index: 10;
+    }
+    .bg-color-1 {
+      background: rgba(200,70,0,.8);
+    }
+    .bg-color-2 {
+      background: rgba(192,132,0,.8);
+    }
+    .bg-color-3 {
+      background: rgba(90,172,174,.8);
+    }
+    .bg-color-4 {
+      background: rgba(65,146,75,.8);
+    }
+    .bg-color-5 {
+      background: rgba(15,27,7,.8);
+    }
+    .bg-color-6 {
+      background: rgba(0,41,70,.8);
+    }
+    .bg-cover {
+      background: url('https://res.cloudinary.com/serverlessdays/image/upload/c_scale,w_640/c_crop,h_360,w_640/v1521409086/London/adore_and_endure.jpg');
+      z-index: -10;
+    }
+    p {
+    	font-family: Consolas, monaco, monospace;
+    	font-weight: 400;
+    	font-size: .875em;
+    	line-height: 1.5;
+    	padding-top: .25rem; padding-bottom: .25rem;
+    }
+    @media screen and (min-width: 30em) {
+    .vh-40-ns {  height: 40vh; }
+    .w-65-ns { width: 64%; }
+    .bg-cover-ns {
+      background: url('https://res.cloudinary.com/serverlessdays/image/upload/c_scale,w_1920/c_crop,h_1080,w_1920/v1521409086/London/adore_and_endure.jpg');
+      z-index: -10;
+    }
+    }
+    @media screen and (min-width: 60em) {
+    .vh-40-l {  height: 40vh; }
+    .w-35-l { width: 37%; }
+    }
+</style>
+
+<body>
+
+    <div class="fixed vh-100 w-100 cover top-0 bg-cover bg-cover-ns">
+    </div>
+
+    <div class="fixed bg-black-80 w-100 top-0 shadow-7">
+      <div class="fl-l mt0 mv2-l ml2-l pa0 tc tl-l v-mid">
+        <img class="pt2 pb1 ph1 pa2-m ph3-l" src="https://res.cloudinary.com/serverlessdays/image/upload/v1528146521/serverless_white_new.svg" height="46" alt="ServerlessDays Logo"/>
+        <p class="mh1 ml3-l f6 fw1 code near-white mv0 pt0 pb2 pb0-ns">
+          6 July 2018 <a class="near-white no-underline" href="http://www.stjohnshoxton.org.uk/">St John&#39;s Hoxton, London, N1 6NP</a>
+        </p>
+      </div>
+      <div class="fr-l mt0 mt4-l mr2-l ph1 pv2 pa2-ns tr v-mid near-white code f6 fw1 dn">
+        <div class="dt dn db-ns">
+          <div class="dt-row">
+            <div class="dtc">
+              <a class="pv1 ph2 near-white no-underline dim" href="/">Home</a>
+            </div>
+            <div class="dtc">
+              <a class="pv1 ph2 near-white no-underline dim" href="/agenda">Agenda</a>
+            </div>
+            <div class="dtc">
+              <sa class="pv1 ph2 near-white no-underline dim" href="/speakers">Speakers</a>
+            </div>
+            <div class="dtc">
+              <a class="pv1 ph2 near-white no-underline dim" href="/location">Location</a>
+            </div>
+            <div class="dtc">
+              <a class="pv1 ph2 near-white no-underline dim" href="/dandi">Diversity & Inclusion</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+		<div class="w-100 pt5">
+			<article class="mw8 center bg-near-white pa3 mt4 mt5-ns">
+				<div class="pa2 pl3-ns pb2 pt3-ns">
+					<h3 class="code tl f3 f2-ns b pl2 pl4-ns mt0 v-top mv0">Erica Windisch</h3>
+					<p class="tl code mb0 mt1 pa0 f6 f5-ns pl2 pl4-ns">IOpipe</p>
+				</div>
+
+				<div class="dt-ns">
+					<div class="dt-row-ns">
+						<div class="dtc-ns w-100 w-40-ns pa2 pa3-ns">
+							<div class="pb0 pb3-ns mt0 mt2-ns ph2 ph4-ns">
+								<img class="w5 ba br4 b--transparent" src='https://res.cloudinary.com/serverlessdays/image/upload/v1528146103/London/erica_med.jpg' alt='Erica Windisch image'/>
+							</div>
+						</div>
+
+						<div class="dtc-ns v-top w-100 w-60-ns">
+							<div class="dt">
+								<div class="dt-row">
+									<div class="dtc w-100">
+										<div class="pv1 pr3-ns">
+											<p>Erica is CTO &amp; Founder at IOpipe where she is building tools to help developers of serverless applications iterate faster and support their applications in production. She is a former maintainer of Docker and OpenStack and has been building cloud, ops, and infrastructure tooling for over 15 years.</p>
+										</div>
+									</div>
+								</div>
+								<div class="dt-row">
+									<div class="dtc">
+										<h3 class="code tl f4 b mt0 v-top mv0">Talk: </h3>
+									</div>
+								</div>
+								<div class="dt-row">
+									<div class="dtc">
+										<div class="pv1 pr3-ns">
+											
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="pa2 pl3-ns">
+					<a class="no-underline ph1 code" title='Erica Windisch on Twitter' href="https://twitter.com/ewindisch" target="_blank"><img class="v-mid" src="https://res.cloudinary.com/serverlessdays/image/upload/v1529880252/SM_Icons/twitter.svg" height="45" alt="Twitter Icon"></a><a class="no-underline ph1 code" title="Erica Windisch on Medium" href="https://medium.com/@ewindisch" target="_blank"><img class="v-mid" src="https://res.cloudinary.com/serverlessdays/image/upload/v1529880151/SM_Icons/medium.svg" height="30" alt="Medium Icon"></a>
+				</div>
+			</article>
+		</div>
+		<div class="w-100 pb5 mw8-ns pv3 tc center">
+			<span class="f5 f3-ns white code b pv2">Sponsored By</span>
+			
+        <div class="cf dt w-100 mt2 bg-black-80">
+          <div class="dt-row">
+            <div class="dtc w-100">
+              <div class="dt-ns w-100 pt3 pb1 pb2-ns">
+                <div class="dt-row-ns">
+                  <div class="dtc-ns w-100 w-33-ns tc tl-m pa2 pa2-ns v-mid">
+                    <img src="https://res.cloudinary.com/serverlessdays/image/upload/v1528241130/IBM_logo_white.svg" height="60"/>
+                  </div>
+                  <div class="dtc-ns w-100 w-33-ns tc pa2 pa0-ns v-mid">
+                    <img src="https://res.cloudinary.com/serverlessdays/image/upload/v1528241132/stdlib-logo-light.svg" height="90"/>
+                  </div>
+                  <div class="dtc-ns w-100 w-33-ns tc tr-m pa2 pa2-ns v-mid">
+                    <img src="https://res.cloudinary.com/serverlessdays/image/upload/v1528241128/Amazon_Web_Services_Logo_white.svg" height="70"/>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="dt-row">
+            <div class="dtc w-100 ">
+              <div class="dt dt-fixed w-100 pv1">
+                <div class="dt-row">
+                  <div class="dtc tc pa2 ph3-ns v-mid">
+                    <img src="https://res.cloudinary.com/serverlessdays/image/upload/v1529397141/DAZN_white.svg" height="60"/>
+                  </div>
+                  <div class="dtc tc pa2 v-mid">
+                    <img src="https://res.cloudinary.com/serverlessdays/image/upload/v1528243401/epsagon-horizontal-white.svg" height="45"/>
+                  </div>                
+                  <div class="dtc tc pa2 ph3-ns v-mid">
+                    <img src="https://res.cloudinary.com/serverlessdays/image/upload/v1528241128/amido_logo_white.svg" height="50"/>
+                  </div>
+                  
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="dt-row">
+            <div class="dtc w-100 ">
+              <div class="dt dt-fixed w-100 pv1">
+                <div class="dt-row">
+                  <div class="dtc tc pa2 v-mid">
+                    <img src="https://res.cloudinary.com/serverlessdays/image/upload/v1528242108/microsoft_horizontal_white.svg" height="32"/>
+                  </div>
+                  <div class="dtc-ns tc pa2 v-mid">
+                    <img src="https://res.cloudinary.com/serverlessdays/image/upload/c_scale,h_35/v1528241131/nexmo.png"/>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="dt-row">
+            <div class="dtc w-100">
+              <div class="dt w-100 pv1 dt-fixed">
+                <div class="dt-row-ns">
+                  <div class="dtc tc pa2 v-mid">
+                    <img src="https://res.cloudinary.com/serverlessdays/image/upload/v1528241132/tray.io-default-white.svg" height="20"/>
+                  </div>
+                  <div class="dtc tc pa2 v-mid">
+                    <img src="https://res.cloudinary.com/serverlessdays/image/upload/v1528241128/bitnami-dark-bg.svg" height="27"/>
+                  </div>
+                  <div class="dtc tc pa2 v-mid">
+                    <img src="https://res.cloudinary.com/serverlessdays/image/upload/v1528242508/reason-white.svg" height="18"/>
+                  </div>
+                  <div class="dtc tc pa2 v-mid">
+                    <img src="https://res.cloudinary.com/serverlessdays/image/upload/c_scale,h_35/v1528241130/fastly-white.svg" height="25"/>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="dt-row">
+            <div class="dtc">
+              <div class="dt w-80 center pv1 dt-fixed">
+                <div class="dt-row-ns"> 
+                  <div class="dtc tc pa2 ph4 v-mid">
+                    <img src="https://res.cloudinary.com/serverlessdays/image/upload/v1529401978/FT_logo_only.svg" height="35"/>
+                  </div>
+                  <div class="dtc tc pa2 ph4 v-mid">
+                    <img src="https://res.cloudinary.com/serverlessdays/image/upload/v1529401537/google-cloud-logo-white.svg" height="22"/>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+  
+		</div>
+		
+		
+	<div class="cf dib bottom--2 w-100 tc pt2 white code bg-navy mt3 pb5">
+      <div class="dt-ns w-90-ns center pt3">
+        <div class="dt-row">
+          <div class="dtc-ns w-100 w-auto-ns tc tl-ns mt4-ns pa2 f6">
+              <span>london@serverlessdays.io</span>
+          </div>
+          <div class="dtc-ns w-100 w-auto-ns ph4 tc v-mid">
+            <img class="ph2 ma0" title="I am Jeff's friend!" alt="Jeff's friend" src="https://res.cloudinary.com/senzo/image/upload/c_scale,w_60/v1518368936/octo_mascot_usu91v.png">
+            <img class="ph2 ma0" title="I am Jeff's friend!" alt="Jeff's friend" src="https://res.cloudinary.com/senzo/image/upload/c_scale,w_55/v1518368936/unicorn_mascot_1_vyq3zb.png">
+            <img class="ph2 ma0" title="I am Jeff's friend!" alt="Jeff's friend" src="https://res.cloudinary.com/senzo/image/upload/c_scale,w_65/v1518368936/Moth_mascot_jeph83.png">
+            <img class="ph2 ma0" title="I am Jeff's friend!" alt="Jeff's friend" src="https://res.cloudinary.com/senzo/image/upload/c_scale,w_65/v1518368935/owl_mascot_tfpz2j.png">
+            <img class="ph2 ma0" title="I am Jeff's friend!" alt="Jeff's friend" src="https://res.cloudinary.com/senzo/image/upload/c_scale,w_50/v1518368936/Dino_mascot_1_ycezll.png">
+            <img class="ph2 ma0" title="I am Jeff's friend!" alt="Jeff's friend" src="https://res.cloudinary.com/senzo/image/upload/c_scale,w_60/v1518368935/Anteater_png_3_hy7l5s.png">
+            <img class="ph2 ma0" title="I am Jeff!" alt="Jeff" src="https://res.cloudinary.com/senzo/image/upload/c_scale,w_45/v1486988424/SERVERLESS_NO_BACKGROUND_opzcgz.png">
+          </div>
+          <div class="dtc-ns w-100 w-auto-ns tc tr-ns mt4-ns pa2 f6">
+              <span>6 July 2018</span>
+              <a class="near-white" href="http://www.stjohnshoxton.org.uk/">St John&#39;s Hoxton, London, N1 6NP</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
+	
+	
