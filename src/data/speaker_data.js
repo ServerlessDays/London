@@ -137,8 +137,8 @@ module.exports = [
 	  {   
 	    slug: "soenke-ruempler",
 	    speakerDetails: {
-	      imgSrc: "",
-	      previewImg: "",
+	      imgSrc: "https://res.cloudinary.com/serverlessdays/image/upload/c_crop,g_faces,h_480,w_480/c_scale,h_240,w_240/v1530281107/London/soenke.jpg",
+	      previewImg: "https://res.cloudinary.com/serverlessdays/image/upload/c_scale,w_512/v1530281459/SM_Icons/sr.png",
 	      speakerName: "Soenke Ruempler",
 		  speakerOrg: "superluminar",
 	      speakerDesc: "Soenke Ruempler is co-founder of superluminar, a consultancy located in Hamburg, where he helps organizations to embrace technical and cultural change. He is always curious about the bigger picture, and how everything maps back to Deming all the time.",
