@@ -135,16 +135,15 @@ module.exports = [
 	    }
 	  },
 	  {   
-	    slug: "hendric-ruesch",
+	    slug: "soenke-ruempler",
 	    speakerDetails: {
-	      imgSrc: "https://res.cloudinary.com/serverlessdays/image/upload/c_scale,h_240/v1528817524/London/hendric.jpg",
-	      previewImg: "https://res.cloudinary.com/serverlessdays/image/upload/c_scale,w_512/v1529964829/SM_Icons/hr.png",
-	      speakerName: "Hendric Ruesch",
+	      imgSrc: "https://res.cloudinary.com/serverlessdays/image/upload/c_crop,g_faces,h_480,w_480/c_scale,h_240,w_240/v1530281107/London/soenke.jpg",
+	      previewImg: "https://res.cloudinary.com/serverlessdays/image/upload/c_scale,w_512/v1530281459/SM_Icons/sr.png",
+	      speakerName: "Soenke Ruempler",
 		  speakerOrg: "superluminar",
-	      speakerDesc: "Hendric's journey has taken him from studying the social sciences to a deep fascination with the social web and digital strategy. He worked for Jimdo, SysEleven, strg. and as a freelance consultant. He grew up by the sea in Germany and lives in Hamburg. Hendric is the co-founder of superluminar, a cloud consulting firm and co-organiser of ServerlessDays Hamburg.",
+	      speakerDesc: "Soenke Ruempler is co-founder of superluminar, a consultancy located in Hamburg, where he helps organizations to embrace technical and cultural change. He is always curious about the bigger picture, and how everything maps back to Deming all the time.",
 	      speakerSocial: {
-	        speakerTwitter: "https://twitter.com/hendricruesch",
-	        speakerLinkedIn: "https://www.linkedin.com/in/hendricruesch"
+	        speakerTwitter: "https://twitter.com/s0enke"
 	      }
 	    },
 	    talkDetails: {
