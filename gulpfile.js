@@ -24,8 +24,8 @@ gulp.task('clean', function () {
     ]);
 });
 
-gulp.task('fileinclude', ['clean'], function(callback) {
-    return gulp.src(['src/html/*.html'])
+gulp.task('fileinclude', ['dev-assets'], function(callback) {
+    return gulp.src(['src/html/*.html', 'src/html/*.css'])
       .pipe(plumber())
       .pipe(fileinclude({
         prefix: '@@',
@@ -33,6 +33,11 @@ gulp.task('fileinclude', ['clean'], function(callback) {
       }))
       .pipe(gulp.dest('src/html-compiled/'))
       .pipe(browserSync.stream());
+  });
+
+  gulp.task('dev-assets', ['clean'], function(callback) {
+    return gulp.src(['src/imgs/**/*.*'])
+      .pipe(gulp.dest('src/html-compiled/'));
   });
 
 gulp.task('minify', ['fileinclude'], function() {
@@ -47,7 +52,8 @@ gulp.task('copy', function() {
             'src/_redirects',
             'src/*.xml',
             'src/*.txt',
-            'src/*.pdf'
+            'src/*.pdf',
+            'src/imgs/**'
         ])
         .pipe(gulp.dest('dist'));
 });
