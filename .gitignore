@@ -60,3 +60,6 @@ typings/
 .DS_Store
 src/html-compiled/
 dist/
+
+src/Art
+.idea/
