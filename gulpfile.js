@@ -25,7 +25,7 @@ gulp.task('clean', function () {
 });
 
 gulp.task('fileinclude', ['dev-assets'], function(callback) {
-    return gulp.src(['src/html/*.html', 'src/html/*.css'])
+    return gulp.src(['src/html/*.html'])
       .pipe(plumber())
       .pipe(fileinclude({
         prefix: '@@',
