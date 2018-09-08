@@ -1,0 +1,157 @@
+body {
+  padding: 20px 10px 10px 10px;
+}
+
+* {
+  font-family: "Work Sans", sans-serif;
+  font-weight: 300;
+  color: #13110c;
+}
+
+h* {
+  color: #13110c;
+}
+
+div,
+nav {
+  display: flex;
+}
+
+strong,
+b,
+.bold {
+  font-family: "Work Sans", sans-serif;
+  font-weight: 500;
+}
+
+.verticalCenter {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+nav.top-nav {
+  display: flex;
+  flex-direction: row;
+  width: 90%;
+  margin: auto;
+}
+
+nav.top-nav .logoContainer {
+  flex: 1;
+}
+
+nav.top-nav .logoContainer .logo {
+  margin-right: 10px;
+  padding-right: 10px;
+  border-right: solid 2px #979797;
+}
+
+nav.top-nav .logoContainer .dates {
+  font-size: 0.7rem;
+  align-self: center;
+  line-height: 1.4em;
+}
+
+nav.top-nav .menu {
+  flex: 0.4;
+  flex-wrap: nowrap;
+  justify-content: space-around;
+  align-items: center;
+}
+
+nav.top-nav .menu a {
+  display: flex;
+  flex: 0 1;
+  padding: 10px;
+  text-decoration: none;
+  color: #13110c;
+  border: solid 2px white;
+  font-weight: 400;
+}
+
+nav.top-nav .menu a.active,
+nav.top-nav .menu a:hover {
+  border: solid 2px #19b1a3;
+  color: #19b1a3;
+}
+
+.heroContainer {
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 5em;
+}
+
+.heroDate {
+  flex: 0 0 25%;
+  flex-direction: column;
+  background-color: rgba(255, 255, 255, 0.5);
+  border: solid 3px #19b1a3;
+  padding: 5px;
+  font-size: 1.2em;
+}
+
+.heroDate h1 {
+  margin-left: 1em;
+  font-size: 1.8em;
+  margin-bottom: 0;
+}
+
+.heroDate ul {
+  flex: 0 0;
+  display: flex;
+  padding-left: 0;
+  flex-direction: column;
+  list-style-type: none;
+}
+
+.heroDate li {
+  margin: 0.5em;
+  display: flex;
+  flex-direction: row;
+}
+
+.heroDate li .checkmark {
+  display: flex;
+  flex: 0 0 50px;
+  visibility: hidden;
+}
+.heroDate li.done .checkmark {
+  display: flex;
+  flex: 0 0 50px;
+  visibility: visible;
+  justify-content: center;
+}
+
+.heroDate li .text {
+  display: block;
+}
+.heroDate li .text strong {
+  font-weight: bold;
+  color: #464541;
+}
+
+.heroDate li.done,
+.heroDate li.done .text,
+.heroDate li.done .text strong {
+  color: #19b1a3;
+}
+
+.heroTitle {
+  flex: 1;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.heroTitle .mascotte,
+.heroTitle .title {
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.heroTitle .title h1 {
+  font-size: 3em;
+  color: #464541;
+  font-weight: 800;
+}
