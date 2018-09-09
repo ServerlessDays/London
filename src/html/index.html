@@ -17,50 +17,14 @@
         @@include('./fragments/_dates.html') @@include('./fragments/_heroTitle.html')
     </div>
 
-    <!--
-  	<div class="w-100 vh-100-ns">
-  	
-  		<div class="relative absolute-ns bottom--2-ns w-100 vh-40-ns bg-black-80 pv3 pt0-ns mt0">
-  			<div class="f4 f2-ns near-white tc">
-				<p>One Day. One Track. One Community</p>
-			</div>
-			<div class="dt-ns center">
-				<div class="dt-row-ns w-100 tc">
-					<div class="dtc-ns pa2">
-						<a id="cfp-link" title="CFP" target="_blank" href="https://www.papercall.io/serverless-days-milano" class="dib pv2 pv3-ns w5 b--white white bg-transparent hover-black hover-bg-white ba br2 pointer db no-underline">
-							Call for Papers
-                        </a>
-                    </div>
-                    <div class="dtc-ns pa2">
-                        <a id="sponsorships-link" title="Sponsor Prospectus" target="_blank" href="/ServerlessDaysMilanSponsorProspectus.pdf" class="dib pv2 pv3-ns w5 b--white white bg-transparent hover-black hover-bg-white ba br2 pointer db no-underline">
-                        Sponsorships
-                        </a>
-                    </div>
-				</div>
-            </div>
-            
-            <div class="dt-ns center">
-				<div class="dt-row-ns w-100 tc">
-					<div class="dtc-ns pa2">
-						<a id="tickets-link" title="ServerlessDays Milano Tickets" href="#tickets" class="dib pv2 pv3-ns w5 b--black b--white white bg-transparent hover-black hover-bg-white ba br2 pointer db no-underline">
-							Tickets
-                        </a>
-                    </div>
-                    <div class="dtc-ns pa2">
-                        <a id="sponsorships-link" title="Job Fair" target="_blank" href="https://www.eventbrite.com/e/serverless-job-fair-tickets-47322046515" class="dib pv2 pv3-ns w5 b--white white bg-transparent hover-black hover-bg-white ba br2 pointer db no-underline">
-                            Job Fair (free)
-                        </a>
-                    </div>
-				</div>
-			</div>
-          </div> 
-          
-
-      </div>
-    -->
-
     <!-- about -->
     @@include('./fragments/_about.html')
+
+    <!-- agenda -->
+    @@include('./fragments/_agenda.html')
+
+    <!-- sponsors -->
+    @@include('./fragments/_speakers.html')
 
     <!-- tickets -->
     @@include('./fragments/_tickets.html')
@@ -68,72 +32,6 @@
     <!-- sponsors -->
     @@include('./fragments/_sponsors.html')
 
-    <div id="keynotes" class="relative w-100 bg-black-80 pt2 pt0-ns mt0">
-        <div class="mw6 mw7-ns center near-white pt3 pt4-ns ph2 pb4">
-            <h2 class="f3 f2-ns tl">Keynote speakers</h2>
-            <div class="f6 f5-ns mt4 lh-copy">
-
-                <p>The agenda will feature two amazing keynotes to start and conclude the series of technical sessions. Note:
-                    the final agenda will be announced around late-August.</p>
-
-                <div class="dt-row code near-white">
-                    <div class="dtc w-100 tc tl-ns">
-                        <div class="no-underline pa3">
-                            <img src="speakers/yan-cui.png" class="fl-ns ph0-ns w-100 w4-ns h4-ns speaker-img grow mr4-ns">
-                            <h3 class="f4 f3-ns mt2 mb1">Yan Cui - <a class="serverlessdays-color no-underline" href="https://twitter.com/theburningmonk"
-                                    target="_blank">@theburningmonk</a></h3>
-                            <span class="f7 f6-ns fw1">Principal Engineer @ DAZN</span>
-                            <p class="f6 fw1 lh-copy tl ph2 ph0-ns dn db-ns">Yan is an experienced engineer who has worked
-                                with AWS for nearly 10 years. He has been an architect and lead developer with a variety
-                                of industries ranging from investment banks, e-commerce to mobile gaming. In the last 2 years
-                                he has worked extensively with AWS Lambda in production, and he has been very active in sharing
-                                his experiences and the lessons he has learnt, some of his work has even made their way into
-                                the Serverless Well-Architected whitepaper published by AWS. Yan is a regular speaker at
-                                user groups and conferences internationally, and he is also the author of Production-Ready
-                                Serverless and a co-author of F# Deep Dives. In his spare time <a class="serverlessdays-color no-underline"
-                                    href="https://theburningmonk.com" target="_blank">he keeps an active blog</a> where he shares
-                                his thoughts on topics such as AWS, serverless, functional programming and chaos engineering.</p>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="dt-row mt-2 code near-white">
-                    <div class="dtc w-100 tc tl-ns">
-                        <div class="no-underline pa3">
-                            <img src="speakers/gojko-adzic.jpg" class="fl-ns ph0-ns w-100 w4-ns h4-ns speaker-img grow mr4-ns">
-                            <h3 class="f4 f3-ns mt2 mb1">Gojko Adzic - <a class="serverlessdays-color no-underline" href="https://twitter.com/gojkoadzic"
-                                    target="_blank">@gojkoadzic</a></h3>
-                            <span class="f7 f6-ns fw1">Author of Humans vs Computers, MindMup, and Claudia.js</span>
-                            <p class="f6 fw1 lh-copy tl ph2 ph0-ns dn db-ns">Gojko Adzic is a partner at <a class="serverlessdays-color no-underline"
-                                    target="_blank" href="https://neuri.co.uk/">Neuri Consulting LLP</a>. He is the winner of
-                                the 2016 European Software Testing Outstanding Achievement Award, and the 2011 Most Influential
-                                Agile Testing Professional Award. Gojko’s book Specification by Example won the Jolt Award
-                                for the best book of 2012, and his blog won the UK Agile Award for the best online publication
-                                in 2010. As a consultant, Gojko has helped companies around the world improve their software
-                                delivery, from some of the largest financial institutions to small innovative startups. Gojko
-                                specialises in agile and lean quality improvement, in particular impact mapping, agile testing,
-                                specification by example and behaviour driven development.</p>
-                        </div>
-                    </div>
-                </div>
-
-            </div>
-        </div>
-    </div>
-
-
-    <!--
-    <div id="agenda" class="relative w-100 bg-black-80 pt2 pt0-ns mt0">
-        <div class="mw6 mw7-ns center near-white pt3 pt4-ns ph2 pb2">
-            <h2 class="f3 f2-ns tl">Agenda</h2>
-            <div class="f6 f5-ns mt4 lh-copy">
-                <p>
-                    Coming soon. Stay tuned!
-                </p>
-            </div>
-        </div>
-    </div>
-    -->
 
     <!-- CoC -->
     @@include('./fragments/_coc.html')

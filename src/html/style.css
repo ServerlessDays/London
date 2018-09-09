@@ -8,6 +8,11 @@ body {
   color: #13110c;
 }
 
+img {
+  /* resets max-width inherited by framework */
+  max-width: initial;
+}
+
 h1,
 h2,
 h3,
@@ -106,6 +111,17 @@ nav.top-nav .menu a:hover {
   padding: 5em;
 }
 
+.button {
+  display: flex;
+  flex: 0 1;
+  padding: 10px;
+  text-decoration: none;
+  font-weight: 400;
+  border: solid 2px #19b1a3;
+  color: #19b1a3;
+  font-size: 1em;
+}
+
 .heroDate {
   flex: 0 0 25%;
   flex-direction: column;
@@ -199,7 +215,7 @@ nav.top-nav .menu a:hover {
 
 .section h1 {
   margin: 0;
-  margin-bottom: 1em;
+  margin-bottom: 0.5em;
   font-weight: 800;
   font-size: 3em;
 }
@@ -223,6 +239,80 @@ nav.top-nav .menu a:hover {
 .section .text p {
   font-size: 1.1em;
   margin-bottom: 1em;
+}
+
+.section.agenda {
+  flex-direction: column;
+}
+
+.section.agenda h2 {
+  margin: 2em 0 1em 0;
+  font-size: 2em;
+  font-weight: bold;
+}
+
+.section.agenda .header-button {
+  align-items: stretch;
+}
+
+.section.agenda .header-button h1,
+.section.agenda .header-button button {
+  flex: 1;
+  margin: 0; /* no margin for h2 so alignment with button works */
+}
+
+.section.agenda .header-button button {
+  background: white;
+  margin-left: 2em;
+}
+
+.section.speakers {
+  flex-direction: column;
+}
+
+.section.speakers .list {
+  width: 80%;
+  margin: auto;
+  flex-direction: column;
+}
+
+.section.speakers .list > div {
+  flex: 1 0;
+  align-items: center;
+  padding-top: 20px;
+}
+.section.speakers .list > div:first-child {
+  padding-top: 0;
+}
+
+.section.speakers .list > div > .bio {
+  width: 200px;
+  flex-direction: column;
+  text-align: center; /* for text elements */
+  align-items: center; /* for flex elements */
+  padding: 20px 0;
+}
+
+.section.speakers .list > div > .bio img {
+  width: 180px;
+  border-radius: 50%;
+  border: 2px solid lightgray;
+}
+
+.section.speakers .list > div > .bio h3 {
+  font-weight: 600;
+  font-size: 1.1em;
+  margin: 0.5em 0 0 0;
+}
+
+.section.speakers .list > div > .bio span {
+  font-weight: 200;
+  margin: 0.5em 0 0 0;
+}
+
+.section.speakers .list > div p {
+  margin-left: 2em;
+  font-size: 1.1em;
 }
 
 .ticketsFrame {
