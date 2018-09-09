@@ -8,8 +8,18 @@ body {
   color: #13110c;
 }
 
-h* {
-  color: #13110c;
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  color: #464541;
+  margin: 0 0 1em 0;
+}
+
+p {
+  font-weight: 400;
 }
 
 div,
@@ -92,9 +102,8 @@ nav.top-nav .menu a:hover {
 }
 
 .heroDate h1 {
-  margin-left: 1em;
   font-size: 1.8em;
-  margin-bottom: 0;
+  margin: 0.5em 0 0 0.5em;
 }
 
 .heroDate ul {
@@ -152,6 +161,97 @@ nav.top-nav .menu a:hover {
 
 .heroTitle .title h1 {
   font-size: 3em;
-  color: #464541;
   font-weight: 800;
+}
+
+.section {
+  padding: 5em 5em;
+  align-items: flex-start;
+  justify-content: flex-start;
+  border-width: 3px 0;
+  border-color: #19b1a3;
+  border-style: solid;
+}
+
+.section .left {
+  flex: 3;
+  justify-content: left;
+  align-items: flex-start;
+}
+
+.section .left .title {
+  flex: 1;
+}
+
+.section .left .title h1 {
+  margin: 0;
+  font-weight: 800;
+  font-size: 3em;
+}
+
+.section .left .image {
+  flex: 1;
+}
+
+.section .text {
+  flex: 5;
+  display: block;
+}
+
+.section .text p {
+  font-size: 1.1em;
+  margin-bottom: 1em;
+}
+
+.ticketsFrame {
+  justify-content: center;
+}
+
+.sponsors {
+  flex-direction: column;
+}
+
+.sponsors h1 {
+  font-size: 3em;
+}
+
+.sponsors h2 {
+  font-size: 2em;
+}
+
+.sponsors .list {
+  flex: 1;
+  justify-content: space-around;
+  align-self: center;
+}
+
+.sponsors .list div {
+  flex: 1 0 content;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+.sponsors .separator {
+  height: 1px;
+  width: 50%;
+  margin: 3em auto;
+  border-top: solid 1.5px #979797;
+}
+
+.sponsors .headline img {
+  height: 80px;
+}
+.sponsors .headline,
+.sponsors .community {
+  width: 100%;
+}
+
+.sponsors .media img,
+.sponsors .community img {
+  height: 45px;
+}
+
+.sponsors .media.list {
+  justify-content: flex-start;
 }
