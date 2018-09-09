@@ -16,6 +16,20 @@ h5,
 h6 {
   color: #464541;
   margin: 0 0 1em 0;
+
+  /* aligns images and text inside headers */
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+h1 img,
+h2 img,
+h3 img,
+h4 img,
+h5 img,
+h6 img {
+  padding-right: 0.5em;
 }
 
 p {
@@ -183,10 +197,18 @@ nav.top-nav .menu a:hover {
   flex: 1;
 }
 
-.section .left .title h1 {
+.section h1 {
   margin: 0;
+  margin-bottom: 1em;
   font-weight: 800;
   font-size: 3em;
+}
+
+.section h2 {
+  margin: 0;
+  margin-bottom: 0.5em;
+  font-weight: 500;
+  font-size: 2.5em;
 }
 
 .section .left .image {
@@ -254,4 +276,53 @@ nav.top-nav .menu a:hover {
 
 .sponsors .media.list {
   justify-content: flex-start;
+}
+
+.section.coc {
+  flex-direction: column;
+}
+
+.section.coc h2 {
+  margin: 0;
+}
+
+.section.coc .expanded {
+  display: block;
+}
+
+.section.coc .expanded h3 {
+  margin: 1.2em 0 0 0;
+}
+
+.footer {
+  background-color: #19b1a3;
+  margin: 0;
+  padding: 1em 0;
+}
+
+.footer div,
+.footer p,
+.footer a {
+  color: white;
+  font-weight: 400;
+}
+
+.footer div {
+  text-align: center;
+}
+.footer p {
+  text-align: left;
+}
+
+.footer .row {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.footer .row.mascotte {
+  justify-content: center;
+}
+.footer .row.mascotte > div {
+  padding: 10px;
 }
