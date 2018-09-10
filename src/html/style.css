@@ -582,7 +582,8 @@ nav.top-nav .menu a.highlight:active {
   padding-right: 3em;
 }
 .section.talk > .photo > img {
-  max-width: 250px;
+  border-radius: 50%;
+  width: 250px;
 }
 .section.talk > .text {
   flex: 1 1 60%;

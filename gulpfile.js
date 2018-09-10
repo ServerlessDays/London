@@ -8,10 +8,7 @@ var fileinclude = require("gulp-file-include");
 var browserSync = require("browser-sync").create();
 var del = require("del");
 var plumber = require("gulp-plumber");
-
-gulp.task("compress", function() {
-  return pump([gulp.src("src/*.js"), uglify(), gulp.dest("dist")]);
-});
+var fs = require("fs");
 
 gulp.task("clean", function() {
   return del(["dist/**", "src/html-compiled/**"]);
@@ -24,7 +21,7 @@ gulp.task("fileinclude", ["dev-assets"], function(callback) {
     .pipe(
       fileinclude({
         prefix: "@@",
-        basepath: "@file",
+        basepath: "@file"
       })
     )
     .pipe(gulp.dest("src/html-compiled/"))
@@ -52,21 +49,52 @@ gulp.task("copy", function() {
       "src/*.xml",
       "src/*.txt",
       "src/*.pdf",
-      "src/imgs/**",
+      "src/imgs/**"
     ])
     .pipe(gulp.dest("dist"));
 });
 
-gulp.task("build", ["minify", "compress", "copy"]);
+gulp.task("generateTalks", () => {
+  const talks = require("./src/talks");
+  const template = fs.readFileSync("./src/html/talk-template.html", {
+    encoding: "utf-8"
+  });
 
-gulp.task("include-watch", ["fileinclude"], browserSync.reload);
+  talks.forEach(talk => {
+    const { key, photoUrl, title, speaker, abstract } = talk;
 
-gulp.task("watch", ["fileinclude", "browser-sync"], function() {
-  "use strict";
-  gulp.watch("./src/html/**/*.html", ["include-watch"]);
-  gulp.watch("./src/html/**/*.css", ["include-watch"]);
-  gulp.watch("./src/*.json", ["include-watch"]);
+    const content = template
+      .replace(/%photoUrl%/gi, photoUrl)
+      .replace(/%title%/gi, title)
+      .replace(/%speaker%/gi, speaker)
+      .replace(/%abstract%/gi, abstract)
+      .replace(/%key%/gi, key);
+
+    fs.writeFileSync(`src/html/talk-${key}.html`, content, {
+      encoding: "utf-8"
+    });
+  });
 });
+
+gulp.task("build", ["generateTalks", "fileinclude", "minify", "copy"]);
+
+gulp.task(
+  "include-watch",
+  ["generateTalks", "fileinclude"],
+  browserSync.reload
+);
+
+gulp.task(
+  "watch",
+  ["generateTalks", "fileinclude", "browser-sync"],
+  function() {
+    "use strict";
+    gulp.watch("./src/html/**/*.html", ["include-watch"]);
+    gulp.watch("./src/html/**/*.css", ["include-watch"]);
+    gulp.watch("./src/*.json", ["include-watch"]);
+    gulp.watch("./src/*.js", ["include-watch"]);
+  }
+);
 
 gulp.task("watch-dist", ["build"], function() {
   "use strict";
@@ -87,18 +115,18 @@ function simpleURLRewrite(req, res, next) {
 gulp.task("browser-sync", ["fileinclude"], function() {
   browserSync.init({
     server: {
-      baseDir: "./src/html-compiled/",
+      baseDir: "./src/html-compiled/"
     },
-    middleware: simpleURLRewrite,
+    middleware: simpleURLRewrite
   });
 });
 
 gulp.task("browser-sync-dist", ["build"], function() {
   browserSync.init({
     server: {
-      baseDir: "./dist/",
+      baseDir: "./dist/"
     },
-    middleware: simpleURLRewrite,
+    middleware: simpleURLRewrite
   });
 });
 
