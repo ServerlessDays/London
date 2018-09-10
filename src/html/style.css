@@ -425,12 +425,15 @@ nav.top-nav .menu a.highlight:active {
 }
 
 .sponsors .list div {
-  flex: 1 0 content;
+  flex: 1 0;
   flex-direction: row;
   justify-content: center;
   align-items: center;
 }
 
+.sponsors .list div.squared {
+  flex: 0 1 content;
+}
 .sponsors .separator {
   height: 1px;
   width: 50%;
@@ -439,8 +442,41 @@ nav.top-nav .menu a.highlight:active {
 }
 
 .sponsors .headline img {
-  height: 80px;
+  min-height: 100px;
+  width: 100%;
+  object-fit: contain;
 }
+.sponsors .headline div {
+  flex: 1 0 20%;
+  padding: 0 30px;
+}
+
+.sponsors .community img {
+  min-height: 60px;
+  width: 100%;
+  object-fit: contain;
+}
+.sponsors .community div.squared img {
+  min-height: 70px;
+}
+.sponsors .community div {
+  flex: 1 0 15%;
+  padding: 0 20px;
+}
+
+.sponsors .media img {
+  min-height: 55px;
+  width: 100%;
+  object-fit: contain;
+}
+.sponsors .media div.squared img {
+  min-height: 70px;
+}
+.sponsors .media div {
+  flex: 1 0 15%;
+  padding: 0 30px;
+}
+
 .sponsors .headline,
 .sponsors .community {
   width: 100%;
