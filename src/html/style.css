@@ -322,6 +322,16 @@ nav.top-nav .menu a.highlight:active {
   font-weight: 700;
 }
 
+.section.agenda .row .keynote:hover,
+.section.agenda .row .talk:hover {
+  transform: scale(1.05);
+  transition: transform .25s ease-out,-webkit-transform .25s ease-out;
+}
+.section.agenda .row .keynote,
+.section.agenda .row .talk {
+  cursor: pointer;
+}
+
 .section.agenda .row .talk {
   flex: 1 0 20%;
   background-color: #22b4a7;
