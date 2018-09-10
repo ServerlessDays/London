@@ -105,6 +105,20 @@ nav.top-nav .menu a:hover {
   color: #19b1a3;
 }
 
+nav.top-nav .menu a.active,
+nav.top-nav .menu a:hover {
+  border: solid 2px #19b1a3;
+  color: #19b1a3;
+}
+
+nav.top-nav .menu a.highlight,
+nav.top-nav .menu a.highlight:hover,
+nav.top-nav .menu a.highlight:active {
+  color: #cc171a;
+  border: solid 2px #cc171a;
+  font-weight: 700;
+}
+
 .heroContainer {
   background-repeat: no-repeat;
   background-size: cover;
@@ -252,6 +266,12 @@ nav.top-nav .menu a:hover {
   font-weight: bold;
 }
 
+.section.agenda h3 {
+  font-size: 1.5em;
+  font-weight: 200;
+  margin-top: 1em;
+}
+
 .section.agenda .header-button {
   align-items: stretch;
 }
@@ -265,6 +285,72 @@ nav.top-nav .menu a:hover {
 .section.agenda .header-button button {
   background: white;
   margin-left: 2em;
+}
+
+.section.agenda .row {
+  flex: 1 1;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+}
+
+.section.agenda .row div {
+  flex: 1 1 212px;
+  flex-direction: column;
+  justify-content: flex-end;
+  margin: 0 10px 10px 0;
+  min-height: 105px;
+  min-width: 212px;
+  padding: 14px;
+}
+
+.section.agenda .row div > * {
+  display: block;
+  flex: 0 0 content;
+  color: white;
+}
+
+.section.agenda .row div > :first-child {
+  flex: 1;
+  justify-self: flex-start;
+}
+
+.section.agenda .row div > span {
+  font-weight: 400;
+}
+
+.section.agenda .row div > strong {
+  font-weight: 700;
+}
+
+.section.agenda .row .keynote {
+  flex-grow: 2;
+  background-color: #22b4a7;
+}
+
+.section.agenda .row .talk {
+  flex-grow: 1;
+  background-color: #cc171a;
+}
+
+.section.agenda .row .coffee {
+  flex: 1 2;
+  justify-content: center;
+  align-items: center;
+  border: solid 3px #7894d9;
+  background-color: white;
+}
+
+.section.agenda .row .coffee div {
+  flex: 1 1 content;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.section.agenda .row .coffee span {
+  flex: 0 0 content;
+  color: #7894d9;
+  font-weight: 600;
 }
 
 .section.speakers {
