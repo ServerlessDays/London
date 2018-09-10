@@ -126,14 +126,15 @@ nav.top-nav .menu a.highlight:active {
 }
 
 .button {
-  display: flex;
   flex: 0 1;
   padding: 10px;
   text-decoration: none;
   font-weight: 400;
   border: solid 2px #19b1a3;
+  background-color: white;
   color: #19b1a3;
   font-size: 1em;
+  cursor: pointer;
 }
 
 .heroDate {
@@ -560,4 +561,44 @@ nav.top-nav .menu a.highlight:active {
 }
 .footer .row.mascotte > div {
   padding: 10px;
+}
+
+.breadcrumb {
+  margin-top: 20px;
+  background-color: #f0f0f0;
+  height: 2em;
+  width: 100%;
+}
+
+.section.talk {
+  max-width: 80%;
+  margin: auto;
+  border: 0;
+  flex-direction: row;
+}
+.section.talk > .photo {
+  flex: 1 1 40%;
+  justify-content: center;
+  padding-right: 3em;
+}
+.section.talk > .photo > img {
+  max-width: 250px;
+}
+.section.talk > .text {
+  flex: 1 1 60%;
+  flex-direction: column;
+}
+.section.talk > .text > h1 {
+  margin-bottom: 5px;
+}
+.section.talk > .text > h2 {
+  font-weight: 300;
+  color: #979797;
+  font-size: 1.8em;
+}
+.section.talk > .text > p {
+  font-weight: 300;
+  color: #464541;
+  line-height: 1.32;
+  margin-bottom: 2em;
 }
