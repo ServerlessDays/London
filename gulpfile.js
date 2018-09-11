@@ -49,6 +49,7 @@ gulp.task("copy", function() {
       "src/*.xml",
       "src/*.txt",
       "src/*.pdf",
+      "src/*.css",
       "src/imgs/**",
     ])
     .pipe(gulp.dest("dist"));
@@ -59,10 +60,8 @@ gulp.task("generateTalks", () => {
   const template = fs.readFileSync("./src/html/talk-template.html", {
     encoding: "utf-8",
   });
-
   talks.forEach(talk => {
     const { key, photoUrl, title, speaker, abstract, bio } = talk;
-
     const content = template
       .replace(/%photoUrl%/gi, photoUrl)
       .replace(/%title%/gi, title)
@@ -70,7 +69,6 @@ gulp.task("generateTalks", () => {
       .replace(/%bio%/gi, bio)
       .replace(/%abstract%/gi, abstract.replace(/\n/g, "<br/><br/>"))
       .replace(/%key%/gi, key);
-
     fs.writeFileSync(`src/html/talk-${key}.html`, content, {
       encoding: "utf-8",
     });
