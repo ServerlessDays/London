@@ -14,7 +14,7 @@ gulp.task("clean", function() {
   return del(["dist/**", "src/html-compiled/**"]);
 });
 
-gulp.task("fileinclude", ["dev-assets", "generateTalks"], function(callback) {
+gulp.task("fileinclude", ["generateTalks"], function(callback) {
   return gulp
     .src(["src/html/*.html"])
     .pipe(plumber())
@@ -49,13 +49,13 @@ gulp.task("copy", function() {
       "src/*.xml",
       "src/*.txt",
       "src/*.pdf",
-      "src/*.css",
+      "src/html/*.css",
       "src/imgs/**",
     ])
     .pipe(gulp.dest("dist"));
 });
 
-gulp.task("generateTalks", () => {
+gulp.task("generateTalks", ["dev-assets"], () => {
   const talks = require("./src/talks");
   const template = fs.readFileSync("./src/html/talk-template.html", {
     encoding: "utf-8",
@@ -121,6 +121,7 @@ gulp.task("browser-sync-dist", ["build"], function() {
   });
 });
 
-gulp.task("default", ["watch"]);
+
+gulp.task("default", ["dev-assets", "watch"]);
 
 gulp.task("dist", ["watch-dist", "browser-sync-dist"]);
