@@ -316,11 +316,12 @@ nav.top-nav .menu a.highlight:active {
 }
 
 .section.agenda .row div > span {
-  font-weight: 400;
+  font-weight: 300;
 }
 
 .section.agenda .row div > strong {
-  font-weight: 700;
+  font-weight: 500;
+  margin: 5px 0;
 }
 
 .section.agenda .row .keynote:hover,

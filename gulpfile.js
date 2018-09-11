@@ -14,7 +14,7 @@ gulp.task("clean", function() {
   return del(["dist/**", "src/html-compiled/**"]);
 });
 
-gulp.task("fileinclude", ["dev-assets"], function(callback) {
+gulp.task("fileinclude", ["dev-assets", "generateTalks"], function(callback) {
   return gulp
     .src(["src/html/*.html"])
     .pipe(plumber())
@@ -61,13 +61,14 @@ gulp.task("generateTalks", () => {
   });
 
   talks.forEach(talk => {
-    const { key, photoUrl, title, speaker, abstract } = talk;
+    const { key, photoUrl, title, speaker, abstract, bio } = talk;
 
     const content = template
       .replace(/%photoUrl%/gi, photoUrl)
       .replace(/%title%/gi, title)
       .replace(/%speaker%/gi, speaker)
-      .replace(/%abstract%/gi, abstract)
+      .replace(/%bio%/gi, bio)
+      .replace(/%abstract%/gi, abstract.replace(/\n/g, "<br/><br/>"))
       .replace(/%key%/gi, key);
 
     fs.writeFileSync(`src/html/talk-${key}.html`, content, {
@@ -76,17 +77,17 @@ gulp.task("generateTalks", () => {
   });
 });
 
-gulp.task("build", ["generateTalks", "fileinclude", "minify", "copy"]);
+gulp.task("build", ["fileinclude", "minify", "copy"]);
 
 gulp.task(
   "include-watch",
-  ["generateTalks", "fileinclude"],
+  ["fileinclude"],
   browserSync.reload
 );
 
 gulp.task(
   "watch",
-  ["generateTalks", "fileinclude", "browser-sync"],
+  ["fileinclude", "browser-sync"],
   function() {
     "use strict";
     gulp.watch("./src/html/**/*.html", ["include-watch"]);

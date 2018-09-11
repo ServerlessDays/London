@@ -4,7 +4,8 @@
 <head>
   @@include('./fragments/_headers.html')
   <title>%speaker% - ServerlessDays Milano 2018</title>
-  <meta property="og:url" content="http://www.nytimes.com/2015/02/19/arts/international/when-great-minds-dont-think-alike.html" />
+  <link rel="canonical" href="https://milan.serverlessdays.io/talk-%key%.html" />
+  <meta property="og:url" content="https://milan.serverlessdays.io/talk-%key%.html" />
   <meta property="og:type" content="article" />
   <meta property="og:title" content="%speaker%" />
   <meta property="og:description" content="%title%" />
@@ -13,10 +14,7 @@
   <meta name="Description" CONTENT="ServerlessDays Milano - %speaker%">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <META NAME="ROBOTS" CONTENT="INDEX,FOLLOW">
-  <meta name="keywords" content="serverless, serverlessdays, aws, microsoft, dazn, docebo, besharp">
-
-
-  <!-- %key% -->
+  <meta name="keywords" content="serverless, serverlessdays, aws, microsoft azure, dazn, docebo, besharp">
 </head>
 
 <body class="sls-gray">
@@ -32,15 +30,12 @@
     </div>
 
   <div class="text">
-      <h1>%title%</h1>
-      <h2>by %speaker%</h2>
-
+      <h1>%speaker%</h1>
+      <p>%bio%</p>
+      <h2>Talk: %title%</h2>
       <p>%abstract%</p>
-
       <a class="button" href="/#agenda">Back to the agenda</a>
     </div>
-
-
   </div>
 
   <!-- sponsors -->
