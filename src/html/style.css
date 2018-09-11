@@ -71,7 +71,7 @@ nav.top-nav {
 }
 
 nav.top-nav .logoContainer {
-  flex: 1;
+  flex: 1 0 auto;
 }
 
 nav.top-nav .logoContainer .logo {
@@ -223,13 +223,13 @@ nav.top-nav .menu a.highlight:active {
 }
 
 .section .left {
-  flex: 3;
+  flex: 3 0 auto;
   justify-content: left;
   align-items: flex-start;
 }
 
 .section .left .title {
-  flex: 1;
+  flex: 1 0 auto;
 }
 
 .section h1 {
@@ -247,11 +247,11 @@ nav.top-nav .menu a.highlight:active {
 }
 
 .section .left .image {
-  flex: 1;
+  flex: 1 0 auto;
 }
 
 .section .text {
-  flex: 5;
+  flex: 5 0 auto;
   display: block;
   font-size: 1.1em;
 }
@@ -283,7 +283,7 @@ nav.top-nav .menu a.highlight:active {
 
 .section.agenda .header-button h1,
 .section.agenda .header-button button {
-  flex: 1;
+  flex: 1 0 auto;
   margin: 0; /* no margin for h2 so alignment with button works */
 }
 
@@ -293,7 +293,7 @@ nav.top-nav .menu a.highlight:active {
 }
 
 .section.agenda .row {
-  flex: 1 1;
+  flex: 1 1 auto;
   flex-wrap: wrap;
   justify-content: flex-start;
 }
@@ -315,7 +315,7 @@ nav.top-nav .menu a.highlight:active {
 }
 
 .section.agenda .row > div > :first-child {
-  flex: 1;
+  flex: 1 0 auto;
   justify-self: flex-start;
 }
 
@@ -392,7 +392,7 @@ nav.top-nav .menu a.highlight:active {
 }
 
 .section.speakers .list > div {
-  flex: 1 0;
+  flex: 1 0 auto;
   align-items: center;
   padding-top: 20px;
 }
@@ -447,13 +447,13 @@ nav.top-nav .menu a.highlight:active {
 }
 
 .sponsors .list {
-  flex: 1;
+  flex: 1 0 auto;
   justify-content: space-around;
   align-self: center;
 }
 
 .sponsors .list div {
-  flex: 1 0;
+  flex: 1 0 auto;
   flex-direction: row;
   justify-content: center;
   align-items: center;
@@ -667,6 +667,10 @@ nav.top-nav .menu a.highlight:active {
 
   .section.agenda .row .coffee {
     flex: 1 1 100%;
+  }
+
+  .section.speakers h1 {
+    text-align: center;
   }
 
   .section.speakers .list {
