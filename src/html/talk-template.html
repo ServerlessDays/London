@@ -10,8 +10,8 @@
   <meta property="og:title" content="%speaker%" />
   <meta property="og:description" content="%title% - %speaker% - ServerlessDays Milano 2018" />
   <meta property="og:image" content="/speakers/%photoUrl%" />
-  <meta name="description" content="ServerlessDays Milano - %speaker%"/>
-  <meta name="robots" content="index,follow"/>
+  <meta name="description" content="ServerlessDays Milano - %speaker%" />
+  <meta name="robots" content="index,follow" />
 </head>
 
 <body class="sls-gray">
@@ -26,7 +26,7 @@
       <img src="/speakers/%photoUrl%" />
     </div>
 
-  <div class="text">
+    <div class="text">
       <h1>%speaker%</h1>
       <p>%bio%</p>
       <h2>Talk: %title%</h2>
@@ -37,10 +37,6 @@
 
   <!-- sponsors -->
   @@include('./fragments/_sponsors.html')
-
-  <!-- agenda -->
-  <a name="agenda"></a>
-  @@include('./fragments/_agenda.html')
 
   <!-- footer -->
   @@include('./fragments/_footer.html')

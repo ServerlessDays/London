@@ -21,7 +21,7 @@ gulp.task("fileinclude", ["dev-assets", "generateTalks"], function(callback) {
     .pipe(
       fileinclude({
         prefix: "@@",
-        basepath: "@file"
+        basepath: "@file",
       })
     )
     .pipe(gulp.dest("src/html-compiled/"))
@@ -49,7 +49,7 @@ gulp.task("copy", function() {
       "src/*.xml",
       "src/*.txt",
       "src/*.pdf",
-      "src/imgs/**"
+      "src/imgs/**",
     ])
     .pipe(gulp.dest("dist"));
 });
@@ -57,7 +57,7 @@ gulp.task("copy", function() {
 gulp.task("generateTalks", () => {
   const talks = require("./src/talks");
   const template = fs.readFileSync("./src/html/talk-template.html", {
-    encoding: "utf-8"
+    encoding: "utf-8",
   });
 
   talks.forEach(talk => {
@@ -72,30 +72,22 @@ gulp.task("generateTalks", () => {
       .replace(/%key%/gi, key);
 
     fs.writeFileSync(`src/html/talk-${key}.html`, content, {
-      encoding: "utf-8"
+      encoding: "utf-8",
     });
   });
 });
 
 gulp.task("build", ["fileinclude", "minify", "copy"]);
 
-gulp.task(
-  "include-watch",
-  ["fileinclude"],
-  browserSync.reload
-);
+gulp.task("include-watch", ["fileinclude"], browserSync.reload);
 
-gulp.task(
-  "watch",
-  ["fileinclude", "browser-sync"],
-  function() {
-    "use strict";
-    gulp.watch("./src/html/**/*.html", ["include-watch"]);
-    gulp.watch("./src/html/**/*.css", ["include-watch"]);
-    gulp.watch("./src/*.json", ["include-watch"]);
-    gulp.watch("./src/*.js", ["include-watch"]);
-  }
-);
+gulp.task("watch", ["fileinclude", "browser-sync"], function() {
+  "use strict";
+  gulp.watch("./src/html/**/*.html", ["include-watch"]);
+  gulp.watch("./src/html/**/*.css", ["include-watch"]);
+  gulp.watch("./src/*.json", ["include-watch"]);
+  gulp.watch("./src/*.js", ["include-watch"]);
+});
 
 gulp.task("watch-dist", ["build"], function() {
   "use strict";
@@ -116,18 +108,18 @@ function simpleURLRewrite(req, res, next) {
 gulp.task("browser-sync", ["fileinclude"], function() {
   browserSync.init({
     server: {
-      baseDir: "./src/html-compiled/"
+      baseDir: "./src/html-compiled/",
     },
-    middleware: simpleURLRewrite
+    middleware: simpleURLRewrite,
   });
 });
 
 gulp.task("browser-sync-dist", ["build"], function() {
   browserSync.init({
     server: {
-      baseDir: "./dist/"
+      baseDir: "./dist/",
     },
-    middleware: simpleURLRewrite
+    middleware: simpleURLRewrite,
   });
 });
 

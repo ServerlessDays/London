@@ -53,6 +53,10 @@ b,
   font-weight: 500;
 }
 
+span.line-break {
+  display: block;
+}
+
 .verticalCenter {
   display: flex;
   flex-direction: column;
@@ -327,7 +331,7 @@ nav.top-nav .menu a.highlight:active {
 .section.agenda .row .keynote:hover,
 .section.agenda .row .talk:hover {
   transform: scale(1.05);
-  transition: transform .25s ease-out,-webkit-transform .25s ease-out;
+  transition: transform 0.25s ease-out, -webkit-transform 0.25s ease-out;
 }
 .section.agenda .row .keynote,
 .section.agenda .row .talk {
@@ -478,6 +482,7 @@ nav.top-nav .menu a.highlight:active {
 .sponsors .community img {
   min-height: 60px;
   width: 100%;
+  max-width: 200px;
   object-fit: contain;
 }
 .sponsors .community div.squared img {
@@ -603,4 +608,123 @@ nav.top-nav .menu a.highlight:active {
   color: #464541;
   line-height: 1.32;
   margin-bottom: 2em;
+}
+
+/* mobile */
+@media (max-width: 920px) {
+  .no-mobile {
+    display: none !important;
+  }
+
+  .heroContainer {
+    padding: 0;
+  }
+
+  .heroContainer .heroTitle {
+    display: none;
+  }
+
+  .heroContainer .heroDate {
+    border: 0;
+  }
+
+  .heroContainer .heroDate .done {
+    display: none;
+  }
+
+  .heroContainer .heroDate .checkmark {
+    display: none;
+  }
+
+  .heroContainer .heroDate ul {
+    padding-left: 0.5em;
+  }
+
+  nav.top-nav {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  nav.top-nav .logoContainer {
+    justify-content: center;
+    flex: 0 0 100%;
+    margin-bottom: 15px;
+  }
+
+  .section {
+    padding: 20px 10px;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .section .left {
+    flex-direction: column-reverse;
+  }
+
+  .section.agenda h2 {
+    margin: 1em 0 0 0;
+  }
+
+  .section.agenda .row .coffee {
+    flex: 1 1 100%;
+  }
+
+  .section.speakers .list {
+    width: 100%;
+  }
+
+  .section.speakers .list > div {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .section.speakers .list > div p {
+    margin: 0 5px;
+  }
+
+  .section.sponsors .list {
+    flex-wrap: wrap;
+  }
+
+  .section.sponsors .list > div {
+    flex: 0 0 100%;
+    padding-bottom: 20px;
+  }
+
+  .section.sponsors .list > div:last-child {
+    padding-bottom: 0;
+  }
+
+  .sponsors .headline img {
+    max-width: 350px;
+  }
+
+  .sponsors .community img {
+    max-width: 200px;
+  }
+
+  .sponsors .media img {
+    max-width: 200px;
+  }
+
+  .section.talk {
+    flex-direction: column;
+    margin-bottom: 20px;
+  }
+
+  .section.talk .photo {
+    padding-bottom: 15px;
+  }
+
+  .section.footer .row {
+    flex-direction: column;
+  }
+
+  .section.footer .row p {
+    text-align: center;
+  }
+
+  .section.footer .row.mascotte {
+    flex-direction: row;
+  }
 }
