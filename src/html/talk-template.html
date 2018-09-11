@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  @@include('./fragments/_headers.html')
+  <title>%speaker% - ServerlessDays Milano 2018</title>
+  <link rel="canonical" href="https://milan.serverlessdays.io/talk-%key%.html" />
+  <meta property="og:url" content="https://milan.serverlessdays.io/talk-%key%.html" />
+  <meta property="og:type" content="article" />
+  <meta property="og:title" content="%speaker%" />
+  <meta property="og:description" content="%title% - %speaker% - ServerlessDays Milano 2018" />
+  <meta property="og:image" content="/speakers/%photoUrl%" />
+  <meta name="description" content="ServerlessDays Milano - %speaker%" />
+  <meta name="robots" content="index,follow" />
+</head>
+
+<body class="sls-gray">
+
+  @@include('./fragments/_header-nav.html')
+
+  <div class="breadcrumb">&nbsp;</div>
+
+  <div class="section talk">
+
+    <div class="photo">
+      <img src="/speakers/%photoUrl%" />
+    </div>
+
+    <div class="text">
+      <h1>%speaker%</h1>
+      <p>%bio%</p>
+      <h2>Talk: %title%</h2>
+      <p>%abstract%</p>
+      <a class="button" href="/#agenda">Back to the agenda</a>
+    </div>
+  </div>
+
+  <!-- sponsors -->
+  @@include('./fragments/_sponsors.html')
+
+  <!-- footer -->
+  @@include('./fragments/_footer.html')
+
+</body>
+
+</html>

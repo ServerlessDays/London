@@ -1,396 +1,45 @@
 <!DOCTYPE html>
 <html lang="en">
-   <head> 
-    <title>ServerlessDays Milano - 19 October 2018</title>
-    <meta charset="utf-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
-    <meta http-equiv="Content-Language" content="en" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <meta property="og:title" content="ServerlessDays Milano - 19 October 2018" />
-    <meta property="og:type" content="website" />
-    <meta property="og:description" content="A community based conference focusing on Jeff (Serverless) based platforms and technologies. Milan, 19 October 2018" />
-    <meta property="og:url" content="https://milan.serverlessdays.io" />
-    <meta property="og:image" content="https://res.cloudinary.com/serverlessdays/image/upload/c_scale,w_1200/c_crop,g_north,w_1200,h_600/v1524234863/milano-piazza-duomo.jpg" />
-    <meta name="twitter:card" content="summary" />
-    <meta name="twitter:site" content="@ServerlessMIL"/>
-    <meta name="twitter:title" content="ServerlessDays Milano 2018"/>
-    <meta name="twitter:description" content="A community based conference focusing on Jeff (Serverless) based platforms and technologies. Milan, 19 October 2018"/>
-    <meta name="twitter:creator" content="@ServerlessMIL"/>
-    <meta name="twitter:image" content="https://res.cloudinary.com/serverlessdays/image/upload/c_scale,w_1200/c_crop,g_north,w_1200,h_600/v1524234863/milano-piazza-duomo.jpg"/>
-    <meta name="twitter:image:src" content="https://res.cloudinary.com/serverlessdays/image/upload/c_scale,w_1200/c_crop,g_north,w_1200,h_600/v1524234863/milano-piazza-duomo.jpg"/>
-    <meta name="twitter:domain" content="milan.serverlessdays.io"/>
-    <meta name="description" content="A community based conference focusing on Jeff (Serverless) based platforms and technologies. Milan, 19 October 2018"/>
-    <link rel="shortcut icon" type="image/x-icon" href="https://res.cloudinary.com/senzo/image/upload/c_scale,w_96/v1518368948/ALL-NEW_ALL-DIFFERENT_cwm1cv.png">
-    <link rel="stylesheet" href="https://unpkg.com/tachyons/css/tachyons.min.css" />
 
-    <style>
-        .vh-60 { height:60vh; }
-        .vh-40 { height:40vh; }
-        .vh-30 { height:30vh; }
+<head>
+    @@include('./fragments/_headers.html') @@include('./fragments/_og-home.html')
+</head>
 
-        iframe#eventbrite {
-            width: 100%;
-            border: 0;
-            margin: 0;
-            overflow: scroll;
-            min-height: 900px;
-        }
+<body class="sls-gray">
 
-        .serverlessdays-color {
-            color: #0bb9a7;
-        }
+    @@include('./fragments/_header-nav.html')
 
-        .speaker-img {
-            border-radius: 50%;
-            border: 2px solid #ddd;
-        }
-
-        .sponsors a {
-            display: inline-block;
-        }
-  
-      @media screen and (min-width: 30em) {
-          .vh-40-ns {  height: 40vh; }
-      }
-    </style>
-
-    <script type='application/ld+json'>
-    {
-        "@context": "http://www.schema.org",
-        "@type": "Organization",
-        "name": "ServerlessDays Milano",
-        "url": "https://milan.serverlessdays.io",
-        "logo": "https://res.cloudinary.com/senzo/image/upload/c_scale,w_640/v1518368968/serverless_logo_no_undertext_jcfeso.png",
-        "image": "https://res.cloudinary.com/senzo/image/upload/c_scale,w_1020/v1518368948/ALL-NEW_ALL-DIFFERENT_cwm1cv.png",
-        "description": "A community based conference focusing on Jeff (Serverless) based platforms and technologies. Milan, 19 October 2018",
-        "contactPoint": [{
-            "@type": "ContactPoint",
-            "email": "milan@serverlessdays.io",
-            "contactType": "technical support",
-            "url": "https://milan.serverlessdays.io"
-        }],
-        "sameAs": [
-            "https://twitter.com/ServerlessMIL",
-            "https://www.youtube.com/channel/UCYzAnR_SebAmLRkKIbK_YoQ",
-            "https://www.facebook.com/serverlessdays/"
-        ]
-    }
-    </script>
-
-  </head>
-
-  <body class="avenir">
-
-  	<div class="fixed w-100 vh-100 cover top-0" style="background:url(https://res.cloudinary.com/serverlessdays/image/upload/c_scale,q_100,w_1920/c_crop,g_north,h_1080,q_100,w_1920,x_0,y_0/v1524234863/milano-piazza-duomo.jpg)"></div>
-
-  	<div class="w-100 vh-100-ns">
-  		<div class="relative w-100 center">
-  			<div class="mt2 mt4-ns mh0 ml4-ns pa3 pl4 mw7-ns bg-white-90 black">
-  				<img class="pa0 pa3-ns" src="logos/serverlessdays.svg" alt="ServerlessDays Logo" width="400"/>
-  				<div class="tl f4 fw8 code pl3 pb1">
-  					<p class="pa0">19 October 2018 @ Fondazione Feltrinelli, Milano</p>
-  				</div>
-  				<div class="tl f6 fw4 code pl4 pb4">
-  					<p class="ma0">2018/06/01 - CFP Opens</p>
-  					<p class="mb0 mt2">2018/06/18 - Tickets go on Sale</p>
-  					<p class="mb0 mt2">2018/08/01 - CFP Closes</p>
-  					<p class="mb0 mt2">2018/09/01 - Speaker Announcement</p>
-                    <p class="mb0 mt2">2018/10/19 - ServerlessDays Milano @ Fondazione Feltrinelli</p>
-                    <p class="mb0 mt2">2018/10/20 - Workshops &amp; Job Fair @ Luiss Hub</p>
-  				</div>
-  			</div>
-  		</div>
-
-  		<div class="relative absolute-ns bottom--2-ns w-100 vh-40-ns bg-black-80 pv3 pt0-ns mt0">
-  			<div class="f4 f2-ns near-white tc">
-				<p>One Day. One Track. One Community</p>
-			</div>
-			<div class="dt-ns center">
-				<div class="dt-row-ns w-100 tc">
-					<div class="dtc-ns pa2">
-						<a id="cfp-link" title="CFP" target="_blank" href="https://www.papercall.io/serverless-days-milano" class="dib pv2 pv3-ns w5 b--white white bg-transparent hover-black hover-bg-white ba br2 pointer db no-underline">
-							Call for Papers
-                        </a>
-                    </div>
-                    <div class="dtc-ns pa2">
-                        <a id="sponsorships-link" title="Sponsor Prospectus" target="_blank" href="/ServerlessDaysMilanSponsorProspectus.pdf" class="dib pv2 pv3-ns w5 b--white white bg-transparent hover-black hover-bg-white ba br2 pointer db no-underline">
-                        Sponsorships
-                        </a>
-                    </div>
-				</div>
-            </div>
-            
-            <div class="dt-ns center">
-				<div class="dt-row-ns w-100 tc">
-					<div class="dtc-ns pa2">
-						<a id="tickets-link" title="ServerlessDays Milano Tickets" href="#tickets" class="dib pv2 pv3-ns w5 b--black b--white white bg-transparent hover-black hover-bg-white ba br2 pointer db no-underline">
-							Tickets
-                        </a>
-                    </div>
-                    <div class="dtc-ns pa2">
-                        <a id="sponsorships-link" title="Job Fair" target="_blank" href="https://www.eventbrite.com/e/serverless-job-fair-tickets-47322046515" class="dib pv2 pv3-ns w5 b--white white bg-transparent hover-black hover-bg-white ba br2 pointer db no-underline">
-                            Job Fair (free)
-                        </a>
-                    </div>
-				</div>
-			</div>
-  		</div> 
-
-      </div>
-
-    <div id="about" class="relative w-100 bg-black-80 pt2 pt0-ns mt0">
-        <div class="mw6 mw7-ns center near-white pt3 pt4-ns ph2 pb2">
-            <h2 class="f3 f2-ns tl">About</h2>
-            <div class="f6 f5-ns mt4 lh-copy">
-                <p>
-                    ServerlessDays Milano is a developer-oriented conference about serverless technologies.
-                </p>
-                <p>
-                    We believe in and encourage practical sessions, in which developers share their experience and lessons from real-world projects.
-                </p>
-                <p>
-                    ServerlessDays Milano is part of 
-                    <a href="https://serverlessdays.io" class="link dim serverlessdays-color">ServerlessDays</a>
-                    (formerly JeffConf), a global series of events around the world fostering communities around serverless technologies.
-                </p>
-                <p>
-                    We follow and enforce the <a target="_blank" title="CoC" href="https://serverlessdays.io/coc" class="link dim serverlessdays-color">Serverless Days Code of Conduct</a>.
-                </p>
-            </div>
-        </div>
+    <div class="heroContainer" style="background-image: url('./bg.svg');">
+        @@include('./fragments/_dates.html') @@include('./fragments/_heroTitle.html')
     </div>
 
-    <div id="keynotes" class="relative w-100 bg-black-80 pt2 pt0-ns mt0">
-        <div class="mw6 mw7-ns center near-white pt3 pt4-ns ph2 pb4">
-            <h2 class="f3 f2-ns tl">Keynote speakers</h2>
-            <div class="f6 f5-ns mt4 lh-copy">
+    <!-- about -->
+    <a name="about"></a>
+    @@include('./fragments/_about.html')
 
-                <p>The agenda will feature two amazing keynotes to start and conclude the series of technical sessions. Note: the final agenda will be announced around late-August.</p>
-                
-                <div class="dt-row code near-white">
-                    <div class="dtc w-100 tc tl-ns">
-                        <div class="no-underline pa3">
-                            <img src="speakers/yan-cui.png" class="fl-ns ph0-ns w-100 w4-ns h4-ns speaker-img grow mr4-ns">
-                            <h3 class="f4 f3-ns mt2 mb1">Yan Cui - <a class="serverlessdays-color no-underline" href="https://twitter.com/theburningmonk" target="_blank">@theburningmonk</a></h3>
-                            <span class="f7 f6-ns fw1">Principal Engineer @ DAZN</span>
-                            <p class="f6 fw1 lh-copy tl ph2 ph0-ns dn db-ns">Yan is an experienced engineer who has worked with AWS for nearly 10 years. He has been an architect and lead developer with a variety of industries ranging from investment banks, e-commerce to mobile gaming. In the last 2 years he has worked extensively with AWS Lambda in production, and he has been very active in sharing his experiences and the lessons he has learnt, some of his work has even made their way into the Serverless Well-Architected whitepaper published by AWS. Yan is a regular speaker at user groups and conferences internationally, and he is also the author of Production-Ready Serverless and a co-author of F# Deep Dives. In his spare time <a class="serverlessdays-color no-underline" href="https://theburningmonk.com" target="_blank">he keeps an active blog</a> where he shares his thoughts on topics such as AWS, serverless, functional programming and chaos engineering.</p>
-                        </div>
-                    </div>
-                </div>
+    <!-- agenda -->
+    <a name="agenda"></a>
+    @@include('./fragments/_agenda.html')
 
-                <div class="dt-row mt-2 code near-white">
-                    <div class="dtc w-100 tc tl-ns">
-                        <div class="no-underline pa3">
-                            <img src="speakers/gojko-adzic.jpg" class="fl-ns ph0-ns w-100 w4-ns h4-ns speaker-img grow mr4-ns">
-                            <h3 class="f4 f3-ns mt2 mb1">Gojko Adzic - <a class="serverlessdays-color no-underline" href="https://twitter.com/gojkoadzic" target="_blank">@gojkoadzic</a></h3>
-                            <span class="f7 f6-ns fw1">Author of Humans vs Computers, MindMup, and Claudia.js</span>
-                            <p class="f6 fw1 lh-copy tl ph2 ph0-ns dn db-ns">Gojko Adzic is a partner at <a class="serverlessdays-color no-underline" target="_blank" href="https://neuri.co.uk/">Neuri Consulting LLP</a>. He is the winner of the 2016 European Software Testing Outstanding Achievement Award, and the 2011 Most Influential Agile Testing Professional Award. Gojko’s book Specification by Example won the Jolt Award for the best book of 2012, and his blog won the UK Agile Award for the best online publication in 2010. As a consultant, Gojko has helped companies around the world improve their software delivery, from some of the largest financial institutions to small innovative startups. Gojko specialises in agile and lean quality improvement, in particular impact mapping, agile testing, specification by example and behaviour driven development.</p>
-                        </div>
-                    </div>
-                </div>
+    <!-- sponsors -->
+    @@include('./fragments/_speakers.html')
 
-            </div>
-        </div>
-    </div>
+    <!-- tickets -->
+    <a name="tickets"></a>
+    @@include('./fragments/_tickets.html')
 
-    <div id="headline-sponsors" class="relative sponsors w-100 bg-white-80 pt2 pt0-ns mt0">
-        <div class="mw6 mw7-ns center near-white pt3 pt4-ns ph2 pb4">
-            <h2 class="f3 f2-ns tl dark-gray mb-3 tc tl-ns">Headline Sponsors</h2>
-            <div class="dt w-100 f6 f5-ns mt4">
-                <div class="dt-row-ns pb2-ns">
-                    <div class="dtc-ns w-100 w-50-ns tc tl-m pa2 pa2-ns v-mid mb3 mb0-ns">
-                        <a href="https://www.docebo.com" target="_blank"><img class="grow" src="logos/docebo.png" height="60" title="Docebo" alt="Docebo"></a>
-                    </div>
-                    <div class="dtc-ns w-100 w-50-ns tc tr-m pa2 pa2-ns v-mid mb3 mb0-ns">
-                        <a href="https://www.besharp.it" target="_blank"><img class="grow" src="logos/besharp.svg" height="90" title="beSharp" alt="beSharp"></a>
-                    </div>
-                    
-                </div>
-            </div>
-            <div class="dt w-100 f6 f5-ns mt4">
-                <div class="dt-row-ns pb2-ns">
-                    <div class="dtc-ns w-100 w-50-ns tc pa2 pa0-ns v-mid mb3 mb0-ns">
-                        <a href="https://aws.amazon.com" target="_blank"><img class="grow" src="logos/aws.svg" height="80" title="Amazon Web Services" alt="Amazon Web Services"></a>
-                    </div>
-                    <div class="dtc-ns w-100 w-50-ns tc tr-m pa2 pa2-ns v-mid mb3 mb0-ns">
-                        <a href="https://azure.microsoft.com" target="_blank"><img class="grow" src="logos/microsoft.png" height="80" title="Microsoft Azure" alt="Microsoft Azure"></a>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-
-    <div id="community-sponsors" class="relative sponsors w-100 bg-white-80 pt2 pt0-ns mt0">
-        <div class="mw6 mw7-ns center near-white pt3 pt4-ns ph2 pb4">
-            <h2 class="f3 f2-ns tl dark-gray mb-3 tc tl-ns">Community &amp; Headhunter Sponsors</h2>
-            <div class="dt w-100 f6 f5-ns mt4">
-                <div class="dt-row-ns">
-                    <div class="dtc-ns w-100 w-33-ns tc tl-m pa2 pa2-ns v-mid mb3 mb0-ns">
-                        <a href="https://www.azatec.com" target="_blank"><img class="grow" src="logos/azatec.png" height="50" title="Azatec" alt="Azatec"></a>
-                    </div>
-                    <div class="dtc-ns w-100 w-33-ns tc tr-m pa2 pa2-ns v-mid mb3 mb0-ns">
-                        <a href="https://www.dazn.com/en-IT" target="_blank"><img class="grow" src="logos/dazn.svg" height="60" title="DAZN" alt="DAZN"></a>
-                    </div>
-                    <div class="dtc-ns w-100 w-33-ns tc tr-m pa2 pa2-ns v-mid mb3 mb0-ns">
-                        <a href="http://www.conversate.eu" target="_blank"><img class="grow" src="logos/conversate.svg" height="40" title="Conversate" alt="Conversate"></a>
-                    </div>
-                </div>
-            </div>
-            <div class="dt w-100 f6 f5-ns mt4">
-                <div class="dt-row-ns">
-                    <div class="dtc-ns w-100 w-20-ns tc pa2 pa0-ns v-mid mb3 mb0-ns"></div>
-                    <div class="dtc-ns w-100 w-33-ns tc pa2 pa0-ns v-mid mb3 mb0-ns">
-                        <a href="https://www.neosperience.com" target="_blank"><img class="grow" src="logos/neosperience.svg" height="30" title="Neosperience" alt="Neosperience"></a>
-                    </div>
-                    <div class="dtc-ns w-100 w-33-ns tc tr-m pa2 pa2-ns v-mid mb3 mb0-ns">
-                        <a href="https://www.digitalattitude.tech" target="_blank"><img class="grow" src="logos/digital_attitude.png" height="40" title="Digital Attitude" alt="Digital Attitude"></a>
-                    </div>
-                    <div class="dtc-ns w-100 w-20-ns tc pa2 pa0-ns v-mid mb3 mb0-ns"></div>
-                </div>
-
-            </div>
-        </div>
-    </div>
-
-    <div id="partners" class="relative sponsors w-100 bg-white-80 pt2">
-        <div class="mw6 mw7-ns center near-white pt3 pt4-ns ph2 pb4">
-            <h2 class="f3 f2-ns tl dark-gray mb-3 tc tl-ns">Media &amp; Diversity Partners</h2>
-            <div class="dt w-100 f6 f5-ns mt4 lh-copy bg-white-20">
-                <div class="dt-row-ns">
-                    <div class="dtc-ns w-100 w-25-ns tc tl-m pa2 pa2-ns v-mid">
-                        <a href="https://www.grusp.org" target="_blank"><img class="grow" src="logos/grusp.svg" height="70" title="GrUSP" alt="GrUSP"></a>
-                    </div>
-                    <div class="dtc-ns w-100 w-25-ns tc pa2 pa0-ns v-mid">
-                        <a href="http://www.compvter.it/" target="_blank"><img class="grow" src="logos/compvter.svg" height="130" title="ComPVter" alt="ComPVter"></a>
-                    </div>
-                    <div class="dtc-ns w-100 w-25-ns tc tl-m pa2 pa2-ns v-mid mb3 mb0-ns">
-                        <a href="https://stackery.io" target="_blank"><img class="grow" src="logos/stackery.svg" height="50" title="Stackery" alt="Stackery"></a>
-                    </div>
-                    <div class="dtc-ns w-100 w-25-ns tc tr-m pa2 pa2-ns v-mid mb3 mb0-ns">
-                        <a href="https://cloudconf.it" target="_blank"><img class="grow" src="logos/cloudconf.png" height="60" title="CloudConf" alt="CloudConf"></a>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
+    <!-- sponsors -->
+    <a name="sponsors"></a>
+    @@include('./fragments/_sponsors.html')
 
 
-    <div id="tickets" class="relative w-100 bg-black-80 pt2 pt0-ns mt0">
-        <div class="mw6 mw7-ns center near-white pt3 pt4-ns ph2 pb5">
-            <h2 class="f3 f2-ns tl">Tickets</h2>
-            <div class="f6 f5-ns mt4 lh-copy">
-                <p>
-                    Tickets are available at €35, and the income will be donated to local no-profit organizations.
-                </p>
-                <p>
-                    We believe in inclusiveness and diversity, and we are working hard with our Diversity Partners to welcome people from diverse backgrounds and to remove any financial barrier.
-                </p>
-                <p>
-                    You can chosee to buy a Diversity Sponsor Ticket, and we'll donate it to a Diversity Scholar.
-                    If you are part of an underrepresented group in tech, you can apply by emailing us at <a class="serverlessdays-color no-underline" href="mailto:milan@serverlessdays.io">milan@serverlessdays.io</a>!
-                </p>
-                <p>
-                    P.s. the <a target="_blank" class="link dim serverlessdays-color" title="Job Fair" href="https://www.eventbrite.com/e/serverless-job-fair-tickets-47322046515">serverless job fair</a> will be 100% free for everybody!
-                </p>
-            </div>
-        </div>
+    <!-- CoC -->
+    <a name="coc"></a>
+    @@include('./fragments/_coc.html')
 
-        <iframe src="https://eventbrite.com/tickets-external?eid=47239920875&ref=etckt" frameborder="0" height="900" width="100%" vspace="0" hspace="0" marginheight="5" marginwidth="5" scrolling="auto" allowtransparency="true"></iframe>
+    <!-- footer -->
+    @@include('./fragments/_footer.html')
 
-    </div>
+</body>
 
-    <!--
-    <div id="agenda" class="relative w-100 bg-black-80 pt2 pt0-ns mt0">
-        <div class="mw6 mw7-ns center near-white pt3 pt4-ns ph2 pb2">
-            <h2 class="f3 f2-ns tl">Agenda</h2>
-            <div class="f6 f5-ns mt4 lh-copy">
-                <p>
-                    Coming soon. Stay tuned!
-                </p>
-            </div>
-        </div>
-    </div>
-    -->
-
-
-  	<div id="coc" class="relative w-100 bg-black-80 pt2 pt0-ns mt0">
-
-            <div class="mw6 mw7-ns center near-white pt3 pt4-ns ph2 pb2">
-                <h2 class="f3 f2-ns tl">Code of Conduct</h2>
-                
-                <div class="f6 f5-ns mt4 lh-copy">
-                    <p>
-                    All attendees, speakers, sponsors and volunteers at our conference are required to agree with the following code of conduct. Organisers will enforce this code throughout the event. We are expecting cooperation from all participants to help ensuring a safe environment for everybody.
-                    </p>
-                    <p>
-                    tl;dr: Jeff says be excellent with each other
-                    </p>
-                    <p class="fw6">
-                    The Quick Version
-                    </p>
-                    <p>
-                    Our conference is dedicated to providing a harassment-free conference experience for everyone, regardless of gender, gender identity and expression, age, sexual orientation, disability, physical appearance, body size, race, or religion (or lack thereof). We do not tolerate harassment of conference participants in any form. Sexual language and imagery is not appropriate for any conference venue, including talks, workshops, parties, Twitter and other online media. Conference participants violating these rules may be sanctioned or expelled from the conference without a refund at the discretion of the conference organisers.
-                    </p>
-                    <p class="fw6">
-                    The Less Quick Version
-                    </p>
-                    <p>
-                    Harassment includes offensive verbal comments related to gender, age, sexual orientation, disability, physical appearance, body size, race, religion, sexual images in public spaces, deliberate intimidation, stalking, following, harassing photography or recording, sustained disruption of talks or other events, inappropriate physical contact, and unwelcome sexual attention.
-                    </p>
-                    <p>
-                    Participants asked to stop any harassing behavior are expected to comply immediately.
-                    </p>
-                    <p>
-                    Sponsors are also subject to the anti-harassment policy. In particular, sponsors should not use sexualised images, activities, or other material. Booth staff (including volunteers) should not use sexualised clothing/uniforms/costumes, or otherwise create a sexualised environment.
-                    </p>
-                    <p>
-                    If a participant engages in harassing behavior, the conference organisers may take any action they deem appropriate, including warning the offender or expulsion from the conference with no refund.
-                    </p>
-                    <p>
-                    If you are being harassed, notice that someone else is being harassed, or have any other concerns, please contact a member of conference staff immediately. Conference staff can be identified as they’ll be wearing branded t-shirts.
-                    </p>
-                    <p>
-                    Conference staff will be happy to help participants contact hotel/venue security or local law enforcement, provide escorts, or otherwise assist those experiencing harassment to feel safe for the duration of the conference. We value your attendance.
-                    </p>
-                    <p>
-                    We expect participants to follow these rules at conference and workshop venues and conference-related social events.
-                    </p>                    
-                </div>
-            </div>
-  	</div>
-
-  	<footer id="foot" class="relative w-100 bg-black-80">
- 
-        <div class="tc pt2 f5">
-            <span class="pa1 pa3-ns">
-                <a class="serverlessdays-color no-underline" href="mailto:milan@serverlessdays.io" title="Email us at milan@serverlessdays.io">
-                    milan@serverlessdays.io
-                </a>
-            </span>
-            <a href="https://twitter.com/ServerlessMIL" title="ServerlessDays Milano on Twitter" class="pa1 pa3-ns near-white no-underline" target="_blank">
-                <svg fill="white" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" height="16" width="16" fill-rule="evenodd" clip-rule="evenodd" stroke-linejoin="round" stroke-miterlimit="1.414"><path d="M16 3.038c-.59.26-1.22.437-1.885.517.677-.407 1.198-1.05 1.443-1.816-.634.375-1.337.648-2.085.795-.598-.638-1.45-1.036-2.396-1.036-1.812 0-3.282 1.468-3.282 3.28 0 .258.03.51.085.75C5.152 5.39 2.733 4.084 1.114 2.1.83 2.583.67 3.147.67 3.75c0 1.14.58 2.143 1.46 2.732-.538-.017-1.045-.165-1.487-.41v.04c0 1.59 1.13 2.918 2.633 3.22-.276.074-.566.114-.865.114-.21 0-.416-.02-.617-.058.418 1.304 1.63 2.253 3.067 2.28-1.124.88-2.54 1.404-4.077 1.404-.265 0-.526-.015-.783-.045 1.453.93 3.178 1.474 5.032 1.474 6.038 0 9.34-5 9.34-9.338 0-.143-.004-.284-.01-.425.64-.463 1.198-1.04 1.638-1.7z" fill-rule="nonzero"></path></svg>
-                @ServerlessMIL
-            </a>
-        </div>
-
-        <p class="tc pt2 f5 near-white">
-            In collaboration with <a class="near-white" href="https://www.meetup.com/Serverless-Italy/" title="Serverless Italy Meetup">Serverless Italy Meetup</a>
-        </p>
-
-	    <div class="mt4 w-100 ph4 pb3 tc">
-	        <img class="ph3 ma0" src="https://res.cloudinary.com/senzo/image/upload/c_scale,w_90/v1518368936/octo_mascot_usu91v.png">
-	        <img class="ph3 ma0" src="https://res.cloudinary.com/senzo/image/upload/c_scale,w_80/v1518368936/unicorn_mascot_1_vyq3zb.png">
-	        <img class="ph3 ma0" src="https://res.cloudinary.com/senzo/image/upload/c_scale,w_100/v1518368936/Moth_mascot_jeph83.png">
-	        <img class="ph3 ma0" src="https://res.cloudinary.com/senzo/image/upload/c_scale,w_100/v1518368935/owl_mascot_tfpz2j.png">
-	        <img class="ph3 ma0" src="https://res.cloudinary.com/senzo/image/upload/c_scale,w_70/v1518368936/Dino_mascot_1_ycezll.png">
-	        <img class="ph3 ma0" src="https://res.cloudinary.com/senzo/image/upload/c_scale,w_90/v1518368935/Anteater_png_3_hy7l5s.png">
-	        <img class="ph3 ma0" src="https://res.cloudinary.com/senzo/image/upload/c_scale,w_60/v1486988424/SERVERLESS_NO_BACKGROUND_opzcgz.png">
-
-	    </div>
-
-	    <div class="w-100 center pv1">
-	        <p class="f6 black-80 tc i" style="font-family:'Comic Sans MS', cursive, sans-serif">Jeff woz here</p>
-	    </div>
-  	</footer>
-  </body>
 </html>
