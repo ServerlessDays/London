@@ -57,7 +57,7 @@ module.exports = [
     bio: "Mattias has been working professionally as a developer for almost 20 years. His interest in coding started already in the 80s with the Commodore 128 and the true passion came with the Amiga. Today he's a partner and senior architect at WCOM, a Microsoft partner located in Gothenburg, Sweden. He’s also a Microsoft Azure MVP and a member of the OzCode Magician community. Outside work he is a father of two, husband of one and contributes actively to the .NET open source community. Most know there for being one of the maintainers behind the Cake build system, which is now also part of the .NET foundation.",
     photoUrl: "mattias-karlsson.jpg",
     title: "From napkin to service in minutes – with serverless on Azure",
-    speaker: "Mattia Karlsson",
+    speaker: "Mattias Karlsson",
     abstract: `Today cloud services have in an unprecedented way - made technology available and affordable, enabling rapidly getting that minimal viable product out the door; even if you’re on a tight schedule and/or budget. In this talk it will explain how he in minutes went from an idea to a published service, without breaking the bank. And at the same time being focused on the “business problem”, all achieved by using services like Twitter, IFTTT, GitHub, OneDrive and Buffer; technologies like Azure Functions, Azure Storage Queues and Notepad. This won’t be a textbook example - but it’ll be a good show case on what can be done ;)`
   },
   {
