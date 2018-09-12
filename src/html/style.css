@@ -590,7 +590,7 @@ nav.top-nav .menu a.highlight:active {
 }
 .section.talk > .photo > img {
   border-radius: 50%;
-  width: 250px;
+  /*width: 250px;*/
 }
 .section.talk > .text {
   flex: 1 1 60%;
