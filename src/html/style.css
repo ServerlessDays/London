@@ -401,6 +401,7 @@ nav.top-nav .menu a.highlight:active {
 }
 
 .section.speakers .list > div > .bio {
+  flex: 0 0 20%;
   width: 200px;
   flex-direction: column;
   text-align: center; /* for text elements */
