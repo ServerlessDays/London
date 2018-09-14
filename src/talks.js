@@ -86,6 +86,8 @@ module.exports = [
     photoUrl: "gojko-adzic.jpg",
     title: "From universal software to superglue",
     speaker: "Gojko Adzic",
-    abstract: ``
+    abstract: `In order to get the most out of serverless execution platforms, organisations will need to rethink common architectural patterns.
+    Gojko will talk about the past and current trends of software integration and how opening up the stack from the inside using serverless functions changes the game.
+    `
   }
 ];
