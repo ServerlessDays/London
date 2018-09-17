@@ -102,7 +102,7 @@ module.exports = [
     key: "alessandro-vitale",
     bio: "Alessandro Vitale is an expert in Artificial Intelligence and a serial entrepreneur. In 2016 he founded Conversate in London, the first enterprise platform for intelligent chatbots. Previously he founded Optimist AI, building Augmented Intelligence algorithms for sales people since 2010. Before being an entrepreneur, he worked for years in Siemens with growing responsibilities in Italy and Europe in the strategy department. He is a member of the coordination board of the AI Task Force of Agenzia per l'Italia Digitale",
     photoUrl: "alessandro-vitale.jpg",
-    title: "Lessons from the trenches: building an enterprise Artificial Intelligence chatbot platform on serverless",
+    title: "Lessons from the trenches: building an enterprise Artificial Intelligence chatbot platform",
     speaker: "Alessandro Vitale",
     abstract: `This session will showcase how Conversate built the new version of our enterprise Artificial Intelligence chatbot platform using serverless. The platform has Enterprise features such as multiple deployment environments (development, staging, production) and developers can deploy code together with Machine Learning models. We leveraged serverless (AWS lambda) to build a PaaS to guarantee security, separation, ease of deployment and integrity of what is deployed in a transparent way to the developer. In the talk, we will go through the project of designing and building the platform, explaining why we choose serverless, what we found being pros & cons for this unique use case and future directions.`
   },
