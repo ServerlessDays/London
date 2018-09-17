@@ -89,5 +89,29 @@ module.exports = [
     abstract: `In order to get the most out of serverless execution platforms, organisations will need to rethink common architectural patterns.
     Gojko will talk about the past and current trends of software integration and how opening up the stack from the inside using serverless functions changes the game.
     `
+  },
+  {
+    key: "matthieu-napoli",
+    bio: "Matthieu is a software consultant who has been developing web applications for more than 10 years. He is the author of PHP-DI, Silly, Couscous, and Bref. He loves working on topics related to code quality and developer experience: anything that makes our job easier. He is also passionate about framework interoperability and is involved in the PHP-FIG on PSR-11 and PSR-15.",
+    photoUrl: "matthieu-napoli.jpg",
+    title: "Deploying serverless PHP applications",
+    speaker: "Matthieu Napoli",
+    abstract: `Serverless and its "functions as a service" is becoming a more and more widespread solution for running web applications. And while PHP powers 80% of the web, using it on FaaS providers is not a piece of cake. Let's bridge that gap and discover why PHP is perfect for serverless applications. Through the Bref project we will explore how to easily deploy Symfony, Laravel and other PHP applications as lambdas, and what it means regarding performances and costs.`
+  },
+  {
+    key: "alessandro-vitale",
+    bio: "Alessandro Vitale is an expert in Artificial Intelligence and a serial entrepreneur. In 2016 he founded Conversate in London, the first enterprise platform for intelligent chatbots. Previously he founded Optimist AI, building Augmented Intelligence algorithms for sales people since 2010. Before being an entrepreneur, he worked for years in Siemens with growing responsibilities in Italy and Europe in the strategy department. He is a member of the coordination board of the AI Task Force of Agenzia per l'Italia Digitale",
+    photoUrl: "alessandro-vitale.jpg",
+    title: "Lessons from the trenches: building an enterprise Artificial Intelligence chatbot platform on serverless",
+    speaker: "Alessandro Vitale",
+    abstract: `This session will showcase how Conversate built the new version of our enterprise Artificial Intelligence chatbot platform using serverless. The platform has Enterprise features such as multiple deployment environments (development, staging, production) and developers can deploy code together with Machine Learning models. We leveraged serverless (AWS lambda) to build a PaaS to guarantee security, separation, ease of deployment and integrity of what is deployed in a transparent way to the developer. In the talk, we will go through the project of designing and building the platform, explaining why we choose serverless, what we found being pros & cons for this unique use case and future directions.`
+  },
+  {
+    key: "andrei-chernyshev",
+    bio: "Software engineer, Kotlin enthusiast and Go newbie.",
+    photoUrl: "andrei-chernyshev.jpg",
+    title: "Serverless with Kubeless - usecase in Outfittery",
+    speaker: "Andrei Chernyshev",
+    abstract: `Outfittery's mission is to provide relevant fashion to men. In the past we relied purely on our stylists to put together the best outfits for our customers. Right now we are in the process of adding more and more intelligent algorithms to augment our human experts. To support that we've built complex decision making platform. But there are bunch of additional piece of functionality around that powerful platform that we don't want to build-in. For example, intermediate data transformation or Slack notification upon certain events, etc. After a research and evaluation we choose Kubeless with Serverless framework on top of it.`
   }
 ];
