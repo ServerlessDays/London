@@ -112,7 +112,7 @@ module.exports = [
     title: "Serverless with Kubeless - usecase in Outfittery",
     speaker: "Andrei Chernyshev",
     abstract: `Outfittery's mission is to provide relevant fashion to men. In the past we relied purely on our stylists to put together the best outfits for our customers. Right now we are in the process of adding more and more intelligent algorithms to augment our human experts. To support that we've built complex decision making platform. But there are bunch of additional piece of functionality around that powerful platform that we don't want to build-in. For example, intermediate data transformation or Slack notification upon certain events, etc. After a research and evaluation we choose Kubeless with Serverless framework on top of it.`
-  }
+  },
   {
     key: "aleksandar-simovic",
     bio: "Aleksandar is a senior software consultant and engineer, author of \"Serverless Applications with Node.js\" and an AWS Serverless Hero. He's one of the authors of Claudia.js and Claudia Bot Builder, Scotty.js, contributor to AWS SAM and many other open source libraries. Aleksandar co-organizes JS Belgrade meetups and workshops, a Belgrade based community of over 1700 members, where we share knowledge and experiences.",
