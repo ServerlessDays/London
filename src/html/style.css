@@ -587,10 +587,12 @@ nav.top-nav .menu a.highlight:active {
   flex: 1 1 40%;
   justify-content: center;
   padding-right: 3em;
+  max-width: 250px;
 }
 .section.talk > .photo > img {
   border-radius: 50%;
-  /*width: 250px;*/
+  width: 100%;
+  height: 100%;
 }
 .section.talk > .text {
   flex: 1 1 60%;
