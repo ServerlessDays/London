@@ -343,6 +343,11 @@ nav.top-nav .menu a.highlight:active {
   background-color: #22b4a7;
 }
 
+.section.agenda .row .talk.workshop {
+  flex-basis: 25%;
+  flex-grow: 0;
+}
+
 .section.agenda .row .keynote {
   flex: 2 0 20%;
   background-color: #cc171a;
