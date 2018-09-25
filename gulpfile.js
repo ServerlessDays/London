@@ -61,14 +61,15 @@ gulp.task("generateTalks", ["dev-assets"], () => {
     encoding: "utf-8",
   });
   talks.forEach(talk => {
-    const { key, photoUrl, title, speaker, abstract, bio } = talk;
+    const { key, photoUrl, title, speaker, abstract, bio, workshop } = talk;
     const content = template
       .replace(/%photoUrl%/gi, photoUrl)
       .replace(/%title%/gi, title)
       .replace(/%speaker%/gi, speaker)
       .replace(/%bio%/gi, bio)
       .replace(/%abstract%/gi, abstract.replace(/\n/g, "<br/><br/>"))
-      .replace(/%key%/gi, key);
+      .replace(/%key%/gi, key)
+      .replace(/%session_type%/, (workshop?"Workshop":"Talk"));
     fs.writeFileSync(`src/html/talk-${key}.html`, content, {
       encoding: "utf-8",
     });

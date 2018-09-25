@@ -87,8 +87,7 @@ module.exports = [
     title: "From universal software to superglue",
     speaker: "Gojko Adzic",
     abstract: `In order to get the most out of serverless execution platforms, organisations will need to rethink common architectural patterns.
-    Gojko will talk about the past and current trends of software integration and how opening up the stack from the inside using serverless functions changes the game.
-    `
+    Gojko will talk about the past and current trends of software integration and how opening up the stack from the inside using serverless functions changes the game.`
   },
   {
     key: "matthieu-napoli",
@@ -113,5 +112,56 @@ module.exports = [
     title: "Serverless with Kubeless - usecase in Outfittery",
     speaker: "Andrei Chernyshev",
     abstract: `Outfittery's mission is to provide relevant fashion to men. In the past we relied purely on our stylists to put together the best outfits for our customers. Right now we are in the process of adding more and more intelligent algorithms to augment our human experts. To support that we've built complex decision making platform. But there are bunch of additional piece of functionality around that powerful platform that we don't want to build-in. For example, intermediate data transformation or Slack notification upon certain events, etc. After a research and evaluation we choose Kubeless with Serverless framework on top of it.`
-  }
+  },
+  {
+    key: "aleksandar-simovic",
+    bio: "Aleksandar is a senior software consultant and engineer, author of \"Serverless Applications with Node.js\" and an AWS Serverless Hero. He's one of the authors of Claudia.js and Claudia Bot Builder, Scotty.js, contributor to AWS SAM and many other open source libraries. Aleksandar co-organizes JS Belgrade meetups and workshops, a Belgrade based community of over 1700 members, where we share knowledge and experiences.",
+    photoUrl: "aleksandar-simovic.jpg",
+    title: "Alexa Skills development",
+    speaker: "Aleksandar Simovic",
+    abstract: `There are more than 80 million Alexa devices sold worldwide and growing. The need for Alexa Skills is now ever greater than before.
+    This workshop's goal is to show you how to create your very first Alexa Skill and inspire you to make many more. You will also learn how does Alexa work, what are the building blocks of an Alexa skill and you’ll work together as a team to create and deploy one of your own. The theme of the workshop will be about creating and combining your favorite pizza recipes. Combining pizza ingredients and recipes with Alexa, will teach you what is an Intent, Utterance and Slot and how to utilize them to create a complete dialog conversation for your Alexa Skill, all while making a juicy and tasty pizza.`,
+    workshop: true
+  },
+  {
+    key: "michal-jankowski",
+    bio: "Michał is an architect, designer and sometimes a developer. He began programming over 20 years ago starting from Basic and Assembler for 8-bit computers. For over 10 years, he has been creating applications working on a .net platform for the world’s largest companies. Currently, he is specialising in the development of web applications and Azure environment. Michał is a great enthusiast of software craftsmanship, unit testing, software design and other topics related to software development. In his free time, when he is not playing with code, he likes travelling, photography and writing a technical blog.",
+    photoUrl: "michal-jankowski.jpg",
+    title: "CosmosDB – database for Serverless era",
+    speaker: "Michał Jankowski",
+    abstract: `We are now getting into the serverless era. Many already known development patterns and solutions are not valid anymore. We need to solve issues in a bit different way. New challenges are waiting for us.
+    One of such challenges is data storing. The classic approach is not good enough. We expect to be able to have a solution in which we will have instant access to all data, schema-less date structure, scalable throughput and global replication.
+    CosmosDB fulfils all of those requirements. During this workshop, you will learn using CosmosDb in your serverless solutions.`,
+    workshop: true
+  },
+  {
+    key: "simone-merlini",
+    bio: "",
+    photoUrl: "simone-merlini.jpg",
+    title: "Creare una piattaforma di file sharing Serveless in sole 2 ore? È possibile!",
+    speaker: "Simone Merlini",
+    abstract: `In questo workshop sarete guidati nello sviluppo di un’applicazione di file-sharing completamente Serverless, basata sui servizi AWS.
+    Vedremo insieme come integrare Amazon S3, DynamoDB, Cognito, Lambda, API Gateway e CloudFront per gestire l’autenticazione, il caricamento e la condivisione dei file, in maniera scalabile, completamente gestita, e sempre disponibile.`,
+    workshop: true
+  },
+  {
+    key: "jessica-tibaldi",
+    bio: "",
+    photoUrl: "jessica-tibaldi.jpg",
+    title: "Build you serverless workflow... with intelligence!",
+    speaker: "Jessica Tibaldi",
+    abstract: `In this workshop we will setup and configure a serverless architecture on Microsoft Azure, implementing an end-to-end solution using Azure Functions, Logic Apps, Event Grid, Cosmos DB, Azure Storage and Cognitive Services in combination. 
+    At the end you will learn how to avoid server management, breaking down your solutions into smaller components, individually scalable and create a cost-effective implementation.`,
+    workshop: true
+  },
+  {
+    key: "diego-natali",
+    bio: "",
+    photoUrl: "diego-natali.jpg",
+    title: "DevOps Best Practices in a Serverless World",
+    speaker: "Diego Natali",
+    abstract: `This workshop will be focused on how to safely release updates to serverless applications. You will learn how to build a CI/CD pipeline using open-source projects such as the AWS SAM CLI as well as managed services such as AWS CodePipeline and AWS CodeBuild.
+    Then we will integrate testing and monitoring capabilities, and enhance the pipeline to manage multiple environments of the same application.`,
+    workshop: true
+  },
 ];
