@@ -106,6 +106,27 @@ module.exports = [
     abstract: `This session will showcase how Conversate built the new version of our enterprise Artificial Intelligence chatbot platform using serverless. The platform has Enterprise features such as multiple deployment environments (development, staging, production) and developers can deploy code together with Machine Learning models. We leveraged serverless (AWS lambda) to build a PaaS to guarantee security, separation, ease of deployment and integrity of what is deployed in a transparent way to the developer. In the talk, we will go through the project of designing and building the platform, explaining why we choose serverless, what we found being pros & cons for this unique use case and future directions.`
   },
   {
+    key: "andreas-nauerz",
+    bio: "Program Director &amp; Senior Technical Staff Member @ IBM Cloud",
+    photoUrl: "andreas-nauerz.jpg",
+    title: "From single functions to entirely serverless applications: Orchestrating serverless solutions using Composer",
+    speaker: "Andreas Nauerz",
+    abstract: `Building scalable serverless architectures requires more stateless functions and cloud services. How do you coordinate and manage application state using stateless functions, independent cloud services, external APIs? Whilst also maximising code reuse, enabling modular development and creating resilient architectures. New programming platforms need new programming paradigms...
+    In this talk, we'll look at the issues and challenges of building scalable architectures and look at new approaches to "composing" serverless applications using new open-source tools.
+    This talk will introduce a new open-source serverless tool, Composer, developed by IBM Research that aims to resolve some of issues developer face in the serverless community. It will identify common architectures that struggle with using serverless platforms and think about how to re-implement them with these new approaches.`
+  },
+  {
+    key: "andreas-nauerz-workshop",
+    bio: "Program Director &amp; Senior Technical Staff Member @ IBM Cloud",
+    photoUrl: "andreas-nauerz.jpg",
+    title: "Developing Event-driven and Serverless Applications with IBM Cloud Functions & Apache OpenWhisk",
+    speaker: "Andreas Nauerz",
+    abstract: `In this workshop you will learn how to develop serverless applications composed of loosely coupled microservice-alike functions. You'll learn about the key concepts and work with our CLI and UI tp become a FaaS star by implementing a real-world application.
+    You will also learn how to make use of related technologies such as our API Gateway, Message Hub and App Connect integration as well as other event providers.
+    Finally, you will learn how to package and deploy your entire serverless application together using the the open Serverless Framework as well as IBM's wskdeply.`,
+    workshop: true
+  },
+  {
     key: "andrei-chernyshev",
     bio: "Software engineer, Kotlin enthusiast and Go newbie.",
     photoUrl: "andrei-chernyshev.jpg",
@@ -117,7 +138,7 @@ module.exports = [
     key: "aleksandar-simovic",
     bio: "Aleksandar is a senior software consultant and engineer, author of \"Serverless Applications with Node.js\" and an AWS Serverless Hero. He's one of the authors of Claudia.js and Claudia Bot Builder, Scotty.js, contributor to AWS SAM and many other open source libraries. Aleksandar co-organizes JS Belgrade meetups and workshops, a Belgrade based community of over 1700 members, where we share knowledge and experiences.",
     photoUrl: "aleksandar-simovic.jpg",
-    title: "Alexa Skills development",
+    title: "Amazon Alexa Skills development",
     speaker: "Aleksandar Simovic",
     abstract: `There are more than 80 million Alexa devices sold worldwide and growing. The need for Alexa Skills is now ever greater than before.
     This workshop's goal is to show you how to create your very first Alexa Skill and inspire you to make many more. You will also learn how does Alexa work, what are the building blocks of an Alexa skill and you’ll work together as a team to create and deploy one of your own. The theme of the workshop will be about creating and combining your favorite pizza recipes. Combining pizza ingredients and recipes with Alexa, will teach you what is an Intent, Utterance and Slot and how to utilize them to create a complete dialog conversation for your Alexa Skill, all while making a juicy and tasty pizza.`,
@@ -163,5 +184,5 @@ module.exports = [
     abstract: `This workshop will be focused on how to safely release updates to serverless applications. You will learn how to build a CI/CD pipeline using open-source projects such as the AWS SAM CLI as well as managed services such as AWS CodePipeline and AWS CodeBuild.
     Then we will integrate testing and monitoring capabilities, and enhance the pipeline to manage multiple environments of the same application.`,
     workshop: true
-  },
+  }
 ];
