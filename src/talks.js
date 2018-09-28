@@ -167,7 +167,7 @@ module.exports = [
   },
   {
     key: "jessica-tibaldi",
-    bio: "",
+    bio: "Jessica Tibaldi works in Microsoft as Technical Solutions Professional. She joined Microsoft 4 years ago as Technical Evangelist supporting startups and software houses developing and migrating their solutions on Azure. During the last year she worked as Software Engineer in the Southern Europe area and she has been engaged mainly in projects related to bot framework and machine learning.",
     photoUrl: "jessica-tibaldi.jpg",
     title: "Build you serverless workflow... with intelligence!",
     speaker: "Jessica Tibaldi",
