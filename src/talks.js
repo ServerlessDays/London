@@ -184,5 +184,15 @@ module.exports = [
     abstract: `This workshop will be focused on how to safely release updates to serverless applications. You will learn how to build a CI/CD pipeline using open-source projects such as the AWS SAM CLI as well as managed services such as AWS CodePipeline and AWS CodeBuild.
     Then we will integrate testing and monitoring capabilities, and enhance the pipeline to manage multiple environments of the same application.`,
     workshop: true
+  },
+  {
+    key: "berat-izgordu",
+    bio: "",
+    photoUrl: "berat-izgordu.jpg",
+    title: "The state of Serverless on Kubernetes: A dive into the future of running serverless applications on top of Kubernetes",
+    speaker: "Berat Izgordu",
+    abstract: `In this workshop we are going to explore the state of Serverless on Kubernetes diving into frameworks, tooling and best practices to run faas and event-driven applications on your Cloud Native infrastructure based on Kubernetes.
+    This will be your chance to have a comprehensive overview and to understand projects like OpenFaaS, knative, kubeless and fission.`,
+    workshop: true
   }
 ];
