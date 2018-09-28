@@ -177,7 +177,7 @@ module.exports = [
   },
   {
     key: "diego-natali",
-    bio: "",
+    bio: "Diego Natali works as Solutions Architect for Amazon Web Services in Italy. With several years of engineering background, he helps ISV and Startup customers designing flexible and resilient architectures using AWS services. His field of expertise covers Serverless.",
     photoUrl: "diego-natali.jpg",
     title: "DevOps Best Practices in a Serverless World",
     speaker: "Diego Natali",
