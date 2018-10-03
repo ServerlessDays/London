@@ -194,5 +194,16 @@ module.exports = [
     abstract: `In this workshop we are going to explore the state of Serverless on Kubernetes diving into frameworks, tooling and best practices to run faas and event-driven applications on your Cloud Native infrastructure based on Kubernetes.
     This will be your chance to have a comprehensive overview and to understand projects like OpenFaaS, knative, kubeless and fission.`,
     workshop: true
+  },
+  {
+    key: "bret-mcgowen",
+    bio: "",
+    photoUrl: "bret-mcgowen.jpg",
+    title: "Build serverless web apps with Google's Firebase",
+    speaker: "Bret McGowen",
+    abstract: `With Firebase, you can build truly serverless mobile and web applications!
+    In the first part of this workshop, you’ll get hands-on experience building a web application using Firebase products. Firebase provides the entire backend for this app, so won’t won’t need to deal with servers at all.
+    In the second part, you’ll add some new features to the app using Cloud Functions for Firebase. You’ll write backend code in JavaScript, again, without the need to maintain or scale backend servers.`,
+    workshop: true
   }
 ];
