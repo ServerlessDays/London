@@ -187,7 +187,7 @@ module.exports = [
   },
   {
     key: "berat-izgordu",
-    bio: "",
+    bio: "Berat graduated at the University of Pisa in Computer Science and completed an internship at the University of San Diego working on low level packet filtering and analysis. She is now working at SIGHUP, hacking on the Kubernetes internals and on software defined infrastructures.",
     photoUrl: "berat-izgordu.jpg",
     title: "The state of Serverless on Kubernetes: A dive into the future of running serverless applications on top of Kubernetes",
     speaker: "Berat Izgordu",
