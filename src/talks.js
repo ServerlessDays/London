@@ -205,5 +205,14 @@ module.exports = [
     In the first part of this workshop, you’ll get hands-on experience building a web application using Firebase products. Firebase provides the entire backend for this app, so won’t won’t need to deal with servers at all.
     In the second part, you’ll add some new features to the app using Cloud Functions for Firebase. You’ll write backend code in JavaScript, again, without the need to maintain or scale backend servers.`,
     workshop: true
+  },
+  {
+    key: "rita-kozlov-workshop",
+    bio: "Rita Kozlov is the Product Manager for Cloudflare Workers. She has worked as a Software Engineer and Solutions Engineer for the past four years.",
+    photoUrl: "rita-kozlov.jpg",
+    title: "Writing a Serverless Application with Cloudflare Workers",
+    speaker: "Rita Kozlov",
+    abstract: ``,
+    workshop: true
   }
 ];
