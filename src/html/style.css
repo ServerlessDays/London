@@ -393,28 +393,29 @@ nav.top-nav .menu a.highlight:active {
 .section.speakers .list {
   width: 80%;
   margin: auto;
-  flex-direction: column;
+  /*flex-direction: column;*/
+  flex: 1 1 auto;
+  flex-wrap: wrap;
+  justify-content: flex-start;
 }
 
 .section.speakers .list > div {
-  flex: 1 0 auto;
+  /*flex: 1 0 auto;*/
+  flex: 1 0 25%;
   align-items: center;
-  padding-top: 20px;
-}
-.section.speakers .list > div:first-child {
-  padding-top: 0;
-}
-
-.section.speakers .list > div > .bio {
-  flex-basis: 20%;
-  flex-direction: column;
-  text-align: center; /* for text elements */
-  align-items: center; /* for flex elements */
   padding: 20px 0;
 }
 
+.section.speakers .list > div > .bio {
+  /*flex-basis: 20%;*/
+  flex-direction: column;
+  text-align: center; /* for text elements */
+  align-items: center; /* for flex elements */
+  /*padding: 20px 0;*/
+}
+
 .section.speakers .list > div > .bio img {
-  width: 180px;
+  width: 150px;
   border-radius: 50%;
   border: 2px solid lightgray;
 }
