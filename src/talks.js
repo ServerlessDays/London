@@ -28,7 +28,7 @@ module.exports = [
   },
   {
     key: "mehul-patel",
-    bio: "Mehul Patel is a Developer Tech by profession, an open source enthusiast, Linux geeky and a maker by heart. He holds Masters in Computers Science and has been working relentlessly and contributing towards the open source community. Mehul is an active member of the Mozilla Community which is a program run by a group of highly trained & passionate Mozillians (Tech enthusiasts), who share technical knowledge about Firefox, Mozilla, OpenSource and the Web at various regional developer-facing events. He is also part of other opensource peers like WordPress, Red Hat Linux, Debian, OpenStack, Auth0 and much more. He also represents Mozilla while being on the Campus Advisory Committee, a Reps Mentor and ambassador at Auth0.",
+    bio: "Mehul Patel is an Engineer at Zimbra. He is a Developer Tech by profession, an open source enthusiast, Linux geeky and a maker by heart. He holds Masters in Computers Science and has been working relentlessly and contributing towards the open source community. Mehul is an active member of the Mozilla Community which is a program run by a group of highly trained & passionate Mozillians (Tech enthusiasts), who share technical knowledge about Firefox, Mozilla, OpenSource and the Web at various regional developer-facing events. He is also part of other opensource peers like WordPress, Red Hat Linux, Debian, OpenStack, Auth0 and much more. He also represents Mozilla while being on the Campus Advisory Committee, a Reps Mentor and ambassador at Auth0.",
     photoUrl: "mehul-patel.jpg",
     title: "Serverless Authentication with JWT",
     speaker: "Mehul Patel",
