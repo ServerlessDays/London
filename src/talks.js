@@ -159,10 +159,10 @@ module.exports = [
     key: "simone-merlini",
     bio: "",
     photoUrl: "simone-merlini.jpg",
-    title: "Creare una piattaforma di file sharing Serveless in sole 2 ore? È possibile!",
+    title: "How to create a serverless file sharing platform in less than 2 hours",
     speaker: "Simone Merlini",
-    abstract: `In questo workshop sarete guidati nello sviluppo di un’applicazione di file-sharing completamente Serverless, basata sui servizi AWS.
-    Vedremo insieme come integrare Amazon S3, DynamoDB, Cognito, Lambda, API Gateway e CloudFront per gestire l’autenticazione, il caricamento e la condivisione dei file, in maniera scalabile, completamente gestita, e sempre disponibile.`,
+    abstract: `In this workshop you will be guided along the creation of a serverless file sharing platform based on AWS services.
+    You will learn how to properly integrate Amazon S3, DynamoDB, Cognito, Lambda, API Gateway, and CloudFront to manage authentication, file uploading and file sharing, obtaining an auto-scalable, resilient, managed and highly-available application.`,
     workshop: true
   },
   {
