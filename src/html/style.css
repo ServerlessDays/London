@@ -323,9 +323,10 @@ nav.top-nav .menu a.highlight:active {
   font-weight: 300;
 }
 
-.section.agenda .row div > strong {
+.section.agenda .row div strong {
   font-weight: 500;
   margin: 5px 0;
+  color: white;
 }
 
 .section.agenda .row .keynote:hover,
