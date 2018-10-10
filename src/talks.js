@@ -212,7 +212,9 @@ module.exports = [
     photoUrl: "rita-kozlov.jpg",
     title: "Writing a Serverless Application with Cloudflare Workers",
     speaker: "Rita Kozlov",
-    abstract: ``,
+    abstract: `Learn about setting up a serverless application and API using Cloudflare Workers.
+    In the workshop, we'll be developing a simple TODO list API and application using Workers.
+    The workshop will cover getting set up with Workers, deploying Workers to the Cloudflare network, testing Workers, architecting an API, and implementing it. `,
     workshop: true
   }
 ];
