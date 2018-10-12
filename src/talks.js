@@ -106,24 +106,24 @@ module.exports = [
     abstract: `This session will showcase how Conversate built the new version of our enterprise Artificial Intelligence chatbot platform using serverless. The platform has Enterprise features such as multiple deployment environments (development, staging, production) and developers can deploy code together with Machine Learning models. We leveraged serverless (AWS lambda) to build a PaaS to guarantee security, separation, ease of deployment and integrity of what is deployed in a transparent way to the developer. In the talk, we will go through the project of designing and building the platform, explaining why we choose serverless, what we found being pros & cons for this unique use case and future directions.`
   },
   {
-    key: "andreas-nauerz",
-    bio: "Program Director &amp; Senior Technical Staff Member @ IBM Cloud",
-    photoUrl: "andreas-nauerz.jpg",
-    title: "From single functions to entirely serverless applications: Orchestrating serverless solutions using Composer",
-    speaker: "Andreas Nauerz",
-    abstract: `Building scalable serverless architectures requires more stateless functions and cloud services. How do you coordinate and manage application state using stateless functions, independent cloud services, external APIs? Whilst also maximising code reuse, enabling modular development and creating resilient architectures. New programming platforms need new programming paradigms...
-    In this talk, we'll look at the issues and challenges of building scalable architectures and look at new approaches to "composing" serverless applications using new open-source tools.
-    This talk will introduce a new open-source serverless tool, Composer, developed by IBM Research that aims to resolve some of issues developer face in the serverless community. It will identify common architectures that struggle with using serverless platforms and think about how to re-implement them with these new approaches.`
+    key: "liran-haimovitch",
+    bio: "Liran Haimovitch is an experienced distributed systems engineer, ex Israeli intelligence officer and CTO of Rookout.",
+    photoUrl: "liran-haimovitch.jpg",
+    title: "Debugging serverless with non-breaking breakpoints",
+    speaker: "Liran Haimovitch",
+    abstract: `Debugging and observability used to be Serverless' biggest challenges, but not anymore, solutions like Rookout empower developers and DevOps engineers to collect data on demand from LIVE code, without restarting, re-deploying or extra coding.
+    Rookout sets non-breaking breakpoints that collect any data you want and deliver it on the fly wherever you need it, when you need it.`
   },
   {
-    key: "andreas-nauerz-workshop",
-    bio: "Program Director &amp; Senior Technical Staff Member @ IBM Cloud",
-    photoUrl: "andreas-nauerz.jpg",
-    title: "Developing Event-driven and Serverless Applications with IBM Cloud Functions & Apache OpenWhisk",
-    speaker: "Andreas Nauerz",
-    abstract: `In this workshop you will learn how to develop serverless applications composed of loosely coupled microservice-alike functions. You'll learn about the key concepts and work with our CLI and UI tp become a FaaS star by implementing a real-world application.
-    You will also learn how to make use of related technologies such as our API Gateway, Message Hub and App Connect integration as well as other event providers.
-    Finally, you will learn how to package and deploy your entire serverless application together using the the open Serverless Framework as well as IBM's wskdeply.`,
+    key: "liran-haimovitch-workshop",
+    bio: "Liran Haimovitch is an experienced distributed systems engineer, ex Israeli intelligence officer and CTO of Rookout.",
+    photoUrl: "liran-haimovitch.jpg",
+    title: "Debugging on the shifting sands of serverless",
+    speaker: "Liran Haimovitch",
+    abstract: `Serverless infrastructures are created anew for every event and as a result, workflows vary a bit each time they run. This variability limits the value of staging and pre-production testing, while insufficient observability makes production debugging no less challenging — and perhaps more so.
+    With no stable infrastructure on which to install agents or daemons, the usual ways to collect, batch and publish data in the background are simply not available. More importantly, data can only be collected during a function invocation. As a result, instead of monitoring toward a known good state, serverless favors event-level observability tools that enable observers to peek into systems at critical junctures.
+    This workshop will include a live demo of Rookout production debugging platform, and free trial accounts for all participants.
+    In this workshop you will learn to debug LIVE serverless functions, use non-breaking breakpoints to instrument your code on the fly, connect your functions to aggregation solutions (such as ELK)  on demand, and debug complex architectures (e.g. serverless with microservices).`,
     workshop: true
   },
   {
