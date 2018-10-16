@@ -505,8 +505,7 @@ nav.top-nav .menu a.highlight:active {
 }
 
 .sponsors .media img {
-  min-height: 55px;
-  width: 100%;
+  width: 200px;
   object-fit: contain;
 }
 .sponsors .media div.squared img {
@@ -529,6 +528,7 @@ nav.top-nav .menu a.highlight:active {
 
 .sponsors .media.list {
   justify-content: flex-start;
+  width: 100%;
 }
 
 .section.coc {
@@ -717,10 +717,6 @@ nav.top-nav .menu a.highlight:active {
   }
 
   .sponsors .community img {
-    max-width: 200px;
-  }
-
-  .sponsors .media img {
     max-width: 200px;
   }
 
