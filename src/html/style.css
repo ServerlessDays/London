@@ -402,7 +402,7 @@ nav.top-nav .menu a.highlight:active {
 
 .section.speakers .list > div {
   /*flex: 1 0 auto;*/
-  flex: 1 0 25%;
+  flex: 1 0 33%;
   align-items: center;
   padding: 20px 0;
 }
