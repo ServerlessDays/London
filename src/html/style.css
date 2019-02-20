@@ -247,11 +247,12 @@ nav.top-nav .menu a.highlight:active {
 }
 
 .section .left .image {
-  flex: 1 0 auto;
+    flex: 1 0 auto;
+    margin: 0 10px;
 }
 
 .section .text {
-  flex: 5 0 auto;
+  flex: 5 1 auto;
   display: block;
   font-size: 1.1em;
 }
