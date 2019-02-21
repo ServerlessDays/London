@@ -1,0 +1,184 @@
+{{ define "head" }}
+<title>{{.Site.Title}} - {{.Site.Params.date}}</title>
+<meta property="og:title" content="{{.Site.Title}} - {{.Site.Params.date}}">
+<meta property="og:image" content="{{.Site.Params.backgroundImage}}">
+<meta name="description" content="A community based conference focusing on Serverless based platforms and technologies. {{.Site.Params.city}}, {{.Site.Params.date}}">
+{{ end }}
+
+{{ define "main" }}
+
+  <div class="heroContainer" style="background-image: url('{{.Site.Params.backgroundImage}}'); background-position: center;">
+    <div class="heroDate">
+      <h1>Dates</h1>
+      <ul>
+        {{ range .Site.Params.dates }} 
+        {{ if eq .done true }}
+        <li class="done"><div class="checkmark">✔️</div><div class="text">{{.date}}<br><strong>{{.text}}</strong></div></li>
+        {{ else }}
+        <li><div class="checkmark">️</div><div class="text">{{.date}}<br><strong>{{.text}}</strong></div></li>
+        {{ end }}
+        {{ end }}
+        <li><div class="checkmark">️</div><div class="text">{{.Site.Params.date}}<br><strong>{{.Site.Title}}<br>@ {{.Site.Params.venue.name}}</strong></div></li>
+      </ul>
+    </div>
+
+    <div class="heroTitle">
+      <div class="mascotte">
+        <div><img class="" width="130" height="183" src="/images/anteater_mascot.svg"></div>
+        <div><img class="" width="130" height="183" src="/images/octo_mascot.svg"></div>
+      </div>
+      <div class="title">
+        <div><img class="" width="130" height="183" src="/images/owl_mascot.svg"></div>
+        <h1>One Day,<br>One Track,<br>One&nbsp;Community</h1>
+        <div><img class="" width="130" height="183" src="/images/unicorn_mascot.svg"></div>
+      </div>
+      <div class="mascotte">
+        <div><img class="" width="130" height="183" src="/images/moth_mascot.svg"></div>
+        <div><img class="" width="130" height="183" src="/images/dino_mascot.svg"></div>
+      </div>
+    </div>
+  </div>
+
+  <a name="about"></a>
+  <div class="section">
+    <div class="left">
+      <div class="title"><h1>About</h1></div>
+      <div class="image"><img width="200" height="200" src="{{.Site.Params.mascot}}"></div>
+    </div>
+    <div class="text">
+      <p>{{.Site.Title}} is a developer-oriented conference about serverless technologies.</p>
+      <p>We believe in and encourage practical sessions, in which developers share their experience and lessons from real-world projects.</p>
+      <p>{{.Site.Title}} is part of ServerlessDays (formerly JeffConf), a global series of events around the world fostering communities around serverless technologies.</p>
+      <p>We follow and enforce the ServerlessDays <a href="#coc">Code of Conduct</a>.</p>
+    </div>
+  </div>
+
+  <a name="venue"></a>
+  <div class="section" style="border-top: 0;">
+    <div class="left">
+      <div class="title"><h1>Venue</h1></div>
+      <div class="image" style="padding: 0px 20px;"><iframe src="{{.Site.Params.venue.map}}" width="400" height="300" frameborder="0" style="border:0" allowfullscreen></iframe></div>
+    </div>
+    <div class="text">
+      <p>The Conference will be hosted at the <a href="{{.Site.Params.venue.link}}">{{.Site.Params.venue.name}}</a></p>
+      <p>{{.Site.Params.venue.text}}</p>
+    </div>
+  </div>
+
+  <a name="agenda"></a>
+  <div class="section agenda" style="border: 0">
+    <div class="header-button"><h1>Agenda</h1></div>
+
+    <h2>{{.Site.Params.date}}</h2>
+
+    <h3>Even though we do not have a set schedule yet, you can already check out the confirmed talks!</h3>
+
+    <div class="row">
+        {{ range .Site.RegularPages }} 
+        <div class="abstract" onclick="location='{{.URL}}';"><span>{{.Params.speaker}}</span> <strong>{{.Title}}</strong> <span>{{.Description}}</span></div>  
+        {{end}}    
+    </div>
+
+    <!--<div class="row">
+      <div class="coffee"><span>8:00 AM - 9:00 AM</span><div><span>Registration &amp; Breakfast</span></div></div>
+      <div class="talk"><span>9:00 AM</span> <strong>Welcome &amp; Introduction</strong> <span>Conference Organizers</span></div>
+      <div class="keynote" onclick="location='/talk-charity-majors.html';"><span>9:15 AM</span> <strong>Opening Keynote: Observability and Software Ownership</strong> <span>Charity Majors</span></div>
+      <div class="talk" onclick="location='/talk-ben-kehoe.html';"><span>10:00 AM</span> <strong>Applying the Serverless Mindset to Any Tech Stack</strong> <span>Ben Kehoe</span></div>
+
+      <div class="coffee"><span>10:30 AM - 10:45 AM</span><div><span>Break</span></div></div>
+
+      <div class="talk" onclick="location='/talk-erica-windisch.html';"><span>10:45 AM</span> <strong>Handling billions of requests without breaking a sweat</strong> <span>Erica Windisch</span></div>
+      <div class="talk" onclick="location='/talk-erik-peterson.html';"><span>11:15 AM</span> <strong>FinDevOps: Site Reliability in the Serverless Age </strong> <span>Erik Peterson</span></div>
+      <div class="talk" onclick="location='/talk-tom-mclaughlin.html';"><span>11:45 PM</span> <strong>Serverless DevOps: What do we do when the server goes away?</strong> <span>Tom McLaughlin</span></div>
+      <div class="talk" onclick="location='/talk-bret-mcgowen.html';"><span>12:15 PM</span> <strong>What's new with serverless on Google Cloud</strong> <span>Bret McGowen</span></div>
+
+      <div class="coffee lunch"><span>12:30 PM - 1:30 PM</span><div><span>Lunch &amp; Open Spaces</span></div></div>
+    </div>-->
+
+    <!--h2>Final Agenda Coming Soon</h2>
+    <div class="text">
+      <p>Registration and Breakfast will begin at 8 AM and the conference talks will begin at 9 AM.</p>
+      <p>Several snack breaks, all day coffee/water, and lunch will be provided.</p>
+      <p>Talks are scheduled to end at 6 PM, followed by a Happy Hour & Networking session from 6 PM to 8 PM.</p>
+    </div-->
+  </div>
+
+  <a name="speakers"></a>
+  <div class="section speakers">
+    <h1>Speakers</h1>
+    <div class="list">
+        {{ range .Site.RegularPages }} 
+        <div><div class="bio"><img src="{{.Params.image}}"><h3>{{.Params.speaker}}</h3><a href="https://twitter.com/{{.Params.twitter}}" target="_blank">@{{.Params.twitter}}</a></div></div>
+        {{end}}
+    </div>
+  </div>
+
+  <!--a name="menu"></a>
+  <div class="section">
+    <div class="left">
+      <div class="title"><h1>Menu</h1></div>
+      <div class="image"><img class="pa4" width="130" src="anteater_mascot.svg"></div>
+    </div>
+    <div class="text"></div>
+  </div-->
+
+  <a name="tickets"></a>
+  <div class="section" style="border: 0;">
+    <div class="left">
+      <div class="title"><h1>Tickets</h1></div>
+      <div class="image"><img class="pa4" width="130" height="150" src="/images/unicorn_mascot.svg"></div>
+    </div>
+    <div class="text">
+      <p>Tickets are available at {{.Site.Params.tickets.price}} each.</p>
+      <p>We seek to create a diverse and inclusive community for serverless developers. We want to include and encourage people of all races, ethnicities, genders, religions, sexual orientations, abilities, technical experience and ages.</p>
+      <p>We have committed to provide a portion of tickets to diversity groups to help remove any financial barrier. Apply for a ticket <a href="{{.Site.Params.tickets.diversityLink}}" target="_blank">here</a>.</p>
+      <p>You can also choose to buy a Diversity Sponsor Ticket and we'll donate it to a Diversity Scholar.</p>
+      <p>Can't see the Tickets frame below? <a href="{{.Site.Params.tickets.eventBrite.link}}" target="_blank">Buy a ticket here!</a></p>
+      <div class="ticketsFrame"><iframe src="https://eventbrite.com/tickets-external?eid={{.Site.Params.tickets.eventBrite.eventid}}&ref=etckt" frameborder="0" height="800" width="100%" vspace="0" hspace="0" marginheight="5" marginwidth="5" scrolling="auto" allowtransparency="true" onload="resizeIframe(this)"></iframe></div>
+    </div>
+  </div>
+
+  <a name="sponsors"></a>
+  <div class="section sponsors">
+    <h1>Sponsors</h1>
+    <h2>Gold Sponsors</h2>
+
+    <div class="list gold">
+      {{ range .Site.Params.sponsors.gold }} 
+      <div><a href="{{ .link }}" target="_blank"><img width="{{.width}}px" class="grow" src="{{ .logo }}" title="{{ .name }}" alt="{{ .name }}"></a></div>
+      {{ end }}
+    </div>
+
+    <div class="separator">&nbsp;</div>
+
+    <h2>Silver Sponsors</h2>
+    <div class="list silver">
+      {{ range .Site.Params.sponsors.silver }} 
+      <div><a href="{{ .link }}" target="_blank"><img width="{{.width}}px" class="grow" src="{{ .logo }}" title="{{ .name }}" alt="{{ .name }}"></a></div>
+      {{ end }}
+    </div>
+
+    <p>&nbsp;</p>
+    <p>For more information on becoming a sponsor, please download our <a href="{{.Site.Params.prospectus}}" target="_blank">prospectus</a>.</p>
+  </div>
+
+  <a name="coc"></a>
+  <div class="section coc" style="border: 0">
+    <h2><img width="80" src="/images/moth_mascot.svg"> Code of Conduct</h2>
+    <div class="expanded">
+      <p>All attendees, speakers, sponsors and volunteers at our conference are required to agree with the following code of conduct. Organisers will enforce this code throughout the event. We are expecting cooperation from all participants to help ensuring a safe environment for everybody.</p>
+      <p><strong>Jeff says be excellent with each other</strong></p>
+      <h3>The Quick Version</h3>
+      <p>Our conference is dedicated to providing a harassment-free conference experience for everyone, regardless of gender, gender identity and expression, age, sexual orientation, disability, physical appearance, body size, race, or religion (or lack thereof). We do not tolerate harassment of conference participants in any form. Sexual language and imagery is not appropriate for any conference venue, including talks, workshops, parties, Twitter and other online media. Conference participants violating these rules may be sanctioned or expelled from the conference without a refund at the discretion of the conference organisers.</p>
+      <h3>The Less Quick Version</h3>
+      <p>Harassment includes offensive verbal comments related to gender, age, sexual orientation, disability, physical appearance, body size, race, religion, sexual images in public spaces, deliberate intimidation, stalking, following, harassing photography or recording, sustained disruption of talks or other events, inappropriate physical contact, and unwelcome sexual attention.</p>
+      <p>Participants asked to stop any harassing behavior are expected to comply immediately.</p>
+      <p>Sponsors are also subject to the anti-harassment policy. In particular, sponsors should not use sexualised images, activities, or other material. Booth staff (including volunteers) should not use sexualised clothing/uniforms/costumes, or otherwise create a sexualised environment.</p>
+      <p>If a participant engages in harassing behavior, the conference organisers may take any action they deem appropriate, including warning the offender or expulsion from the conference with no refund.</p>
+      <p>If you are being harassed, notice that someone else is being harassed, or have any other concerns, please contact a member of conference staff immediately. Conference staff can be identified as they’ll be wearing branded t-shirts.</p>
+      <p>Conference staff will be happy to help participants contact hotel/venue security or local law enforcement, provide escorts, or otherwise assist those experiencing harassment to feel safe for the duration of the conference. We value your attendance.</p>
+      <p>We expect participants to follow these rules at conference and workshop venues and conference-related social events.</p>
+    </div>
+  </div>
+
+{{ end }}

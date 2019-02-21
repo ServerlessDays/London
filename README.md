@@ -1,12 +1,18 @@
-# London
+# Amsterdam
+
 ServerlessDays Amsterdam Website
 
+## Site Generator
+
+The site is built on top of [Hugo](https://gohugo.io).
+
+[Installation](https://gohugo.io/getting-started/installing/)
 
 ## Localdev
 
-`gulp watch`
-
-`gulp build`
+```
+hugo serve -D -s src/site
+```
 
 ## Deploy
 
