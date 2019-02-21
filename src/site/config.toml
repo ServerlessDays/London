@@ -30,7 +30,7 @@ title = "ServerlessDays Amsterdam"
 
 [[params.dates]]
     date = "February 28, 2019"
-    text = "Speaker Announcement" 
+    text = "Schedule Announcement"
 
 [params.venue]
     name = "Pakhuis de Zwijger"
