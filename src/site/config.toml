@@ -1,0 +1,83 @@
+baseURL = "https://serverlessdays.amsterdam/"
+languageCode = "en-us"
+title = "ServerlessDays Amsterdam"
+
+[params]
+    logo = "/images/logo_serverless_amsterdam.svg"
+    description = "A community based conference focusing on Serverless based platforms and technologies. Amsterdam, March 29, 2019"
+    mascot = "/images/logo.jpg"
+    date = "March 29, 2019"
+    city = "Amsterdam"
+    twitter = "ServerlessDAms"
+    email = "amsterdam@serverlessdays.io"
+    backgroundImage = "https://res.cloudinary.com/serverlessdays/image/upload/c_scale,q_auto:best,w_1920/v1527152567/amsterdam-2018.jpg"
+    prospectus = "https://serverlessdays.amsterdam/18.08.29_serverless_days.pdf"
+
+[[params.dates]]
+    date = "September 24, 2018"
+    text = "CFP Opens"
+    done = true
+
+[[params.dates]]
+    date = "January 13, 2019"
+    text = "CFP Closes"
+    done = true
+
+[[params.dates]]
+    date = "January 30, 2019"
+    text = "Tickets go on Sale"
+    done = true
+
+[[params.dates]]
+    date = "February 28, 2019"
+    text = "Speaker Announcement" 
+
+[params.venue]
+    name = "Pakhuis de Zwijger"
+    link = "https://dezwijger.nl/"
+    map = "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2435.6456449004804!2d4.919928715875416!3d52.37684507978742!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47c609a80e2c8a2f%3A0x2d9e404fc8f71f8d!2sPakhuis+de+Zwijger!5e0!3m2!1sru!2snl!4v1550737160263"
+    text = "The venue Pakhuis de Zwijger provides a state-of-the-art AV system and catering, as well as a beautiful view of Amsterdam."
+
+[params.tickets]
+    price = "€65"
+    diversityLink = "https://diversitytickets.org/events/371/"
+
+[params.tickets.eventBrite]
+    eventid = "55648142091"
+    link = "https://www.eventbrite.com/e/serverlessdays-amsterdam-2019-tickets-55648142091"
+
+[[params.sponsors.gold]]
+    name = "Trivago"
+    link = "https://trivago.com/"
+    logo = "https://i.imgur.com/xLaCjI5.png"
+    width = 300
+
+[[params.sponsors.gold]]
+    name = "AWS"
+    link = "https://aws.amazon.com/"
+    logo = "https://i.imgur.com/g9feQ9v.png"
+    width = 200
+
+[[params.sponsors.gold]]
+    name = "Nordcloud"
+    link = "https://nordcloud.com/"
+    logo = "/images/NRD_LOGO_blue.png"
+    width = 400
+
+[[params.sponsors.silver]]
+    name = "Mindcurv"
+    link = "https://mindcurv.com/"
+    logo = "https://i.imgur.com/ADE2fH3.png"
+    width = 250
+
+[[params.sponsors.silver]]
+    name = "Epsagon"
+    link = "https://epsagon.com/"
+    logo = "/images/EpsagonLogo.svg"
+    width = 250
+
+[[params.sponsors.silver]]
+    name = "Schuberg Philis"
+    link = "https://schubergphilis.com/"
+    logo = "https://i.imgur.com/sZOoE0U.png"
+    width = 250
