@@ -1,7 +1,7 @@
 {{ define "head" }}
 <title>{{.Params.speaker}} - {{.Title}} - {{.Site.Title}}</title>
 <meta property="og:title" content="{{.Params.speaker}} - {{.Title}} - {{.Site.Title}}">
-<meta property="og:image" content="{{.Params.image}}">
+<meta property="og:image" content="{{.Params.image | absURL}}">
 <meta name="description" content="{{.Description}}">
 {{ end }}
 
