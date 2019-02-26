@@ -74,7 +74,7 @@
     <h3>Even though we do not have a set schedule yet, you can already check out the confirmed talks!</h3>
 
     <div class="row">
-        {{ range .Site.RegularPages }} 
+        {{ range .Site.RegularPages | shuffle }} 
         <div class="abstract" onclick="location='{{.URL}}';"><span>{{.Params.speaker}}</span> <strong>{{.Title}}</strong> <span>{{.Description}}</span></div>  
         {{end}}    
     </div>
@@ -86,8 +86,16 @@
   <div class="section speakers">
     <h1>Speakers</h1>
     <div class="list">
-        {{ range .Site.RegularPages }} 
-        <div><div class="bio"><img src="{{.Params.image}}"><h3>{{.Params.speaker}}</h3><a href="https://twitter.com/{{.Params.twitter}}" target="_blank">@{{.Params.twitter}}</a></div></div>
+        {{ range .Site.RegularPages | shuffle }} 
+        <div>
+          <div class="bio">
+              <a href="{{.URL}}">
+                  <img src="{{.Params.image}}">
+                </a>
+            <h3>{{.Params.speaker}}</h3>
+            <a href="https://twitter.com/{{.Params.twitter}}" target="_blank">@{{.Params.twitter}}</a>
+          </div>
+        </div>
         {{end}}
     </div>
 

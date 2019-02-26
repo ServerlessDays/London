@@ -10,10 +10,11 @@
 
 <div class="section talk">
   <div class="photo">
-    <img src="{{.Params.image}}">
+      <img src="{{.Params.image}}">      
   </div>
   <div class="text">
     <h1>{{.Params.speaker}}</h1>
+    <div><a href="https://twitter.com/{{.Params.twitter}}" target="_blank">@{{.Params.twitter}}</a></div>
     <p>{{.Params.bio}}</p>
 
     <h2>Talk: {{.Title}}</h2>
