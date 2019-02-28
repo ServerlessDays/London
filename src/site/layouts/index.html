@@ -71,35 +71,50 @@
 
     <h2>{{.Site.Params.date}}</h2>
 
-    <h3>Even though we do not have a set schedule yet, you can already check out the confirmed talks!</h3>
-
     <div class="row">
-        {{ range .Site.RegularPages | shuffle }} 
-        <div class="abstract" onclick="location='{{.URL}}';"><span>{{.Params.speaker}}</span> <strong>{{.Title}}</strong> <span>{{.Description}}</span></div>  
-        {{end}}    
-    </div>
+        {{ $site := .Site }}
+        {{ range .Site.Params.agenda }} 
+        {{ $item := . }}
+        {{ with .talk }}
+        
+          {{ $page := printf "speakers/%s" . }}
+          {{ with $site.GetPage $page }}
+          <div class="{{$item.type}}" onclick="location='{{.URL}}';">
+            <span>{{$item.time}}</span> 
+            <strong>{{.Title}}</strong> 
+            <span>{{.Params.speaker}}{{with .Params.secondSpeaker}} &amp; {{.}}{{end}}</span>
+          </div>  
+          {{ end }} 
 
-    <h3>More talks are coming!</h3>
+        {{ else }}
+        <div class="{{.type}}">
+          <span>{{.time}}</span>
+          <strong>{{.title}}</strong>
+          <span>{{.description}}</span>
+        </div>
+        {{end}}
+        {{end}}  
+    </div>
   </div>
 
   <a name="speakers"></a>
   <div class="section speakers">
     <h1>Speakers</h1>
     <div class="list">
-        {{ range .Site.RegularPages | shuffle }} 
+        {{ range where .Site.RegularPages ".Params.image" "ne" "TODO" | shuffle }} 
         <div>
           <div class="bio">
               <a href="{{.URL}}">
                   <img src="{{.Params.image}}">
                 </a>
             <h3>{{.Params.speaker}}</h3>
-            <a href="https://twitter.com/{{.Params.twitter}}" target="_blank">@{{.Params.twitter}}</a>
+            {{ with .Params.twitter }}
+            <a href="https://twitter.com/{{.}}" target="_blank">@{{.}}</a>
+            {{ end }}
           </div>
         </div>
         {{end}}
     </div>
-
-    <h3 class="center pt5">More speakers will be announced soon!</h3>
 
   </div>
 

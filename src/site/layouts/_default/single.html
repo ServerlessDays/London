@@ -14,7 +14,9 @@
   </div>
   <div class="text">
     <h1>{{.Params.speaker}}</h1>
-    <div><a href="https://twitter.com/{{.Params.twitter}}" target="_blank">@{{.Params.twitter}}</a></div>
+    {{with .Params.twitter}}
+    <div><a href="https://twitter.com/{{.}}" target="_blank">@{{.}}</a></div>
+    {{end}}
     <p>{{.Params.bio}}</p>
 
     <h2>Talk: {{.Title}}</h2>

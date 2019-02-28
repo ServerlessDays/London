@@ -334,12 +334,14 @@ nav.top-nav .menu a.highlight:active {
 
 .section.agenda .row .keynote:hover,
 .section.agenda .row .abstract:hover,
+.section.agenda .row .lightning:hover,
 .section.agenda .row .talk:hover {
   transform: scale(1.05);
   transition: transform 0.25s ease-out, -webkit-transform 0.25s ease-out;
 }
 .section.agenda .row .keynote,
 .section.agenda .row .abstract,
+.section.agenda .row .lightning,
 .section.agenda .row .talk {
   cursor: pointer;
 }
@@ -359,9 +361,30 @@ nav.top-nav .menu a.highlight:active {
   background-color: #cc171a;
 }
 
+.section.agenda .row .lightning {
+  flex: 2 0 10%;
+  background-color: orange;
+}
+
 .section.agenda .row .abstract {
   flex: 2 0 40%;
   background-color: #22b4a7;
+}
+
+.section.agenda .row .draft {
+  flex: 0 2 10%;
+  border: solid 3px orange;
+  background-color: white;
+}
+
+.section.agenda .row div.draft strong {
+  font-weight: 600;
+  margin: 5px 0;
+  color: orange;
+}
+
+.section.agenda .row .draft span {
+  color: orange;
 }
 
 .section.agenda .row .coffee {
@@ -383,6 +406,12 @@ nav.top-nav .menu a.highlight:active {
   align-items: center;
 }
 
+.section.agenda .row div.coffee strong {
+  font-weight: 600;
+  margin: 5px 0;
+  color: #7894d9;
+}
+
 .section.agenda .row .coffee > span {
   flex: 0 0 content;
   align-self: flex-start;
@@ -394,7 +423,6 @@ nav.top-nav .menu a.highlight:active {
   justify-self: center;
   align-self: center;
   color: #7894d9;
-  font-weight: 600;
 }
 
 .section.speakers {
