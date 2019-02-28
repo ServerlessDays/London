@@ -31,7 +31,8 @@ title = "ServerlessDays Amsterdam"
 [[params.dates]]
     date = "February 28, 2019"
     text = "Schedule Announcement"
-
+    done = true
+    
 [params.venue]
     name = "Pakhuis de Zwijger"
     link = "https://dezwijger.nl/"
@@ -81,3 +82,81 @@ title = "ServerlessDays Amsterdam"
     link = "https://schubergphilis.com/"
     logo = "https://i.imgur.com/sZOoE0U.png"
     width = 250
+
+[[params.agenda]]
+    time = "8:00 - 9:00"
+    type = "coffee"
+    title = "Registration & Breakfast"
+[[params.agenda]]
+    time = "9:00 - 9:15"
+    type = "coffee"
+    title = "Opening Remarks"
+[[params.agenda]]
+    time = "9:15 - 9:45"
+    type = "talk"
+    talk = "olaf-conijn"
+[[params.agenda]]
+    time = "9:50 - 10:20"
+    type = "talk"
+    talk = "michael-adda"
+[[params.agenda]]
+    time = "10:25 - 10:55"
+    type = "talk"
+    talk = "slobodan-stojanovic"
+[[params.agenda]]
+    time = "10:55 - 11:15"
+    type = "coffee"
+    title = "Coffee Break"
+[[params.agenda]]
+    time = "11:15 - 11:45"
+    type = "talk"
+    talk = "asavari-tayal"
+[[params.agenda]]
+    time = "11:50 - 12:20"
+    type = "talk"
+    talk = "ory-segal"
+[[params.agenda]]
+    time = "12:20 - 13:50"
+    type = "coffee lunch"
+    title = "Lunch & Open Spaces"
+[[params.agenda]]
+    time = "13:50 - 14:20"
+    type = "talk"
+    talk = "hen-peretz"
+[[params.agenda]]
+    time = "14:25 - 14:55"
+    type = "talk"
+    talk = "eduardo-laureano"
+[[params.agenda]]
+    time = "14:55 - 15:20"
+    type = "coffee"
+    title = "Coffee Break"
+[[params.agenda]]
+    time = "15:20 - 15:50"
+    type = "talk"
+    talk = "yan-cui"
+[[params.agenda]]
+    time = "15:55 - 16:25"
+    type = "talk"
+    talk = "danilo-poccia"
+[[params.agenda]]
+    time = "16:30 - 16:40"
+    type = "lightning"
+    talk = "roberto-diaz"
+[[params.agenda]]
+    time = "16:40 - 16:50"
+    type = "lightning"
+    talk = "alessandro-vozza"
+[[params.agenda]]
+    time = "16:50 - 17:00"
+    type = "draft"
+    title = "Lightning Talk to be confirmed"
+[[params.agenda]]
+    time = "17:00 - 17:10"
+    type = "coffee"
+    title = "Closing Remarks"
+[[params.agenda]]
+    time = "17:10 - 18:00"
+    type = "coffee lunch"
+    title = "Happy Hour & Networking"
+    description = "There will be a place to mingle after 18:00 for the most pationate serverless fans"
