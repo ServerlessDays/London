@@ -334,6 +334,7 @@ nav.top-nav .menu a.highlight:active {
 
 .section.agenda .row .keynote:hover,
 .section.agenda .row .abstract:hover,
+.section.agenda .row .lunch:hover,
 .section.agenda .row .lightning:hover,
 .section.agenda .row .talk:hover {
   transform: scale(1.05);
@@ -387,16 +388,17 @@ nav.top-nav .menu a.highlight:active {
   color: orange;
 }
 
+.section.agenda .row .lunch {
+  flex: 2 0 30%;
+  background-color: #7894d9;
+}
+
 .section.agenda .row .coffee {
   flex: 0 2 10%;
   justify-content: center;
   align-items: center;
   border: solid 3px #7894d9;
   background-color: white;
-}
-
-.section.agenda .row .coffee.lunch {
-  flex: 2 0 30%;
 }
 
 .section.agenda .row .coffee div {
