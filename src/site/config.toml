@@ -155,8 +155,8 @@ title = "ServerlessDays Amsterdam"
     talk = "alessandro-vozza"
 [[params.agenda]]
     time = "16:50 - 17:00"
-    type = "draft"
-    title = "Lightning Talk to be confirmed"
+    type = "lightning"
+    talk = "henk-waanders"
 [[params.agenda]]
     time = "17:00 - 17:10"
     type = "coffee"
