@@ -123,8 +123,8 @@ title = "ServerlessDays Amsterdam"
     talk = "ory-segal"
 [[params.agenda]]
     time = "12:20 - 13:50"
-    type = "coffee lunch"
-    title = "Lunch & Open Spaces"
+    type = "lunch"
+    talk = "lunch-signing"
 [[params.agenda]]
     time = "13:50 - 14:20"
     type = "talk"
