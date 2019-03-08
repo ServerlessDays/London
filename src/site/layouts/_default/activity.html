@@ -1,0 +1,25 @@
+{{ define "head" }}
+<title>{{.Params.speaker}} - {{.Title}} - {{.Site.Title}}</title>
+<meta property="og:title" content="{{.Params.speaker}} - {{.Title}} - {{.Site.Title}}">
+<meta property="og:image" content="{{.Params.image | absURL}}">
+<meta name="description" content="{{.Description}}">
+{{ end }}
+
+{{ define "main" }}
+<div class="breadcrumb">&nbsp;</div>
+
+<div class="section talk">
+  <div class="photo">
+      <img src="{{.Params.image}}">      
+  </div>
+  <div class="text">
+    <h1> {{.Title}}</h1>
+    <p>{{.Description}}</p>
+
+    <h2>{{.Params.speaker}}</h2>
+    <p>{{.Params.bio}}</p>
+
+    <a class="button" href="/#agenda">Back to the agenda</a>
+  </div>
+</div>
+{{ end }}

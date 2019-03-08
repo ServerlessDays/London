@@ -77,8 +77,7 @@
         {{ $item := . }}
         {{ with .talk }}
         
-          {{ $page := printf "speakers/%s" . }}
-          {{ with $site.GetPage $page }}
+          {{ with $site.GetPage . }}
           <div class="{{$item.type}}" onclick="location='{{.URL}}';">
             <span>{{$item.time}}</span> 
             <strong>{{.Title}}</strong> 
@@ -101,7 +100,7 @@
   <div class="section speakers">
     <h1>Speakers</h1>
     <div class="list">
-        {{ range where .Site.RegularPages ".Params.image" "ne" "TODO" | shuffle }} 
+        {{ range where .Site.RegularPages "Section" "speakers" | shuffle }} 
         <div>
           <div class="bio">
               <a href="{{.URL}}">
