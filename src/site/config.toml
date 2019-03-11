@@ -89,6 +89,12 @@ title = "ServerlessDays Amsterdam"
     logo = "https://i.imgur.com/sZOoE0U.png"
     width = 250
 
+[[params.sponsors.silver]]
+    name = "IBM"
+    link = "https://ibm.com"
+    logo = "https://i.imgur.com/ADxtkmp.png"
+    width = 250
+
 [[params.agenda]]
     time = "8:00 - 9:00"
     type = "coffee"
