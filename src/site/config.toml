@@ -5,7 +5,7 @@ title = "ServerlessDays Amsterdam"
 [params]
     logo = "/images/logo_serverless_amsterdam.svg"
     description = "A community based conference focusing on Serverless based platforms and technologies. Amsterdam, March 29, 2019"
-    mascot = "/images/logo.jpg"
+    mascot = "/images/UnicornDutchified.png"
     date = "March 29, 2019"
     city = "Amsterdam"
     twitter = "ServerlessDAms"
