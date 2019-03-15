@@ -60,6 +60,12 @@ title = "ServerlessDays Amsterdam"
     width = 200
 
 [[params.sponsors.gold]]
+    name = "Microsoft"
+    link = "https://microsoft.com/"
+    logo = "https://i.imgur.com/lKwfRMK.png"
+    width = 200
+
+[[params.sponsors.gold]]
     name = "Nordcloud"
     link = "https://nordcloud.com/"
     logo = "/images/NRD_LOGO_blue.png"
