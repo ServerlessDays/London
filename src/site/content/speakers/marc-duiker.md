@@ -1,0 +1,9 @@
+---
+title: Showdown of the serverless cloud, orchestrating functions
+description: "Serverless and event-driven architectures are vastly growing in popularity. Companies are jumping on the bandwagon fast, especially now it is so easy and cheap to create them in the bigger cloud vendors. But what cloud vendor can we best pick for a specific problem? What are the capabilities and limitations of each cloud vendor? What are the differences between serverless functions implementations? We are fans of serverless and event-driven architectures and we wanted to see how easy it was to create a serverless application in both AWS, Azure and Google cloud. In specific, we wanted to compare how we can orchestrate functions. Our use case, replacing our current car park management solution. During this demo, we will show you our solutions for this use-case in the different clouds. It is based on AWS Lambda with Step Functions and DynamoDB, Azure Durable Functions and Azure Table Storage, and Google Cloud functions with Google Cloud Datastore. Finally ending up with the pros and cons of each cloud vendor. So are you thinking about moving to the serverless cloud and not quite sure which vendor fits you the best, come to join this session!"
+speaker: Marc Duiker
+secondSpeaker: Kenny Baas-Schwegler
+bio: "Marc Duiker is a Lead Consultant at Xpirit with a strong focus on serverless and event-driven architectures and an extensive knowledge of the Azure platform. He likes to help organizations by making effective use of cloud-based solutions using PaaS and FaaS services. He’s highly involved in the developer community and a regular speaker at meetups and conferences related to the Azure cloud & serverless technologies."
+image: /images/marc-duiker.jpg
+twitter: marcduiker
+---
