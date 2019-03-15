@@ -1,0 +1,10 @@
+---
+title: Showdown of the serverless cloud, orchestrating functions
+description: "Serverless and event-driven architectures are vastly growing in popularity. Companies are jumping on the bandwagon fast, especially now it is so easy and cheap to create them in the bigger cloud vendors. But what cloud vendor can we best pick for a specific problem? What are the capabilities and limitations of each cloud vendor? What are the differences between serverless functions implementations? We are fans of serverless and event-driven architectures and we wanted to see how easy it was to create a serverless application in both AWS, Azure and Google cloud. In specific, we wanted to compare how we can orchestrate functions. Our use case, replacing our current car park management solution. During this demo, we will show you our solutions for this use-case in the different clouds. It is based on AWS Lambda with Step Functions and DynamoDB, Azure Durable Functions and Azure Table Storage, and Google Cloud functions with Google Cloud Datastore. Finally ending up with the pros and cons of each cloud vendor. So are you thinking about moving to the serverless cloud and not quite sure which vendor fits you the best, come to join this session!"
+speaker: Kenny Baas-Schwegler
+bio: "Kenny Baas-Schwegler is a software engineer and strategic technology consultant focusing on building quality into software delivery at Xebia. He mentors, coaches and consults teams by using practices techniques and tools from Domain-Driven Design, Behaviour-Driven Development, Test-Driven Development, and Continuous Delivery.
+
+He is an advocate for multidisciplinary collaborate modelling in open spaces. By using and combining tools such as EventStorming, and Example Mapping, he helps engineer requirements to design and model software. With these approaches, he aims to create a transparent, collaborative space with constant and instant feedback when delivering software."
+image: /images/kenny-baas-schwegler.jpg
+twitter: kenny_baas
+---
