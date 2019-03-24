@@ -393,6 +393,7 @@ nav.top-nav .menu a.highlight:active {
 .section.agenda .row .afterparty {
   flex: 2 0 30%;
   background-color: #7894d9;
+  cursor: pointer;
 }
 
 .section.agenda .row .coffee {
