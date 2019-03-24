@@ -1,0 +1,21 @@
+{{ define "head" }}
+<title>{{.Title}} - {{.Site.Title}}</title>
+<meta property="og:image" content="{{.Params.image | absURL}}">
+<meta name="description" content="{{.Description}}">
+{{ end }}
+
+{{ define "main" }}
+<div class="breadcrumb">&nbsp;</div>
+
+<div class="section talk">
+  <div class="photo">
+      <img src="{{.Params.image}}">      
+  </div>
+  <div class="text">
+    <h1> {{.Title}}</h1>
+    <p>{{.Description}}</p>
+    <p><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2435.6072090931216!2d4.910589815595799!3d52.3775419545296!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47c609af70f617c7%3A0xca3f24058b2263f!2sDelirium+Cafe+Amsterdam!5e0!3m2!1sen!2snl!4v1553456629472" width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe></p>
+    <a class="button" href="/#agenda">Back to the agenda</a>
+  </div>
+</div>
+{{ end }}
