@@ -413,7 +413,7 @@ nav.top-nav .menu a.highlight:active {
   flex-direction: column;
   text-align: center; /* for text elements */
   align-items: center; /* for flex elements */
-  /*padding: 20px 0;*/
+  padding: 0 20px;
 }
 
 .section.speakers .list > div > .bio img {
@@ -426,6 +426,14 @@ nav.top-nav .menu a.highlight:active {
   font-weight: 600;
   font-size: 1.1em;
   margin: 0.5em 0 0 0;
+}
+
+.section.speakers .list > div > .bio h4 {
+  display: inline-block;
+  margin-top: 5px;
+  font-weight: 150;
+  font-size: 0.8em;
+  text-transform: italic;
 }
 
 .section.speakers .list > div > .bio span {
@@ -460,7 +468,7 @@ nav.top-nav .menu a.highlight:active {
 
 .sponsors .list {
   flex: 1 0 auto;
-  justify-content: space-around;
+  justify-content: center;
   align-self: center;
 }
 
@@ -478,11 +486,11 @@ nav.top-nav .menu a.highlight:active {
   height: 1px;
   width: 50%;
   margin: 3em auto;
-  border-top: solid 1.5px #979797;
+  border-top: solid 1.5px #ccc;
 }
 
 .sponsors .headline img {
-  min-height: 100px;
+  min-height: 180px;
   width: 100%;
   object-fit: contain;
 }
@@ -491,8 +499,22 @@ nav.top-nav .menu a.highlight:active {
   padding: 0 30px;
 }
 
+.sponsors .supporter img {
+  height: 90px;
+  width: 100%;
+  object-fit: contain;
+}
+.sponsors .supporter img.squared {
+  height: 90px;
+}
+.sponsors .supporter div {
+  flex: 1 0 15%;
+  padding: 0 25px;
+}
+
 .sponsors .community img {
   min-height: 60px;
+  max-height: 80px;
   width: 100%;
   max-width: 200px;
   object-fit: contain;
@@ -528,7 +550,7 @@ nav.top-nav .menu a.highlight:active {
 }
 
 .sponsors .media.list {
-  justify-content: flex-start;
+  justify-content: center;
   width: 100%;
 }
 
