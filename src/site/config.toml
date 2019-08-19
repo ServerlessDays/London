@@ -184,11 +184,6 @@ title = "ServerlessDays Amsterdam"
     description = "Afterparty at Café Delirium"
 
 [[params.video]]
-    title = "Serverless Amsterdam 2019 aftermovie"
-    speaker = "ServerlessDays Amsterdam"
-    youtube = "g9OBp9tgpgQ"
-
-[[params.video]]
     title = "Serverless Security: Your COde, Your Responsability"
     speaker = "Ory Segal"
     youtube = "xqM_rnGrasQ"
@@ -232,6 +227,11 @@ title = "ServerlessDays Amsterdam"
     title = "Evolutionaty Serverless Architecture with Safe Deployments"
     speaker = "Danilo Poccia"
     youtube = "71mo2xypK50"
+
+[[params.video]]
+    title = "Hands-on IoT applications with OpenWhisk and Rust"
+    speaker = "Roberto Diaz"
+    youtube = "Kv7yPcRUC0c"
 
 [[params.video]]
     title = "A Brigade of open source tools for event-driven pipelines in Kubernetes"
