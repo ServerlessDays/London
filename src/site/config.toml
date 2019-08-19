@@ -32,7 +32,7 @@ title = "ServerlessDays Amsterdam"
     date = "February 28, 2019"
     text = "Schedule Announcement"
     done = true
-    
+
 [params.venue]
     name = "Pakhuis de Zwijger"
     link = "https://dezwijger.nl/"
@@ -182,3 +182,63 @@ title = "ServerlessDays Amsterdam"
     type = "afterparty"
     talk = "afterparty"
     description = "Afterparty at Café Delirium"
+
+[[params.video]]
+    title = "Serverless Security: Your COde, Your Responsability"
+    speaker = "Ory Segal"
+    youtube = "xqM_rnGrasQ"
+
+[[params.video]]
+    title = "Testing Serverless Applications"
+    speaker = "Slobodan Stajanovic"
+    youtube = "Cnbbsex6nUo"
+
+[[params.video]]
+    title = "Where Serverless Falls Short - Lessons from a Vendor"
+    speaker = "Eduardo Laureano"
+    youtube = "CcCEioVuMoo"
+
+[[params.video]]
+    title = "Serverless-as-a-Bank: the journey of one bank to the tratosphere and beyond"
+    speaker = "Olaf Conijn and Tjerk Stroband"
+    youtube = "5lqKlcdgI9k"
+
+[[params.video]]
+    title = "Zen and The Art of Beer Fermentation Observability"
+    speaker = "Hen Peretz"
+    youtube = "Jfrxb5OVOQU"
+
+[[params.video]]
+    title = "Showdown of the serverless cloud, orchestrating functions"
+    speaker = "Marc Duiker and Kenny Baas-Schwegler"
+    youtube = "BgSWyb3GE0I"
+
+[[params.video]]
+    title = "Serverless Machine Learning - Predicting the future with the bleeding edge"
+    speaker = "Asavari Tayal"
+    youtube = "MFMDDZUHrNQ"
+
+[[params.video]]
+    title = "Think Functions"
+    speaker = "Michael Adda"
+    youtube = "2RPJjLEx-rg"
+
+[[params.video]]
+    title = "Evolutionaty Serverless Architecture with Safe Deployments"
+    speaker = "Danilo Poccia"
+    youtube = "71mo2xypK50"
+
+[[params.video]]
+    title = "Hands-on IoT applications with OpenWhisk and Rust"
+    speaker = "Roberto Diaz"
+    youtube = "Kv7yPcRUC0c"
+
+[[params.video]]
+    title = "A Brigade of open source tools for event-driven pipelines in Kubernetes"
+    speaker = "Allessandro Vozza"
+    youtube = "Jn_egcVvWYU"
+
+[[params.video]]
+    title = "Knative: A Gentle Introduction"
+    speaker = "Henk Waanders"
+    youtube = "Bd2nHSnDpfs"

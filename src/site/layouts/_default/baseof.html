@@ -1,6 +1,6 @@
-
 <!DOCTYPE html>
 <html lang="{{ .Site.LanguageCode }}">
+
 <head>
   <link href="https://fonts.googleapis.com/css?family=Work+Sans:300,400,500,800" rel="stylesheet">
   <link rel="stylesheet" href="/style.css">
@@ -9,36 +9,91 @@
   <meta http-equiv="Content-Language" content="en">
   <meta name="viewport" content="width=device-width,initial-scale=1">
   <meta name="keywords" content="serverless, serverlessdays">
-  <link rel="shortcut icon" type="image/x-icon" href="https://res.cloudinary.com/senzo/image/upload/c_scale,w_96/v1518368948/ALL-NEW_ALL-DIFFERENT_cwm1cv.png">
+  <link rel="shortcut icon" type="image/x-icon"
+    href="https://res.cloudinary.com/senzo/image/upload/c_scale,w_96/v1518368948/ALL-NEW_ALL-DIFFERENT_cwm1cv.png">
   <link rel="stylesheet" href="https://unpkg.com/tachyons/css/tachyons.min.css">
   <script>
-    function resizeIframe(e){e.style.height=e.contentWindow.document.body.scrollHeight+"px"}
+    function resizeIframe(e) { e.style.height = e.contentWindow.document.body.scrollHeight + "px" }
   </script>
   <style>
-    .vh-60{height:60vh}.vh-40{height:40vh}.vh-30{height:30vh}.sls-gray{color:#13110c}.sls-btn{color:#19b1a3;border-color:#19b1a3}.sls-border{border-color:#19b1a3}iframe#eventbrite{width:100%;border:0;margin:0;overflow:scroll;min-height:1100px}.serverlessdays-color{color:#0bb9a7}.speaker-img{border-radius:50%;border:2px solid #ddd}.sponsors a{display:inline-block}@media screen and (min-width:30em){.vh-40-ns{height:40vh}}
+    .vh-60 {
+      height: 60vh
+    }
+
+    .vh-40 {
+      height: 40vh
+    }
+
+    .vh-30 {
+      height: 30vh
+    }
+
+    .sls-gray {
+      color: #13110c
+    }
+
+    .sls-btn {
+      color: #19b1a3;
+      border-color: #19b1a3
+    }
+
+    .sls-border {
+      border-color: #19b1a3
+    }
+
+    iframe#eventbrite {
+      width: 100%;
+      border: 0;
+      margin: 0;
+      overflow: scroll;
+      min-height: 1100px
+    }
+
+    .serverlessdays-color {
+      color: #0bb9a7
+    }
+
+    .speaker-img {
+      border-radius: 50%;
+      border: 2px solid #ddd
+    }
+
+    .sponsors a {
+      display: inline-block
+    }
+
+    @media screen and (min-width:30em) {
+      .vh-40-ns {
+        height: 40vh
+      }
+    }
   </style>
   {{- block "head" . }}{{- end }}
-	{{ template "_internal/opengraph.html" . }}
-	{{ template "_internal/twitter_cards.html" . }}
-	<meta name="twitter:creator" content="@{{.Site.Params.twitter}}"></meta>
+  {{ template "_internal/opengraph.html" . }}
+  {{ template "_internal/twitter_cards.html" . }}
+  <meta name="twitter:creator" content="@{{.Site.Params.twitter}}">
+  </meta>
 </head>
+
 <body class="sls-gray">
   <header>
     <div class="bg-white">
       <nav class="top-nav">
         <div class="logoContainer">
-          <div class="logo"><a href="/" class="verticalCenter"><img src="{{.Site.Params.logo}}" alt="{{.Site.Title}}" width="270"></a></div>
+          <div class="logo"><a href="/" class="verticalCenter"><img src="{{.Site.Params.logo}}" alt="{{.Site.Title}}"
+                width="270"></a></div>
           <div class="dates bold">{{.Site.Params.date}}</div>
         </div>
         <div class="menu bold">
           <a class="no-mobile" href="/#about">About</a>
           <a class="no-mobile" href="/#venue">Venue</a>
+          <a class="highlight" href="/#videos">Videos</a>
           <a class="" href="/#agenda">Agenda</a>
           <a class="no-mobile" href="/#speakers">Speakers</a>
           <a class="" href="/#sponsors">Sponsors</a>
           <!--a class="" href="/#menu">Menu</a-->
           <a class="no-mobile" href="/#coc">CoC</a>
-          <a class="highlight" href="/#tickets">Buy Tickets</a>
+          <!-- <a class="highlight" href="/#tickets">Buy Tickets</a> -->
         </div>
       </nav>
     </div>
@@ -48,8 +103,10 @@
 
   <footer class="section footer">
     <div class="row">
-      <div><a class="no-underline" href="mailto:{{.Site.Params.email}}" title="Email us at {{.Site.Params.email}} ">{{.Site.Params.email}}</a></div>
-      <div><a href="https://twitter.com/{{.Site.Params.twitter}}" title="{{.Site.Title}} on Twitter " class="no-underline verticalCenter" target="_blank ">@{{.Site.Params.twitter}}</a></div>
+      <div><a class="no-underline" href="mailto:{{.Site.Params.email}}"
+          title="Email us at {{.Site.Params.email}} ">{{.Site.Params.email}}</a></div>
+      <div><a href="https://twitter.com/{{.Site.Params.twitter}}" title="{{.Site.Title}} on Twitter "
+          class="no-underline verticalCenter" target="_blank ">@{{.Site.Params.twitter}}</a></div>
     </div>
     <div class="row mascotte">
       <div><img width="100" height="141" src="/images/moth_mascot.svg"></div>
@@ -61,4 +118,5 @@
     </div>
   </footer>
 </body>
+
 </html>
