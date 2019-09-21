@@ -255,4 +255,48 @@
   </div>
 </div>
 
+
+<script type="text/javascript">
+  var DIGITAL_CLIMATE_STRIKE_OPTIONS = {
+    /**
+     * Set the language of the widget. We currently support:
+     * 'en': English
+     * 'de': German
+     * 'es': Spanish
+     * 'cs': Czech
+     * 'fr': French
+     * 'nl': Dutch
+     * 'tr': Turkish
+     * 'pt': Portuguese
+     * Defaults to null, which will obey the navigator.language setting of the
+     * viewer's browser.
+     */
+     language: 'en', // @type {string}
+
+    /**
+     * Always show the widget, even when someone has closed the widget and set the cookie on their device.
+     * Useful for testing. Defaults to false.
+     */
+    alwaysShowWidget: false, // @type {boolean}
+
+    /**
+     * Automatically makes the widget full page. Defaults to false.
+     */
+    forceFullPageWidget: true, // @type {boolean}
+
+    /**
+    * For the full page widget, shows a close button "x" and hides the message about the site being
+    * available tomorrow. Defaults to false.
+    */
+    showCloseButtonOnFullPageWidget: true, // @type {boolean}
+
+    /**
+     * The date when the full page widget should showing on your web site for 24 hours.
+     * Note: the month is one integer less than the number of the month. E.g. 8 is September, not August.
+     * Defaults to new Date(2019, 8, 20) (September 20th, 2019)
+     */
+    fullPageDisplayStartDate: (new Date() < new Date(2019, 8, 27)) ? new Date() : new Date(2019, 8, 27), //@ type {Date object}
+  };
+</script>
+<script src="https://assets.digitalclimatestrike.net/widget.js" async></script>
 {{ end }}
