@@ -6,32 +6,29 @@ title = "ServerlessDays Amsterdam"
     logo = "/images/logo_serverless_amsterdam.svg"
     description = "A community based conference focusing on Serverless based platforms and technologies. Amsterdam, March 29, 2019"
     mascot = "/images/UnicornDutchified.png"
-    date = "March 29, 2019"
+    date = "May 8, 2020"
     city = "Amsterdam"
     twitter = "ServerlessDAms"
     email = "amsterdam@serverlessdays.io"
     backgroundImage = "https://res.cloudinary.com/serverlessdays/image/upload/c_scale,q_auto:best,w_1920/v1527152567/amsterdam-2018.jpg"
-    prospectus = "https://serverlessdays.amsterdam/18.08.29_serverless_days.pdf"
+    prospectus = "https://serverlessdays.amsterdam/2020_serverlessdays_nl_prospectus.pdf"
 
 [[params.dates]]
-    date = "September 24, 2018"
+    date = "December 16, 2019"
     text = "CFP Opens"
     done = true
 
 [[params.dates]]
-    date = "January 13, 2019"
+    date = "TODO"
     text = "CFP Closes"
-    done = true
 
 [[params.dates]]
-    date = "January 30, 2019"
+    date = "TODO"
     text = "Tickets go on Sale"
-    done = true
 
 [[params.dates]]
-    date = "February 28, 2019"
+    date = "TODO"
     text = "Schedule Announcement"
-    done = true
 
 [params.venue]
     name = "Pakhuis de Zwijger"
@@ -39,206 +36,3 @@ title = "ServerlessDays Amsterdam"
     map = "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2435.6456449004804!2d4.919928715875416!3d52.37684507978742!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47c609a80e2c8a2f%3A0x2d9e404fc8f71f8d!2sPakhuis+de+Zwijger!5e0!3m2!1sru!2snl!4v1550737160263"
     text = "The venue Pakhuis de Zwijger provides a state-of-the-art AV system and catering, as well as a beautiful view of Amsterdam."
 
-[params.tickets]
-    price = "€65"
-    diversityLink = "https://diversitytickets.org/events/371/"
-
-[params.tickets.eventBrite]
-    eventid = "55648142091"
-    link = "https://www.eventbrite.com/e/serverlessdays-amsterdam-2019-tickets-55648142091"
-
-[[params.sponsors.gold]]
-    name = "Trivago"
-    link = "https://trivago.com/"
-    logo = "https://i.imgur.com/xLaCjI5.png"
-    width = 300
-
-[[params.sponsors.gold]]
-    name = "AWS"
-    link = "https://aws.amazon.com/"
-    logo = "https://i.imgur.com/g9feQ9v.png"
-    width = 200
-
-[[params.sponsors.gold]]
-    name = "Microsoft"
-    link = "https://microsoft.com/"
-    logo = "https://i.imgur.com/lKwfRMK.png"
-    width = 200
-
-[[params.sponsors.gold]]
-    name = "Nordcloud"
-    link = "https://nordcloud.com/"
-    logo = "/images/NRD_LOGO_blue.png"
-    width = 400
-
-[[params.sponsors.gold]]
-    name = "ContainerSolutions"
-    link = "https://container-solutions.com"
-    logo = "https://i.imgur.com/8hlmO7s.png"
-    width = 400
-
-[[params.sponsors.silver]]
-    name = "Mindcurv"
-    link = "https://mindcurv.com/"
-    logo = "https://i.imgur.com/ADE2fH3.png"
-    width = 250
-
-[[params.sponsors.silver]]
-    name = "Epsagon"
-    link = "https://epsagon.com/"
-    logo = "/images/EpsagonLogo.svg"
-    width = 250
-
-[[params.sponsors.silver]]
-    name = "Schuberg Philis"
-    link = "https://schubergphilis.com/"
-    logo = "https://i.imgur.com/sZOoE0U.png"
-    width = 250
-
-[[params.sponsors.silver]]
-    name = "IBM"
-    link = "https://ibm.com"
-    logo = "https://i.imgur.com/ADxtkmp.png"
-    width = 250
-
-[[params.agenda]]
-    time = "8:00 - 9:00"
-    type = "coffee"
-    title = "Registration & Breakfast"
-[[params.agenda]]
-    time = "9:00 - 9:15"
-    type = "coffee"
-    title = "Opening Remarks"
-[[params.agenda]]
-    time = "9:15 - 9:45"
-    type = "talk"
-    talk = "olaf-conijn"
-[[params.agenda]]
-    time = "9:50 - 10:20"
-    type = "talk"
-    talk = "michael-adda"
-[[params.agenda]]
-    time = "10:25 - 10:55"
-    type = "talk"
-    talk = "slobodan-stojanovic"
-[[params.agenda]]
-    time = "10:55 - 11:15"
-    type = "coffee"
-    title = "Coffee Break"
-[[params.agenda]]
-    time = "11:15 - 11:45"
-    type = "talk"
-    talk = "asavari-tayal"
-[[params.agenda]]
-    time = "11:50 - 12:20"
-    type = "talk"
-    talk = "eduardo-laureano"
-[[params.agenda]]
-    time = "12:20 - 13:50"
-    type = "lunch"
-    talk = "lunch-signing"
-[[params.agenda]]
-    time = "13:50 - 14:20"
-    type = "talk"
-    talk = "hen-peretz"
-[[params.agenda]]
-    time = "14:25 - 14:55"
-    type = "talk"
-    talk = "ory-segal"
-[[params.agenda]]
-    time = "14:55 - 15:20"
-    type = "coffee"
-    title = "Coffee Break"
-[[params.agenda]]
-    time = "15:20 - 15:50"
-    type = "talk"
-    talk = "marc-duiker"
-[[params.agenda]]
-    time = "15:55 - 16:25"
-    type = "talk"
-    talk = "danilo-poccia"
-[[params.agenda]]
-    time = "16:30 - 16:40"
-    type = "lightning"
-    talk = "roberto-diaz"
-[[params.agenda]]
-    time = "16:40 - 16:50"
-    type = "lightning"
-    talk = "alessandro-vozza"
-[[params.agenda]]
-    time = "16:50 - 17:00"
-    type = "lightning"
-    talk = "henk-waanders"
-[[params.agenda]]
-    time = "17:00 - 17:10"
-    type = "coffee"
-    title = "Closing Remarks"
-[[params.agenda]]
-    time = "17:10 - 18:00"
-    type = "coffee"
-    title = "Happy Hour & Networking"
-[[params.agenda]]
-    time = "18:00 - open end"
-    type = "afterparty"
-    talk = "afterparty"
-    description = "Afterparty at Café Delirium"
-
-[[params.video]]
-    title = "Serverless Security: Your COde, Your Responsability"
-    speaker = "Ory Segal"
-    youtube = "xqM_rnGrasQ"
-
-[[params.video]]
-    title = "Testing Serverless Applications"
-    speaker = "Slobodan Stajanovic"
-    youtube = "Cnbbsex6nUo"
-
-[[params.video]]
-    title = "Where Serverless Falls Short - Lessons from a Vendor"
-    speaker = "Eduardo Laureano"
-    youtube = "CcCEioVuMoo"
-
-[[params.video]]
-    title = "Serverless-as-a-Bank: the journey of one bank to the tratosphere and beyond"
-    speaker = "Olaf Conijn and Tjerk Stroband"
-    youtube = "5lqKlcdgI9k"
-
-[[params.video]]
-    title = "Zen and The Art of Beer Fermentation Observability"
-    speaker = "Hen Peretz"
-    youtube = "Jfrxb5OVOQU"
-
-[[params.video]]
-    title = "Showdown of the serverless cloud, orchestrating functions"
-    speaker = "Marc Duiker and Kenny Baas-Schwegler"
-    youtube = "BgSWyb3GE0I"
-
-[[params.video]]
-    title = "Serverless Machine Learning - Predicting the future with the bleeding edge"
-    speaker = "Asavari Tayal"
-    youtube = "MFMDDZUHrNQ"
-
-[[params.video]]
-    title = "Think Functions"
-    speaker = "Michael Adda"
-    youtube = "2RPJjLEx-rg"
-
-[[params.video]]
-    title = "Evolutionaty Serverless Architecture with Safe Deployments"
-    speaker = "Danilo Poccia"
-    youtube = "71mo2xypK50"
-
-[[params.video]]
-    title = "Hands-on IoT applications with OpenWhisk and Rust"
-    speaker = "Roberto Diaz"
-    youtube = "Kv7yPcRUC0c"
-
-[[params.video]]
-    title = "A Brigade of open source tools for event-driven pipelines in Kubernetes"
-    speaker = "Allessandro Vozza"
-    youtube = "Jn_egcVvWYU"
-
-[[params.video]]
-    title = "Knative: A Gentle Introduction"
-    speaker = "Henk Waanders"
-    youtube = "Bd2nHSnDpfs"

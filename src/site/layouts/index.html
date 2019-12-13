@@ -63,7 +63,7 @@
     <p>{{.Site.Title}} is a developer-oriented conference about serverless technologies.</p>
     <p>We believe in and encourage practical sessions, in which developers share their experience and lessons from
       real-world projects.</p>
-    <p>{{.Site.Title}} is part of ServerlessDays (formerly JeffConf), a global series of events around the world
+    <p>{{.Site.Title}} is part of ServerlessDays, a global series of events around the world
       fostering communities around serverless technologies.</p>
     <p>We follow and enforce the ServerlessDays <a href="#coc">Code of Conduct</a>.</p>
   </div>
@@ -84,95 +84,6 @@
   </div>
 </div>
 
-<a name="videos"></a>
-<div class="section videos">
-  <h1>Videos</h1>
-  <div class="header-button">
-    <h3>Enjoy the videos of ServerlessDays Amsterdam 2019!</h3>
-  </div>
-  <div class="list">
-    <div>
-      <div class="desc">
-        <a href="{{.URL}}">
-          <iframe width="720" height="360" src="https://www.youtube.com/embed/g9OBp9tgpgQ" frameborder="0"
-            allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-        </a>
-        <h3>The Aftermovie</h3>
-        <div>ServerlessDays Amsterdam 2019 in 3 minutes</div>
-      </div>
-    </div>
-  </div>
-  <div class="list">
-    {{ range .Site.Params.video }}
-    <div>
-      <div class="desc">
-        <a href="{{.URL}}">
-          <iframe width="320" height="180" src="https://www.youtube.com/embed/{{.youtube}}" frameborder="0"
-            allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-        </a>
-        <h3>{{.title}}</h3>
-        <div>{{.speaker}}</div>
-      </div>
-    </div>
-    {{end}}
-  </div>
-
-</div>
-
-<a name="agenda"></a>
-<div class="section agenda" style="border: 0">
-  <div class="header-button">
-    <h1>Agenda</h1>
-  </div>
-
-  <h2>{{.Site.Params.date}}</h2>
-
-  <div class="row">
-    {{ $site := .Site }}
-    {{ range .Site.Params.agenda }}
-    {{ $item := . }}
-    {{ with .talk }}
-
-    {{ with $site.GetPage . }}
-    <div class="{{$item.type}}" onclick="location='{{.URL}}';">
-      <span>{{$item.time}}</span>
-      <strong>{{.Title}}</strong>
-      <span>{{.Params.speaker}}{{with .Params.secondSpeaker}} &amp; {{.}}{{end}}</span>
-    </div>
-    {{ end }}
-
-    {{ else }}
-    <div class="{{.type}}">
-      <span>{{.time}}</span>
-      <strong>{{.title}}</strong>
-      <span>{{.description}}</span>
-    </div>
-    {{end}}
-    {{end}}
-  </div>
-</div>
-
-<a name="speakers"></a>
-<div class="section speakers">
-  <h1>Speakers</h1>
-  <div class="list">
-    {{ range where .Site.RegularPages "Section" "speakers" | shuffle }}
-    <div>
-      <div class="bio">
-        <a href="{{.URL}}">
-          <img src="{{.Params.image}}">
-        </a>
-        <h3>{{.Params.speaker}}</h3>
-        {{ with .Params.twitter }}
-        <a href="https://twitter.com/{{.}}" target="_blank">@{{.}}</a>
-        {{ end }}
-      </div>
-    </div>
-    {{end}}
-  </div>
-
-</div>
-
 <!-- <a name="tickets"></a>
   <div class="section" style="border: 0;">
     <div class="left">
@@ -189,33 +100,6 @@
     </div>
   </div> -->
 
-<a name="sponsors"></a>
-<div class="section sponsors">
-  <h1>Sponsors</h1>
-  <h2>Gold Sponsors</h2>
-
-  <div class="list gold">
-    {{ range .Site.Params.sponsors.gold }}
-    <div><a href="{{ .link }}" target="_blank"><img width="{{.width}}px" class="grow" src="{{ .logo }}"
-          title="{{ .name }}" alt="{{ .name }}"></a></div>
-    {{ end }}
-  </div>
-
-  <div class="separator">&nbsp;</div>
-
-  <h2>Silver Sponsors</h2>
-  <div class="list silver">
-    {{ range .Site.Params.sponsors.silver }}
-    <div><a href="{{ .link }}" target="_blank"><img width="{{.width}}px" class="grow" src="{{ .logo }}"
-          title="{{ .name }}" alt="{{ .name }}"></a></div>
-    {{ end }}
-  </div>
-
-  <p>&nbsp;</p>
-  <p>For more information on becoming a sponsor, please download our <a href="{{.Site.Params.prospectus}}"
-      target="_blank">prospectus</a>.</p>
-</div>
-
 <a name="coc"></a>
 <div class="section coc" style="border: 0">
   <h2><img width="80" src="/images/moth_mascot.svg"> Code of Conduct (<a
@@ -225,7 +109,7 @@
     <p>All attendees, speakers, sponsors and volunteers at our conference are required to agree with the following code
       of conduct. Organisers will enforce this code throughout the event. We are expecting cooperation from all
       participants to help ensuring a safe environment for everybody.</p>
-    <p><strong>Jeff says be excellent with each other</strong></p>
+    <p><strong>Be excellent with each other</strong></p>
     <h3>The Quick Version</h3>
     <p>Our conference is dedicated to providing a harassment-free conference experience for everyone, regardless of
       gender, gender identity and expression, age, sexual orientation, disability, physical appearance, body size, race,
@@ -271,7 +155,7 @@
      * Defaults to null, which will obey the navigator.language setting of the
      * viewer's browser.
      */
-     language: 'en', // @type {string}
+    language: 'en', // @type {string}
 
     /**
      * Always show the widget, even when someone has closed the widget and set the cookie on their device.
