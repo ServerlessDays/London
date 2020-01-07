@@ -3,85 +3,87 @@
 <meta property="og:title" content="{{.Site.Title}} - {{.Site.Params.date}}">
 <meta property="og:image" content="{{.Site.Params.backgroundImage}}">
 <meta name="description"
-  content="A community based conference focusing on Serverless based platforms and technologies. {{.Site.Params.city}}, {{.Site.Params.date}}">
+	content="A community based conference focusing on Serverless based platforms and technologies. {{.Site.Params.city}}, {{.Site.Params.date}}">
 {{ end }}
 
 {{ define "main" }}
 
 <div class="heroContainer"
-  style="background-image: url('{{.Site.Params.backgroundImage}}'); background-position: center;">
-  <div class="heroDate">
-    <h1>Dates</h1>
-    <ul>
-      {{ range .Site.Params.dates }}
-      {{ if eq .done true }}
-      <li class="done">
-        <div class="checkmark">✔️</div>
-        <div class="text">{{.date}}<br><strong>{{.text}}</strong></div>
-      </li>
-      {{ else }}
-      <li>
-        <div class="checkmark">️</div>
-        <div class="text">{{.date}}<br><strong>{{.text}}</strong></div>
-      </li>
-      {{ end }}
-      {{ end }}
-      <li>
-        <div class="checkmark">️</div>
-        <div class="text">{{.Site.Params.date}}<br><strong>{{.Site.Title}}<br>@ {{.Site.Params.venue.name}}</strong>
-        </div>
-      </li>
-    </ul>
-  </div>
+	style="background-image: url('{{.Site.Params.backgroundImage}}'); background-position: center;">
+	<div class="heroDate">
+		<h1>Dates</h1>
+		<ul>
+			{{ range .Site.Params.dates }}
+			{{ if eq .done true }}
+			<li class="done">
+				<div class="checkmark">✔️</div>
+				<div class="text">{{.date}}<br><strong>{{.text}}</strong></div>
+			</li>
+			{{ else }}
+			<li>
+				<div class="checkmark">️</div>
+				<div class="text">{{.date}}<br><strong>{{.text}}</strong></div>
+			</li>
+			{{ end }}
+			{{ end }}
+			<li>
+				<div class="checkmark">️</div>
+				<div class="text">{{.Site.Params.date}}<br><strong>{{.Site.Title}}<br>@
+						{{.Site.Params.venue.name}}</strong>
+				</div>
+			</li>
+		</ul>
+	</div>
 
-  <div class="heroTitle">
-    <div class="mascotte">
-      <div><img class="" width="130" height="183" src="/images/anteater_mascot.svg"></div>
-      <div><img class="" width="130" height="183" src="/images/octo_mascot.svg"></div>
-    </div>
-    <div class="title">
-      <div><img class="" width="130" height="183" src="/images/owl_mascot.svg"></div>
-      <h1>One Day,<br>One Track,<br>One&nbsp;Community</h1>
-      <div><img class="" width="130" height="183" src="/images/unicorn_mascot.svg"></div>
-    </div>
-    <div class="mascotte">
-      <div><img class="" width="130" height="183" src="/images/moth_mascot.svg"></div>
-      <div><img class="" width="130" height="183" src="/images/dino_mascot.svg"></div>
-    </div>
-  </div>
+	<div class="heroTitle">
+		<div class="mascotte">
+			<div><img class="" width="130" height="183" src="/images/anteater_mascot.svg"></div>
+			<div><img class="" width="130" height="183" src="/images/octo_mascot.svg"></div>
+		</div>
+		<div class="title">
+			<div><img class="" width="130" height="183" src="/images/owl_mascot.svg"></div>
+			<h1>One Day,<br>One Track,<br>One&nbsp;Community</h1>
+			<div><img class="" width="130" height="183" src="/images/unicorn_mascot.svg"></div>
+		</div>
+		<div class="mascotte">
+			<div><img class="" width="130" height="183" src="/images/moth_mascot.svg"></div>
+			<div><img class="" width="130" height="183" src="/images/dino_mascot.svg"></div>
+		</div>
+	</div>
 </div>
 
 <a name="about"></a>
 <div class="section">
-  <div class="left">
-    <div class="title">
-      <h1>About</h1>
-    </div>
-    <div class="image"><img width="200" height="200" src="{{.Site.Params.mascot}}"></div>
-  </div>
-  <div class="text">
-    <p>{{.Site.Title}} is a developer-oriented conference about serverless technologies.</p>
-    <p>We believe in and encourage practical sessions, in which developers share their experience and lessons from
-      real-world projects.</p>
-    <p>{{.Site.Title}} is part of ServerlessDays, a global series of events around the world
-      fostering communities around serverless technologies.</p>
-    <p>We follow and enforce the ServerlessDays <a href="#coc">Code of Conduct</a>.</p>
-  </div>
+	<div class="left">
+		<div class="title">
+			<h1>About</h1>
+		</div>
+		<div class="image"><img width="200" height="200" src="{{.Site.Params.mascot}}"></div>
+	</div>
+	<div class="text">
+		<p>{{.Site.Title}} is a developer-oriented conference about serverless technologies.</p>
+		<p>We believe in and encourage practical sessions, in which developers share their experience and lessons from
+			real-world projects.</p>
+		<p>{{.Site.Title}} is part of ServerlessDays, a global series of events around the world
+			fostering communities around serverless technologies.</p>
+		<p>We follow and enforce the ServerlessDays <a href="#coc">Code of Conduct</a>.</p>
+	</div>
 </div>
 
 <a name="venue"></a>
 <div class="section" style="border-top: 0;">
-  <div class="left">
-    <div class="title">
-      <h1>Venue</h1>
-    </div>
-    <div class="image" style="padding: 0px 20px;"><iframe src="{{.Site.Params.venue.map}}" width="400" height="300"
-        frameborder="0" style="border:0" allowfullscreen></iframe></div>
-  </div>
-  <div class="text">
-    <p>The Conference will be hosted at the <a href="{{.Site.Params.venue.link}}">{{.Site.Params.venue.name}}</a></p>
-    <p>{{.Site.Params.venue.text}}</p>
-  </div>
+	<div class="left">
+		<div class="title">
+			<h1>Venue</h1>
+		</div>
+		<div class="image" style="padding: 0px 20px;"><iframe src="{{.Site.Params.venue.map}}" width="400" height="300"
+				frameborder="0" style="border:0" allowfullscreen></iframe></div>
+	</div>
+	<div class="text">
+		<p>The Conference will be hosted at the <a href="{{.Site.Params.venue.link}}">{{.Site.Params.venue.name}}</a>
+		</p>
+		<p>{{.Site.Params.venue.text}}</p>
+	</div>
 </div>
 
 <!-- <a name="tickets"></a>
@@ -102,85 +104,113 @@
 
 <a name="coc"></a>
 <div class="section coc" style="border: 0">
-  <h2><img width="80" src="/images/moth_mascot.svg"> Code of Conduct (<a
-      href="https://docs.google.com/forms/d/e/1FAIpQLSc1qwXD_6mtAJo_kIRAVfl87HkdSi-1iUKbln_eN1JH03Th3A/viewform">Form to
-      report incidents</a>)</h2>
-  <div class="expanded">
-    <p>All attendees, speakers, sponsors and volunteers at our conference are required to agree with the following code
-      of conduct. Organisers will enforce this code throughout the event. We are expecting cooperation from all
-      participants to help ensuring a safe environment for everybody.</p>
-    <p><strong>Be excellent with each other</strong></p>
-    <h3>The Quick Version</h3>
-    <p>Our conference is dedicated to providing a harassment-free conference experience for everyone, regardless of
-      gender, gender identity and expression, age, sexual orientation, disability, physical appearance, body size, race,
-      or religion (or lack thereof). We do not tolerate harassment of conference participants in any form. Sexual
-      language and imagery is not appropriate for any conference venue, including talks, workshops, parties, Twitter and
-      other online media. Conference participants violating these rules may be sanctioned or expelled from the
-      conference without a refund at the discretion of the conference organisers.</p>
-    <h3>The Less Quick Version</h3>
-    <p>Harassment includes offensive verbal comments related to gender, age, sexual orientation, disability, physical
-      appearance, body size, race, religion, sexual images in public spaces, deliberate intimidation, stalking,
-      following, harassing photography or recording, sustained disruption of talks or other events, inappropriate
-      physical contact, and unwelcome sexual attention.</p>
-    <p>Participants asked to stop any harassing behavior are expected to comply immediately.</p>
-    <p>Sponsors are also subject to the anti-harassment policy. In particular, sponsors should not use sexualised
-      images, activities, or other material. Booth staff (including volunteers) should not use sexualised
-      clothing/uniforms/costumes, or otherwise create a sexualised environment.</p>
-    <p>If a participant engages in harassing behavior, the conference organisers may take any action they deem
-      appropriate, including warning the offender or expulsion from the conference with no refund.</p>
-    <p>If you are being harassed, notice that someone else is being harassed, or have any other concerns, please contact
-      a member of conference staff immediately. Conference staff can be identified as they’ll be wearing branded
-      t-shirts.</p>
-    <p>Conference staff will be happy to help participants contact hotel/venue security or local law enforcement,
-      provide escorts, or otherwise assist those experiencing harassment to feel safe for the duration of the
-      conference. We value your attendance.</p>
-    <p>We expect participants to follow these rules at conference and workshop venues and conference-related social
-      events.</p>
-  </div>
-</div>
+	<h2><img width="80" src="/images/moth_mascot.svg"> Code of Conduct (<a
+			href="https://docs.google.com/forms/d/e/1FAIpQLSc1qwXD_6mtAJo_kIRAVfl87HkdSi-1iUKbln_eN1JH03Th3A/viewform">Form
+			to
+			report incidents</a>)</h2>
+	<div class="expanded">
+		<p>All attendees, speakers, sponsors and volunteers at our conference are required to agree with the following
+			code
+			of conduct. Organisers will enforce this code throughout the event. We are expecting cooperation from all
+			participants to help ensuring a safe environment for everybody.</p>
+		<p><strong>Be excellent with each other</strong></p>
+		<h3>The Quick Version</h3>
+		<p>Our conference is dedicated to providing a harassment-free conference experience for everyone, regardless of
+			gender, gender identity and expression, age, sexual orientation, disability, physical appearance, body size,
+			race,
+			or religion (or lack thereof). We do not tolerate harassment of conference participants in any form. Sexual
+			language and imagery is not appropriate for any conference venue, including talks, workshops, parties,
+			Twitter and
+			other online media. Conference participants violating these rules may be sanctioned or expelled from the
+			conference without a refund at the discretion of the conference organisers.</p>
+		<h3>The Less Quick Version</h3>
+		<p>Harassment includes offensive verbal comments related to gender, age, sexual orientation, disability,
+			physical
+			appearance, body size, race, religion, sexual images in public spaces, deliberate intimidation, stalking,
+			following, harassing photography or recording, sustained disruption of talks or other events, inappropriate
+			physical contact, and unwelcome sexual attention.</p>
+		<p>Participants asked to stop any harassing behavior are expected to comply immediately.</p>
+		<p>Sponsors are also subject to the anti-harassment policy. In particular, sponsors should not use sexualised
+			images, activities, or other material. Booth staff (including volunteers) should not use sexualised
+			clothing/uniforms/costumes, or otherwise create a sexualised environment.</p>
+		<p>If a participant engages in harassing behavior, the conference organisers may take any action they deem
+			appropriate, including warning the offender or expulsion from the conference with no refund.</p>
+		<p>If you are being harassed, notice that someone else is being harassed, or have any other concerns, please
+			contact
+			a member of conference staff immediately. Conference staff can be identified as they’ll be wearing branded
+			t-shirts.</p>
+		<p>Conference staff will be happy to help participants contact hotel/venue security or local law enforcement,
+			provide escorts, or otherwise assist those experiencing harassment to feel safe for the duration of the
+			conference. We value your attendance.</p>
+		<p>We expect participants to follow these rules at conference and workshop venues and conference-related social
+			events.</p>
+
+		<div class="section" style="border-top: 0;">
+			<div class="left">
+				<h3>The Code Of Conduct Team</h3>
+			</div>
+			<div class="left">
+				<div class="text">
+					<div class="image"><img height="150px" width="150" src="/images/Floor.jpg" /></div>
+					<p>Floor Drees</p>
+					<p><a href="https://twitter.com/floordrees">Twitter</a></p>
+					<p><a href="mailto:floordrees@gmail.com">Email</a></p>
+				</div>
+			</div>
+			<div class="right">
+				<div class="text">
+					<div class="image"><img height="150px" width="150px" src="/images/Marc.jpg" /></div>
+					<p>Marc Duiker</p>
+					<p><a href="https://twitter.com/marcduiker">Twitter</a></p>
+					<p><a href="mailto:marcduiker@gmail.com">Email</a></p>
+				</div>
+			</div>
+
+		</div>
+	</div>
 
 
-<script type="text/javascript">
-  var DIGITAL_CLIMATE_STRIKE_OPTIONS = {
-    /**
-     * Set the language of the widget. We currently support:
-     * 'en': English
-     * 'de': German
-     * 'es': Spanish
-     * 'cs': Czech
-     * 'fr': French
-     * 'nl': Dutch
-     * 'tr': Turkish
-     * 'pt': Portuguese
-     * Defaults to null, which will obey the navigator.language setting of the
-     * viewer's browser.
-     */
-    language: 'en', // @type {string}
+	<script type="text/javascript">
+		var DIGITAL_CLIMATE_STRIKE_OPTIONS = {
+			/**
+			 * Set the language of the widget. We currently support:
+			 * 'en': English
+			 * 'de': German
+			 * 'es': Spanish
+			 * 'cs': Czech
+			 * 'fr': French
+			 * 'nl': Dutch
+			 * 'tr': Turkish
+			 * 'pt': Portuguese
+			 * Defaults to null, which will obey the navigator.language setting of the
+			 * viewer's browser.
+			 */
+			language: 'en', // @type {string}
 
-    /**
-     * Always show the widget, even when someone has closed the widget and set the cookie on their device.
-     * Useful for testing. Defaults to false.
-     */
-    alwaysShowWidget: false, // @type {boolean}
+			/**
+			 * Always show the widget, even when someone has closed the widget and set the cookie on their device.
+			 * Useful for testing. Defaults to false.
+			 */
+			alwaysShowWidget: false, // @type {boolean}
 
-    /**
-     * Automatically makes the widget full page. Defaults to false.
-     */
-    forceFullPageWidget: true, // @type {boolean}
+			/**
+			 * Automatically makes the widget full page. Defaults to false.
+			 */
+			forceFullPageWidget: true, // @type {boolean}
 
-    /**
-    * For the full page widget, shows a close button "x" and hides the message about the site being
-    * available tomorrow. Defaults to false.
-    */
-    showCloseButtonOnFullPageWidget: true, // @type {boolean}
+			/**
+			* For the full page widget, shows a close button "x" and hides the message about the site being
+			* available tomorrow. Defaults to false.
+			*/
+			showCloseButtonOnFullPageWidget: true, // @type {boolean}
 
-    /**
-     * The date when the full page widget should showing on your web site for 24 hours.
-     * Note: the month is one integer less than the number of the month. E.g. 8 is September, not August.
-     * Defaults to new Date(2019, 8, 20) (September 20th, 2019)
-     */
-    fullPageDisplayStartDate: (new Date() < new Date(2019, 8, 27)) ? new Date() : new Date(2019, 8, 27), //@ type {Date object}
-  };
-</script>
-<script src="https://assets.digitalclimatestrike.net/widget.js" async></script>
-{{ end }}
+			/**
+			 * The date when the full page widget should showing on your web site for 24 hours.
+			 * Note: the month is one integer less than the number of the month. E.g. 8 is September, not August.
+			 * Defaults to new Date(2019, 8, 20) (September 20th, 2019)
+			 */
+			fullPageDisplayStartDate: (new Date() < new Date(2019, 8, 27)) ? new Date() : new Date(2019, 8, 27), //@ type {Date object}
+		};
+	</script>
+	<script src="https://assets.digitalclimatestrike.net/widget.js" async></script>
+	{{ end }}
