@@ -235,6 +235,10 @@ nav.top-nav .menu a.highlight:active {
   flex: 1 0 auto;
 }
 
+.section .teammember {
+    margin-left: 5em;
+}
+
 .section h1 {
   margin: 0;
   margin-bottom: 0.5em;
