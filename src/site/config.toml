@@ -22,13 +22,13 @@ title = "ServerlessDays Amsterdam"
     date = "February 23, 2020"
     text = "CFP Closes"
 
-#[[params.dates]]
-#    date = "TODO"
-#    text = "Tickets go on Sale"
+[[params.dates]]
+    date = "February 23, 2020"
+    text = "Tickets go on Sale"
 
-#[[params.dates]]
-#    date = "TODO"
-#    text = "Schedule Announcement"
+[[params.dates]]
+    date = "March 7, 2020"
+    text = "Schedule Announcement"
 
 [params.venue]
     name = "Pakhuis de Zwijger"
