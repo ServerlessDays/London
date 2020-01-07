@@ -14,21 +14,21 @@ title = "ServerlessDays Amsterdam"
     prospectus = "https://serverlessdays.amsterdam/2020_serverlessdays_nl_prospectus.pdf"
 
 [[params.dates]]
-    date = "December 16, 2019"
+    date = "January 10, 2020"
     text = "CFP Opens"
     done = true
 
 [[params.dates]]
-    date = "TODO"
+    date = "February 23, 2020"
     text = "CFP Closes"
 
-[[params.dates]]
-    date = "TODO"
-    text = "Tickets go on Sale"
+#[[params.dates]]
+#    date = "TODO"
+#    text = "Tickets go on Sale"
 
-[[params.dates]]
-    date = "TODO"
-    text = "Schedule Announcement"
+#[[params.dates]]
+#    date = "TODO"
+#    text = "Schedule Announcement"
 
 [params.venue]
     name = "Pakhuis de Zwijger"
