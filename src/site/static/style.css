@@ -542,7 +542,6 @@ nav.top-nav .menu a.highlight:active {
 
 .sponsors .silver img {
   min-height: 80px;
-  height: 110px;
   object-fit: contain;
 }
 .sponsors .silver div {
@@ -562,8 +561,7 @@ nav.top-nav .menu a.highlight:active {
 }
 
 .sponsors .community img {
-  min-height: 60px;
-  width: 100%;
+  min-height: 30px;
   max-width: 300px;
   object-fit: contain;
 }
@@ -592,11 +590,6 @@ nav.top-nav .menu a.highlight:active {
 .sponsors .drinks,
 .sponsors .community {
   width: 100%;
-}
-
-.sponsors .media img,
-.sponsors .community img {
-  height: 70px;
 }
 
 .sponsors .media.list {
