@@ -11,7 +11,7 @@ title = "ServerlessDays Amsterdam"
     twitter = "ServerlessDAms"
     email = "amsterdam@serverlessdays.io"
     backgroundImage = "https://res.cloudinary.com/serverlessdays/image/upload/c_scale,q_auto:best,w_1920/v1527152567/amsterdam-2018.jpg"
-    prospectus = "https://serverlessdays.amsterdam/2020_serverlessdays_nl_prospectus.pdf"
+    prospectus = "https://serverlessdays.amsterdam/ServerlessDaysAms_SponsorProspectus_2020.pdf"
 
 [[params.dates]]
     date = "January 10, 2020"
@@ -36,3 +36,20 @@ title = "ServerlessDays Amsterdam"
     map = "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2435.6456449004804!2d4.919928715875416!3d52.37684507978742!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47c609a80e2c8a2f%3A0x2d9e404fc8f71f8d!2sPakhuis+de+Zwijger!5e0!3m2!1sru!2snl!4v1550737160263"
     text = "The venue Pakhuis de Zwijger provides a state-of-the-art AV system and catering, as well as a beautiful view of Amsterdam."
 
+[[params.sponsors.gold]]
+    name = "Container Solutions"
+    link = "https://www.container-solutions.com/"
+    logo = "./images/ContainerSolutionsArtboard.svg"
+    width = 400
+
+[[params.sponsors.silver]]
+    name = "Xpirit"
+    link = "https://xpirit.com/"
+    logo = "./images/xpiritlogo_rgb_outlines.svg"
+    width = 250
+
+[[params.sponsors.community]]
+    name = "Thundra"
+    link = "https://www.thundra.io/"
+    logo = "./images/Thundra-main-blue.svg"
+    width = 220

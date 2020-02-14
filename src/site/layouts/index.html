@@ -100,6 +100,43 @@
     </div>
   </div> -->
 
+  <a name="sponsors"></a>
+  <div class="section sponsors">
+    <h1>Sponsors</h1>
+    <h2>Gold Sponsors</h2>
+  
+    <div class="list gold">
+      {{ range .Site.Params.sponsors.gold }}
+      <div><a href="{{ .link }}" target="_blank"><img width="{{.width}}px" class="grow" src="{{ .logo }}"
+            title="{{ .name }}" alt="{{ .name }}"></a></div>
+      {{ end }}
+    </div>
+  
+    <div class="separator">&nbsp;</div>
+  
+    <h2>Silver Sponsors</h2>
+    <div class="list silver">
+      {{ range .Site.Params.sponsors.silver }}
+      <div><a href="{{ .link }}" target="_blank"><img width="{{.width}}px" class="grow" src="{{ .logo }}"
+            title="{{ .name }}" alt="{{ .name }}"></a></div>
+      {{ end }}
+    </div>
+
+    <div class="separator">&nbsp;</div>
+
+    <h2>Community Sponsors</h2>
+    <div class="list community">
+      {{ range .Site.Params.sponsors.community }}
+      <div><a href="{{ .link }}" target="_blank"><img width="{{.width}}px" class="grow" src="{{ .logo }}"
+            title="{{ .name }}" alt="{{ .name }}"></a></div>
+      {{ end }}
+    </div>
+
+    <p>&nbsp;</p>
+    <p>For more information on becoming a sponsor, please download our <a href="{{.Site.Params.prospectus}}"
+        target="_blank">prospectus</a>.</p>
+  </div>
+
 <a name="coc"></a>
 <div class="section coc" style="border: 0">
   <h2><img width="80" src="/images/moth_mascot.svg"> Code of Conduct (<a
@@ -160,49 +197,4 @@
     </div>
   </div>
 </div>
-
-
-<script type="text/javascript">
-  var DIGITAL_CLIMATE_STRIKE_OPTIONS = {
-    /**
-     * Set the language of the widget. We currently support:
-     * 'en': English
-     * 'de': German
-     * 'es': Spanish
-     * 'cs': Czech
-     * 'fr': French
-     * 'nl': Dutch
-     * 'tr': Turkish
-     * 'pt': Portuguese
-     * Defaults to null, which will obey the navigator.language setting of the
-     * viewer's browser.
-     */
-    language: 'en', // @type {string}
-
-    /**
-     * Always show the widget, even when someone has closed the widget and set the cookie on their device.
-     * Useful for testing. Defaults to false.
-     */
-    alwaysShowWidget: false, // @type {boolean}
-
-    /**
-     * Automatically makes the widget full page. Defaults to false.
-     */
-    forceFullPageWidget: true, // @type {boolean}
-
-    /**
-    * For the full page widget, shows a close button "x" and hides the message about the site being
-    * available tomorrow. Defaults to false.
-    */
-    showCloseButtonOnFullPageWidget: true, // @type {boolean}
-
-    /**
-     * The date when the full page widget should showing on your web site for 24 hours.
-     * Note: the month is one integer less than the number of the month. E.g. 8 is September, not August.
-     * Defaults to new Date(2019, 8, 20) (September 20th, 2019)
-     */
-    fullPageDisplayStartDate: (new Date() < new Date(2019, 8, 27)) ? new Date() : new Date(2019, 8, 27), //@ type {Date object}
-  };
-</script>
-<script src="https://assets.digitalclimatestrike.net/widget.js" async></script>
 {{ end }}
