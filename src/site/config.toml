@@ -53,3 +53,7 @@ title = "ServerlessDays Amsterdam"
     link = "https://www.thundra.io/"
     logo = "./images/Thundra-main-blue.svg"
     width = 220
+
+[params.tickets]
+    titolink = "https://ti.to/serverlessdaysams/2020"
+    price = "50 EUR"

@@ -4,6 +4,7 @@
 <meta property="og:image" content="{{.Site.Params.backgroundImage}}">
 <meta name="description"
   content="A community based conference focusing on Serverless based platforms and technologies. {{.Site.Params.city}}, {{.Site.Params.date}}">
+<script src='https://js.tito.io/v1' async></script>
 {{ end }}
 
 {{ define "main" }}
@@ -84,21 +85,25 @@
   </div>
 </div>
 
-<!-- <a name="tickets"></a>
+  <a name="tickets"></a>
   <div class="section" style="border: 0;">
     <div class="left">
       <div class="title"><h1>Tickets</h1></div>
       <div class="image"><img class="pa4" width="150" height="150" src="{{.Site.Params.mascot}}"></div>
     </div>
+    
     <div class="text">
       <p>Tickets are available at {{.Site.Params.tickets.price}} each.</p>
-      <p>We seek to create a diverse and inclusive community for serverless developers. We want to include and encourage people of all races, ethnicities, genders, religions, sexual orientations, abilities, technical experience and ages.</p>
+      <!--<p>We seek to create a diverse and inclusive community for serverless developers. We want to include and encourage people of all races, ethnicities, genders, religions, sexual orientations, abilities, technical experience and ages.</p>
       <p>We have committed to provide a portion of tickets to diversity groups to help remove any financial barrier. Apply for a ticket <a href="{{.Site.Params.tickets.diversityLink}}" target="_blank">here</a>.</p>
       <p>You can also choose to buy a Diversity Sponsor Ticket and we'll donate it to a Diversity Scholar.</p>
-      <p>Can't see the Tickets frame below? <a href="{{.Site.Params.tickets.eventBrite.link}}" target="_blank">Buy a ticket here!</a></p>
-      <div class="ticketsFrame"><iframe src="https://eventbrite.com/tickets-external?eid={{.Site.Params.tickets.eventBrite.eventid}}&ref=etckt" frameborder="0" height="800" width="100%" vspace="0" hspace="0" marginheight="5" marginwidth="5" scrolling="auto" allowtransparency="true" onload="resizeIframe(this)"></iframe></div>
+      <p>Can't see the Tickets frame below? <a href="{{.Site.Params.tickets.titolink}}" target="_blank">Buy a ticket here!</a></p>-->
+      <div class="ticketsFrame">
+        <tito-widget event="serverlessdaysams/2020"></tito-widget> 
+        <link rel="stylesheet" type="text/css" href='https://css.tito.io/v1.1' />
+      </div>
     </div>
-  </div> -->
+  </div>
 
   <a name="sponsors"></a>
   <div class="section sponsors">
