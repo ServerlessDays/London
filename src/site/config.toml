@@ -21,10 +21,12 @@ title = "ServerlessDays Amsterdam"
 [[params.dates]]
     date = "February 23, 2020"
     text = "CFP Closes"
+    done = true
 
 [[params.dates]]
-    date = "February 23, 2020"
+    date = "February 25, 2020"
     text = "Tickets go on Sale"
+    done = true
 
 [[params.dates]]
     date = "March 7, 2020"
