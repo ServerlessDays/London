@@ -493,6 +493,7 @@ nav.top-nav .menu a.highlight:active {
 
 .ticketsFrame {
   justify-content: center;
+  width: 800px;
 }
 
 .sponsors {
