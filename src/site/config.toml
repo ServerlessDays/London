@@ -21,10 +21,12 @@ title = "ServerlessDays Amsterdam"
 [[params.dates]]
     date = "February 23, 2020"
     text = "CFP Closes"
+    done = true
 
 [[params.dates]]
-    date = "February 23, 2020"
+    date = "February 25, 2020"
     text = "Tickets go on Sale"
+    done = true
 
 [[params.dates]]
     date = "March 7, 2020"
@@ -53,3 +55,7 @@ title = "ServerlessDays Amsterdam"
     link = "https://www.thundra.io/"
     logo = "./images/Thundra-main-blue.svg"
     width = 220
+
+[params.tickets]
+    titolink = "https://ti.to/serverlessdaysams/2020"
+    price = "60 EUR"
