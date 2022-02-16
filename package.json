@@ -34,6 +34,6 @@
     "pump": "^3.0.0"
   },
   "dependencies": {
-    "showdown": "^1.8.6"
+    "showdown": "^2.0.0"
   }
 }
